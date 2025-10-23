@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import "tailwindcss";
+
+*{
+      font-family: "Outfit", sans-serif;
+}
