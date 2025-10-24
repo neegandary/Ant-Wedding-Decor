@@ -39,7 +39,7 @@ export const Header = () => {
 
                 {/* Center: logo */}
                 <div className="flex justify-center">
-                    <a href="/"><img src="/logo.png" alt="Company logo" className="h-24 w-24 rounded-full" /></a>
+                    <a href="/"><img src="/logo-rmbg.png" alt="Company logo" className="h-24 w-24" /></a>
                 </div>
 
                 {/* Right: icons */}
