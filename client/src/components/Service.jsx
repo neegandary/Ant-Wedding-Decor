@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 import { useMemo, useState, useEffect } from "react";
 import { CountUpNumber } from "./CountUpNumber";
 import { IMAGES } from "../constants/image";
+import { useTranslation } from 'react-i18next';
+
 const Service = () => {
+    const { t } = useTranslation();
     const [visibleImages, setVisibleImages] = useState([]);
 
     // Load ảnh tuần tự, mỗi ảnh cách nhau 150ms
@@ -18,26 +21,26 @@ const Service = () => {
 
     const cards = useMemo(() => [
         {
-            title: 'TRANG TRÍ LỄ GIA TIÊN',
+            title: t('ancestorDecor'),
             img: `${IMAGES.vietxquynh}`,
-            desc: 'Thiết kế không gian lễ gia tiên trang trọng, ấm cúng với đầy đủ các vật phẩm truyền thống. Chúng tôi tư vấn và bố trí theo phong tục từng vùng miền, đảm bảo sự trang nghiêm và ý nghĩa cho nghi lễ quan trọng này.'
+            desc: t('ancestorDesc')
         },
         {
-            title: 'TRANG TRÍ NGOÀI TRỜI',
+            title: t('outdoorDecor'),
             img: `${IMAGES.nganxnhat}`,
-            desc: 'Tạo nên không gian tiệc cưới ngoài trời lãng mạn, sang trọng với hệ thống backdrop, cổng hoa, lối đi và khu vực đón khách ấn tượng. Phù hợp với sân vườn, bãi biển hay không gian mở.'
+            desc: t('outdoorDesc')
         },
         {
-            title: 'TRANG TRÍ NHÀ HÀNG',
+            title: t('restaurantDecor'),
             img: `${IMAGES.duyxmy}`,
-            desc: 'Biến hóa sảnh tiệc nhà hàng thành không gian cưới lung linh với backdrop sân khấu, bàn tiệc, lối đi và hệ thống ánh sáng chuyên nghiệp. Đa dạng phong cách từ cổ điển đến hiện đại.'
+            desc: t('restaurantDesc')
         },
         {
-            title: 'TRANG TRÍ SỰ KIỆN',
+            title: t('eventDecorTitle'),
             img: `${IMAGES.eventxbenang}`,
-            desc: 'Cung cấp giải pháp trang trí toàn diện cho các sự kiện đặc biệt như lễ đính hôn, tiệc thôi nôi, sinh nhật. Thiết kế theo chủ đề riêng với đội ngũ thi công chuyên nghiệp, đúng tiến độ.'
+            desc: t('eventDecorDesc')
         },
-    ], []);
+    ], [t]);
 
     return (
         <>
@@ -79,18 +82,18 @@ const Service = () => {
                                     )}
                                 </div>
                                 <div className="relative bg-white rounded-md shadow-lg p-6 -mt-12 mx-4 flex-1 flex flex-col min-h-[280px] z-10">
-                                    <h3 className="text-center text-base font-bold text-emerald-700 mb-3 min-h-[48px] flex items-center justify-center">
+                                    <h3 className="text-center text-base font-black text-emerald-700 mb-3 min-h-[48px] flex items-center justify-center">
                                         {c.title}
                                     </h3>
-                                    <p className="text-sm text-gray-600 text-center mb-4 flex-1 leading-relaxed">
+                                    <p className="text-sm text-gray-600 text-center mb-4 flex-1 leading-relaxed font-light">
                                         {c.desc}
                                     </p>
                                     <div className="text-center mt-auto">
                                         <a
-                                            className="inline-block text-sm font-medium text-emerald-700 hover:text-emerald-800 underline transition-colors"
+                                            className="inline-block text-sm font-bold text-emerald-700 hover:text-emerald-800 underline transition-colors"
                                             href="#"
                                         >
-                                            XEM CHI TIẾT
+                                            {t('viewDetails')}
                                         </a>
                                     </div>
                                 </div>
@@ -109,12 +112,12 @@ const Service = () => {
                         <div className="w-1/2 flex flex-row items-center justify-center px-8">
                             <div className="text-center flex-1">
                                 <div className="text-7xl font-bold mb-2"><CountUpNumber target={15} /></div>
-                                <div className="text-sm uppercase tracking-wide">NĂM KINH NGHIỆM</div>
+                                <div className="text-sm uppercase tracking-wide">{t('yearsExperience')}</div>
                             </div>
                             <div className="h-32 w-px bg-white/50 mx-8"></div>
                             <div className="text-center flex-1">
                                 <div className="text-7xl font-bold mb-2"><CountUpNumber target={8000} /></div>
-                                <div className="text-sm uppercase tracking-wide">CẶP ĐÔI TIN TƯỞNG</div>
+                                <div className="text-sm uppercase tracking-wide">{t('couplesServed')}</div>
                             </div>
                         </div>
 
@@ -126,14 +129,13 @@ const Service = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
                         >
-                            <h2 className="text-4xl font-bold mb-2">We'll create wedding</h2>
-                            <h3 className="text-3xl mb-4">décor to suit your Inspiration</h3>
-                            <p className="text-sm leading-relaxed mb-6 text-justify">
-                                Với hơn 15 năm kinh nghiệm tổ chức các sự kiện và những phương án cưới nhỏ lẻ khác nhau, Ant Wedding sẽ mang lại cho bạn những ý tưởng tuyệt vời và bản tính nhất về sự lựa chọn ANT
-                                WEDDING để đảm bảo sự yên tâm trong quá trình thực hiện cũng như thành thải hoàn toàn đã đạt được trong sự hài lòng về ngày vui của mình.
+                            <h2 className="text-4xl font-black mb-2">{t('bannerTitle1')}</h2>
+                            <h3 className="text-3xl font-bold mb-4">{t('bannerTitle2')}</h3>
+                            <p className="text-sm leading-relaxed mb-6 text-justify font-light">
+                                {t('bannerDesc')}
                             </p>
-                            <button className="bg-white text-gray-800 px-6 py-2 rounded text-sm font-medium hover:bg-gray-100 transition">
-                                CÁC GÓI ĐÃ CÓ THIẾT KẾ
+                            <button className="bg-white text-gray-800 px-6 py-2 rounded text-sm font-bold hover:bg-gray-100 transition">
+                                {t('designPackages')}
                             </button>
                         </motion.div>
                     </div>
@@ -143,25 +145,25 @@ const Service = () => {
             <section className="bg-[#f8f6ec] py-16">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <motion.h2
-                        className="text-4xl font-bold text-center text-gray-800 mb-4"
+                        className="text-4xl font-black text-center text-gray-800 mb-4"
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, ease: "easeOut" }}
                     >
-                        LÝ DO CHỌN ANT WEDDING
+                        {t('whyChooseUs')}
                     </motion.h2>
                     <div className="flex items-center justify-center gap-2 mb-4">
                         <div className="h-px bg-gradient-to-r from-transparent via-[#cbb9a4] to-transparent w-76"></div>
                     </div>
                     <motion.p
-                        className="text-center text-gray-600 max-w-3xl mx-auto mb-12 whitespace-nowrap"
+                        className="text-center text-gray-600 max-w-3xl mx-auto mb-12 whitespace-nowrap font-light"
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
                     >
-                        Ant Town luôn cân nhắc "đầu vào" về độ tỉ mỉ, sự tinh tâm có khách hàng hoàn toàn yên tâm về "đầu ra" của mình
+                        {t('whyChooseDesc')}
                     </motion.p>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -173,11 +175,11 @@ const Service = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.7, ease: "easeOut" }}
                         >
-                            <div className="text-6xl font-bold text-emerald-700/20 mb-2">01.</div>
-                            <h3 className="text-xl font-bold text-gray-800 mb-2">THƯƠNG HIỆU UY TÍN</h3>
-                            <p className="text-sm font-semibold text-gray-700 mb-3">~ ĐÀN ĐẦY KINH NGHIỆM</p>
-                            <p className="text-sm text-gray-600 leading-relaxed">
-                                Với hơn 15 năm kinh nghiệm và phục trách các dịch vụ về tổ chức đám cưới, Ant Wedding đã trở thành một trong những thương hiệu uy tín hàng đầu tại TP. HCM. Đội ngũ tư vấn chuyên nghiệp, tận tâm, luôn sẵn sàng lắng nghe và đưa ra giải pháp tối ưu nhất cho mỗi đám cưới.
+                            <div className="text-6xl font-black text-emerald-700/20 mb-2">01.</div>
+                            <h3 className="text-xl font-black text-gray-800 mb-2">{t('trustedBrand')}</h3>
+                            <p className="text-sm font-bold text-gray-700 mb-3">{t('experiencedTeam')}</p>
+                            <p className="text-sm text-gray-600 leading-relaxed font-light">
+                                {t('trustedBrandDesc')}
                             </p>
                         </motion.div>
 
@@ -190,9 +192,9 @@ const Service = () => {
                             transition={{ duration: 0.7, ease: "easeOut" }}
                         >
                             <div className="text-6xl font-bold text-emerald-700/20 mb-2">02.</div>
-                            <h3 className="text-xl font-bold text-gray-800 mb-2">QUY TRÌNH & ĐỘI NGŨ CHUYÊN NGHIỆP</h3>
-                            <p className="text-sm text-gray-600 leading-relaxed">
-                                Với quy trình làm việc rõ ràng, chặt chẽ và đội ngũ nhân viên chuyên nghiệp, Ant Wedding đảm bảo mọi khâu trong tổ chức đám cưới đều được thực hiện một cách hoàn hảo. Từ khâu tư vấn, thiết kế, thi công đến khâu hoàn thiện, mọi chi tiết đều được chăm chút tỉ mỉ.
+                            <h3 className="text-xl font-bold text-gray-800 mb-2">{t('professionalProcess')}</h3>
+                            <p className="text-sm text-gray-600 leading-relaxed font-light">
+                                {t('professionalProcessDesc')}
                             </p>
                         </motion.div>
 
@@ -205,9 +207,9 @@ const Service = () => {
                             transition={{ duration: 0.7, ease: "easeOut" }}
                         >
                             <div className="text-6xl font-bold text-emerald-700/20 mb-2">03.</div>
-                            <h3 className="text-xl font-bold text-gray-800 mb-2">NHẬN SỰ CHUYÊN MÔN CAO</h3>
-                            <p className="text-sm text-gray-600 leading-relaxed">
-                                Được xây dựng và đào tạo bởi đội ngũ chuyên gia hàng đầu, nhân viên của Ant Wedding luôn cập nhật những xu hướng mới nhất trong lĩnh vực trang trí cưới. Chúng tôi cam kết mang đến cho khách hàng những sản phẩm và dịch vụ tốt nhất.
+                            <h3 className="text-xl font-bold text-gray-800 mb-2">{t('highExpertise')}</h3>
+                            <p className="text-sm text-gray-600 leading-relaxed font-light">
+                                {t('highExpertiseDesc')}
                             </p>
                         </motion.div>
                     </div>
