@@ -1,16 +1,19 @@
 import { ChevronDown } from "lucide-react"
 import { NavLink } from "react-router-dom"
+import { useTranslation } from 'react-i18next'
 
 export const Navbar = () => {
+    const { t } = useTranslation();
+    
     return (
         <div className="flex justify-center text-center bg-[#cbb9a4]">
-            <nav className="flex space-x-8 py-4 text-md font-medium w-full max-w-7xl justify-center text-white">
-                <NavLink to='/' className="hover:text-[#A48D78] transition-colors">TRANG CHỦ</NavLink>
+            <nav className="flex space-x-8 py-4 text-md font-black w-full max-w-7xl justify-center text-white">
+                <NavLink to='/' className="hover:text-[#A48D78] transition-colors">{t('home')}</NavLink>
                 {/* <NavLink to='/services' className="flex items-center gap-1 text-amber-200">DỊCH VỤ<ChevronDown className="ml-1" size={18} /></NavLink> */}
                 {/* Dropdown DỊCH VỤ */}
                 <div className="relative group before:content-[''] before:absolute before:top-full before:left-0 before:w-full before:h-4 before:bg-transparent">
                     <button className="flex items-center gap-1 hover:text-[#A48D78] transition-colors after:content-[''] after:absolute after:left-0 after:top-full after:w-full after:h-2 after:bg-transparent">
-                        DỊCH VỤ
+                        {t('services')}
                         <ChevronDown size={16} />
                     </button>
 
@@ -21,7 +24,7 @@ export const Navbar = () => {
                                 to="/services/destination"
                                 className="block w-full px-4 py-2 text-sm text-gray-600 hover:text-gray-800 hover:bg-white/20"
                             >
-                                Trang trí tiệc cưới ngoài trời
+                                {t('destinationWedding')}
                             </NavLink>
                         </li>
                         <li className="flex text-start">
@@ -29,7 +32,7 @@ export const Navbar = () => {
                                 to="/services/ancestor"
                                 className="block w-full px-4 py-2 text-sm text-gray-600 hover:text-gray-800 hover:bg-white/20"
                             >
-                                Trang trí lễ gia tiên
+                                {t('ancestorCeremony')}
                             </NavLink>
                         </li>
                         <li className="flex text-start">
@@ -37,7 +40,7 @@ export const Navbar = () => {
                                 to="/services/restaurant-wedding"
                                 className="block w-full px-4 py-2 text-sm text-gray-600 hover:text-gray-800 hover:bg-white/20"
                             >
-                                Trang trí sảnh nhà hàng
+                                {t('restaurantWedding')}
                             </NavLink>
                         </li>
                         <li className="flex text-start">
@@ -45,15 +48,15 @@ export const Navbar = () => {
                                 to="/services/event"
                                 className="block w-full px-4 py-2 text-sm text-gray-600 hover:text-gray-800 hover:bg-white/20"
                             >
-                                Trang trí sự kiện
+                                {t('eventDecor')}
                             </NavLink>
                         </li>
                     </ul>
                 </div>
 
-                <NavLink to='/work' className="hover:text-[#A48D78] transition-colors">ANTWORK</NavLink>
-                <NavLink to='/about' className="hover:text-[#A48D78] transition-colors">GIỚI THIỆU</NavLink>
-                <NavLink to='/contact' className="hover:text-[#A48D78] transition-colors">LIÊN HỆ</NavLink>
+                <NavLink to='/work' className="hover:text-[#A48D78] transition-colors">{t('work')}</NavLink>
+                <NavLink to='/about' className="hover:text-[#A48D78] transition-colors">{t('about')}</NavLink>
+                <NavLink to='/contact' className="hover:text-[#A48D78] transition-colors">{t('contact')}</NavLink>
             </nav>
         </div>
     )

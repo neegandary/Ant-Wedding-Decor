@@ -1,11 +1,18 @@
-import { Search } from "lucide-react";
+import { Search, Globe } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { IMAGES } from "../constants/image";
+import { useTranslation } from 'react-i18next';
 
 export const Header = () => {
+    const { t, i18n } = useTranslation();
     const [searchOpen, setSearchOpen] = useState(false);
     const inputRef = useRef(null);
     const containerRef = useRef(null);
+
+    const toggleLanguage = () => {
+        const newLang = i18n.language === 'vi' ? 'en' : 'vi';
+        i18n.changeLanguage(newLang);
+    };
 
     useEffect(() => {
         if (searchOpen && inputRef.current) {
@@ -34,8 +41,8 @@ export const Header = () => {
         <header className="bg-[#f7f6eb] py-4 shadow-sm">
             <div className="max-w-7xl mx-auto px-4 grid grid-cols-3 items-center">
                 {/* Left: hotline */}
-                <div className="text-sm text-gray-700">
-                    Hotline: <span className="text-red-700">079 467 2928</span>
+                <div className="text-sm text-gray-700 font-light">
+                    {t('hotline')}: <span className="text-red-700 font-bold">079 467 2928</span>
                 </div>
 
                 {/* Center: logo */}
@@ -83,6 +90,17 @@ export const Header = () => {
                             <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
                         </svg>
                     </a>
+
+                    {/* Language Toggle */}
+                    <button
+                        type="button"
+                        onClick={toggleLanguage}
+                        aria-label="Change language"
+                        className="text-gray-700 hover:text-emerald-700 focus:outline-none flex items-center gap-1 transition-colors"
+                    >
+                        <Globe className="w-5 h-5" />
+                        <span className="text-xs font-bold uppercase">{i18n.language}</span>
+                    </button>
 
                     <button
                         type="button"

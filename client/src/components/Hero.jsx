@@ -1,8 +1,10 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import { IMAGES } from "../constants/image";
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+    const { t } = useTranslation();
     const images = [
         IMAGES.hero1,
         IMAGES.hero2,
@@ -114,18 +116,18 @@ const Hero = () => {
                         initial="hidden"
                         animate="visible"
                         custom={0.2}
-                        className="text-sm tracking-widest uppercase text-white/90 mb-2 underline"
+                        className="text-sm tracking-widest uppercase text-white/90 mb-2 underline font-light"
                     >
-                        Tiệc cưới
+                        {t('wedding')}
                     </motion.p>
                     <motion.h2
                         variants={textVariants}
                         initial="hidden"
                         animate="visible"
                         custom={0.5}
-                        className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-lg text-center"
+                        className="text-3xl md:text-5xl lg:text-6xl font-black leading-tight drop-shadow-lg text-center"
                     >
-                        Thoả Sức Biến Tấu Tiệc Cưới Trong Mơ
+                        {t('heroTitle')}
                     </motion.h2>
                     <motion.div
                         variants={textVariants}
@@ -134,8 +136,8 @@ const Hero = () => {
                         custom={0.8}
                         className="mt-6 flex justify-center"
                     >
-                        <button className="inline-block px-6 py-2 border-2 border-white text-white rounded-full hover:bg-white/10 transition">
-                            Read more
+                        <button className="inline-block px-6 py-2 border-2 border-white text-white rounded-full hover:bg-white/10 transition font-bold">
+                            {t('readMore')}
                         </button>
                     </motion.div>
                 </div>

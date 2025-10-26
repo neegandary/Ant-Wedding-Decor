@@ -1,10 +1,12 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { IMAGES } from "../constants/image";
+import { useTranslation } from 'react-i18next';
 
 const Introduce = () => {
+    const { t } = useTranslation();
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-50px" });
 
@@ -32,24 +34,15 @@ const Introduce = () => {
                     >
                         <div className="pl-4 sm:pl-6 lg:pl-12 xl:pl-24 max-w-3xl">
                             <p className="text-lg text-red-500 font-semibold tracking-widest mb-4">
-                                HELLO, WE ARE ANT WEDDING
+                                {t('helloWeAre')}
                             </p>
                             <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium text-gray-900 leading-tight mb-6">
-                                <span className="block">Chúng Tôi Luôn</span>
-                                <span className="block">Đổi Mới Sáng Tạo</span>
-                                <span className="block">Uy Tín & Chất Lượng</span>
+                                <span className="block">{t('introTitle1')}</span>
+                                <span className="block">{t('introTitle2')}</span>
+                                <span className="block">{t('introTitle3')}</span>
                             </h2>
-                            <p className="text-gray-600 leading-relaxed text-lg text-justify">
-                                Khởi đầu từ 2010 - trong giai đoạn dịch vụ cho ngày cưới còn rất
-                                truyền thống và cơ bản. Bứt phá khỏi những quan niệm làm dịch vụ
-                                lỗi thời, kết hợp với tư duy đổi mới dựa trên nền tảng được đào
-                                tạo bài bản trong trường lớp mỹ thuật. Ant Wedding tự hào là
-                                một trong những đơn vị tiên phong và có kinh nghiệm nhiều năm
-                                trong việc tổ chức lễ cưới tại TPHCM. Ant Wedding cung cấp các
-                                dịch vụ cho ngày cưới: Lập kế hoạch - Thiết kế - Trang trí. Từ
-                                quá trình lên kế hoạch, làm ý tưởng & kiến tạo nên những trải
-                                nghiệm cá nhân hoá, phản ánh đúng câu chuyện tình yêu của từng
-                                cặp đôi.
+                            <p className="text-gray-600 leading-relaxed text-lg text-justify font-light">
+                                {t('introDesc')}
                             </p>
                         </div>
                     </motion.div>
@@ -84,22 +77,15 @@ const Introduce = () => {
 
                             {/* Right stack */}
                             <div className="space-y-6 self-start">
-                                <div className="bg-[#68866c] text-white rounded-lg p-6 shadow-lg">
-                                    <p className="mb-4 text-justify">
-                                        Cho đến nay White Wedding vẫn luôn tự hào là đơn vị chuyên
-                                        nghiệp và giàu kinh nghiệm hàng đầu trong lĩnh vực trang trí
-                                        gia tiên tại TPHCM.
+                                <div className="bg-[#68866c] text-white rounded-lg p-6 shadow-lg min-h-[200px] flex flex-col justify-between">
+                                    <p className="mb-4 text-justify font-light text-sm leading-relaxed">
+                                        {t('introQuote')}
                                     </p>
                                     <div className="flex items-center gap-3">
-                                        <img
-                                            src="/avatar.jpg"
-                                            alt="Huyền Phạm"
-                                            className="w-12 h-12 rounded-full object-cover border-2 border-white"
-                                        />
                                         <div>
-                                            <div className="font-semibold">Name</div>
-                                            <div className="text-sm text-white/80 whitespace-nowrap">
-                                                Founder Ant Wedding
+                                            <div className="font-semibold text-sm">{t('founders')}</div>
+                                            <div className="text-xs text-white/80">
+                                                {t('founderTitle')}
                                             </div>
                                         </div>
                                     </div>
