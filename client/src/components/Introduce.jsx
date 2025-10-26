@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
+import { IMAGES } from "../constants/image";
 
 const Introduce = () => {
     const ref = useRef(null);
@@ -15,7 +16,7 @@ const Introduce = () => {
     return (
         <section className="relative bg-white overflow-hidden py-20" ref={ref}>
             <img
-                src="/background.jpg"
+                src={IMAGES.background}
                 alt="decorative background"
                 className="pointer-events-none absolute inset-0 w-full h-full object-contain opacity-30"
             />
@@ -64,13 +65,8 @@ const Introduce = () => {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-6 sm:gap-y-0 items-start">
                             {/* Left stack */}
                             <div className="space-y-0">
-                                {/* <img
-                  src="intro1.jpg"
-                  alt="intro 1"
-                  className="w-full h-40 object-cover rounded-lg shadow-md mt-5"
-                /> */}
                                 <motion.img
-                                    src="intro1.jpg"
+                                    src={IMAGES.intro1}
                                     alt="intro 1"
                                     className="w-full h-40 object-cover rounded-lg shadow-md mt-5 cursor-pointer"
                                     whileHover={{ scale: 1.1 }}
@@ -78,7 +74,7 @@ const Introduce = () => {
 
                                 />
                                 <motion.img
-                                    src="intro2.jpg"
+                                    src={IMAGES.intro2}
                                     alt="intro 2"
                                     className="w-full h-80 object-cover rounded-lg shadow-md mt-5 cursor-pointer"
                                     whileHover={{ scale: 1.1 }}
@@ -110,7 +106,7 @@ const Introduce = () => {
                                 </div>
 
                                 <motion.img
-                                    src="intro3.jpg"
+                                    src={IMAGES.intro3}
                                     alt="intro 3"
                                     className="w-full h-36 object-cover rounded-lg shadow-md cursor-pointer"
                                     whileHover={{ scale: 1.1 }}

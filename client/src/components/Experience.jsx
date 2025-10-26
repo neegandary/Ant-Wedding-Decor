@@ -1,26 +1,27 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { IMAGES } from '../constants/image';
 
 const Experience = () => {
     // Hàng 1: 6 hình với thông tin
     const row1Images = [
-        { img: '/exp1-1.jpg', title: 'NƠ & MÈO', tags: ['Hiện Đại', 'Trang Trí Gia Tiên'] },
-        { img: '/exp1-2.jpg', title: 'ROMANTIC GARDEN', tags: ['Hiện Đại', 'Trang Trí Tiệc Cưới'] },
-        { img: '/exp1-3.jpg', title: 'RED PASSION', tags: ['Sang Trọng', 'Trang Trí Gia Tiên'] },
-        { img: '/exp1-4.jpg', title: 'BLUE DREAM', tags: ['Hiện Đại', 'Trang Trí Tiệc Cưới'] },
-        { img: '/exp1-5.jpg', title: 'GOLDEN LOVE', tags: ['Sang Trọng', 'Trang Trí Gia Tiên'] },
-        { img: '/exp1-6.jpg', title: 'PINK PARADISE', tags: ['Hiện Đại', 'Trang Trí Tiệc Cưới'] },
+        { img: `${IMAGES.nathanxtracy}`, title: 'FOUND BY FATE', tags: [ 'Trang Trí Tiệc Cướ'] },
+        { img: `${IMAGES.tienxwilliam}`, title: 'QUIET COASTAL LOVE ', tags: [ 'Trang Trí Tiệc Cưới'] },
+        { img: `${IMAGES.vanxtuc}`, title: 'VAN & TUC', tags: [ 'Trang Trí Gia Tiên'] },
+        { img: `${IMAGES.tranxtai}`, title: 'TRAN & TAI', tags: [ 'Trang Trí Tiệc Cưới'] },
+        { img: `${IMAGES.mayxmat}`, title: 'EAT.PRAY.LOVE', tags: [ 'Trang Trí Gia Tiên'] },
+        { img: `${IMAGES.duyenxsteven}`, title: 'DUYEN & STEVEN', tags: [ 'Trang Trí Tiệc Cưới'] },
     ];
 
     // Hàng 2: 6 hình với thông tin
     const row2Images = [
-        { img: '/exp2-1.jpg', title: 'CLASSIC ELEGANCE', tags: ['Sang Trọng', 'Trang Trí Gia Tiên'] },
-        { img: '/exp2-2.jpg', title: 'SPRING BLOSSOM', tags: ['Hiện Đại', 'Trang Trí Tiệc Cưới'] },
-        { img: '/exp2-3.jpg', title: 'OCEAN BREEZE', tags: ['Hiện Đại', 'Trang Trí Gia Tiên'] },
-        { img: '/exp2-4.jpg', title: 'ROYAL WEDDING', tags: ['Sang Trọng', 'Trang Trí Tiệc Cưới'] },
-        { img: '/exp2-5.jpg', title: 'VINTAGE CHARM', tags: ['Cổ Điển', 'Trang Trí Gia Tiên'] },
-        { img: '/exp2-6.jpg', title: 'MODERN CHIC', tags: ['Hiện Đại', 'Trang Trí Tiệc Cưới'] },
+        { img: `${IMAGES.service}`, title: 'THE JOURNEY WITHIN', tags: [ 'Trang Trí Tiệc Cưới'] },
+        { img: `${IMAGES.phuongxhien}`, title: 'PHUONG & HIEN', tags: [ 'Trang Trí Gia Tiên'] },
+        { img: `${IMAGES.duyxmy}`, title: 'SWEETEST DAY', tags: [ 'Trang Trí Gia Tiên'] },
+        { img: `${IMAGES.phuongxhien2}`, title: 'PHUONG & HIEN', tags: [ 'Trang Trí Tiệc Cưới'] },
+        { img: `${IMAGES.elopement}`, title: 'ELOPE WEDDING', tags: [ 'Trang Trí Tiệc Cưới'] },
+        { img: `${IMAGES.hieuxbrian}`, title: 'WELCOME HOME', tags: [ 'Trang Trí Tiệc Cưới'] },
     ];
 
     const settings = {

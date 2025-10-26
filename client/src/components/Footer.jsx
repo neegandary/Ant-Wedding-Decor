@@ -1,6 +1,8 @@
+import { IMAGES } from "../constants/image";
+
 export const Footer = () => {
     return (
-        <footer className="bg-[#6b8e7d] text-white py-12">
+        <footer className="bg-[#cbb9a4] text-white py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Main Footer Content */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -8,11 +10,11 @@ export const Footer = () => {
                     <div>
                         <div className="mb-6">
                             <div className="flex justify-center gap-2 mb-2">
-                                <img src="/logo-rmbg.png" alt="logo" className="h-50 w-50" />
+                                <img src={IMAGES.logo_rmbg} alt="logo" className="h-50 w-50" />
                             </div>
                         </div>
                         <div className="border-t border-white/30 pt-4 flex justify-center">
-                            <h3 className="text-5xl font-bold text-yellow-400 mb-4">Contact us</h3>
+                            <h3 className="text-5xl font-bold text-[#806a56] mb-4">Contact us</h3>
                         </div>
                     </div>
 
@@ -24,7 +26,7 @@ export const Footer = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                 </svg>
                                 <div>
-                                    <div className="text-yellow-400 text-sm mb-1">Our phone number:</div>
+                                    <div className="text-[#806a56] text-sm mb-1">Our phone number:</div>
                                     <div className="font-semibold">079 467 2928</div>
                                 </div>
                             </div>
@@ -36,7 +38,7 @@ export const Footer = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
                                 <div>
-                                    <div className="text-yellow-400 text-sm mb-1">Our Email:</div>
+                                    <div className="text-[#806a56] text-sm mb-1">Our Email:</div>
                                     <div className="font-semibold">antwedding79@gmail.com</div>
                                 </div>
                             </div>
@@ -49,7 +51,7 @@ export const Footer = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                 </svg>
                                 <div>
-                                    <div className="text-yellow-400 text-sm mb-1">Our Address:</div>
+                                    <div className="text-[#806a56] text-sm mb-1">Our Address:</div>
                                     <div className="font-semibold ">
                                         Destination Wedding Decoration based in Nha Trang<br />
                                         (Vui lòng đặt lịch hẹn trước)
@@ -65,7 +67,7 @@ export const Footer = () => {
                         <div className="bg-white rounded-lg p-4">
                             <div className="mb-3">
                                 <img
-                                    src="/logo.png"
+                                    src="/logo.ico"
                                     alt="White Wedding Decor"
                                     className="w-full h-32 object-cover rounded"
                                 />
@@ -98,7 +100,7 @@ export const Footer = () => {
                 <div className="border-t border-white/30 pt-6">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
                         <div> Ant Wedding –  Draw Your Wedding Dream</div>
-                        
+
                         <div>from Ant Wedding with Love</div>
                     </div>
                 </div>
