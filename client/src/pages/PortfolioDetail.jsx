@@ -1,0 +1,754 @@
+import { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { ChevronLeft, ChevronRight, Grid3x3, X, ZoomIn, Maximize2 } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import { IMAGES } from '../constants/image';
+
+const PortfolioDetail = () => {
+  const { t } = useTranslation();
+  const { endpoint } = useParams();
+  const navigate = useNavigate();
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Scroll to top when endpoint changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [endpoint]);
+
+  // Danh sách tất cả portfolio endpoints theo thứ tự
+  const portfolioList = [
+    'nathanxtracy',
+    'tienxwilliam',
+    'vanxtuc',
+    'tranxtai',
+    'mayxmat',
+    'duyenxsteven',
+    'hanxtuan',
+    'phuongxhien',
+    'duyxmy',
+    'phuongxhien2',
+    'elopement',
+    'hieuxbrian'
+  ];
+
+  const currentIndex = portfolioList.indexOf(endpoint);
+  const prevEndpoint = currentIndex > 0 ? portfolioList[currentIndex - 1] : null;
+  const nextEndpoint = currentIndex < portfolioList.length - 1 ? portfolioList[currentIndex + 1] : null;
+
+  // Data cho từng portfolio
+  const portfolioData = {
+    nathanxtracy: {
+      title: 'FOUND BY FATE',
+      subtitle: 'Nathan & Tracy - Định Mệnh Tìm Thấy Nhau',
+      category: 'TRANG TRÍ TIỆC CƯỚI',
+      headerImage: IMAGES.nathanxtracy,
+      description: `Trong không khí Vietnam Wedding Week 2024, lễ cưới của Nathan & Tracy đã mang đến không gian Wedding Art Decor đầy mê hoặc với concept "Định Mệnh". Toàn bộ không gian được thiết kế xoay quanh câu chuyện tình yêu định mệnh của cặp đôi.
+
+Không ngừng tìm kiếm ánh "Mặt trời" - cảm xúc tràn đầy về sự bình yên trong tâm hồn mà cả hai đã tìm thấy ở nhau. Mỗi chi tiết đều mang một ý nghĩa sâu sắc, từ màu sắc đến hoa tươi, tất cả đều được lựa chọn cẩn thận để kể lại câu chuyện tình yêu của họ.
+
+Trong bối cảnh trang trí tinh tế, không gian của cặp đôi Nathan & Tracy đã được tạo nên từ sự kết hợp hoàn hảo giữa nghệ thuật và cảm xúc. Mỗi góc nhỏ đều toát lên vẻ đẹp lãng mạn và sự tinh tế trong từng chi tiết.`,
+      details: {
+        concept: 'Found By Fate & Bloom #2 Decoration',
+        address: 'Nha Trang',
+        photographer: 'Ant Wedding Studio'
+      },
+      contact: {
+        hotline: '079 467 2928',
+        email: 'antwedding79@gmail.com'
+      },
+      tags: ['Lễ Hỏi & Gia Tiên', 'Nghi Lễ', 'Không Gian', 'Lễ Gia Tiên', 'Trang Trí Gia Tiên', 'Trang Màu', 'Xanh Trang'],
+      images: [
+        { src: IMAGES.nathanxtracy, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.nathanxtracy1, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.nathanxtracy2, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.nathanxtracy3, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.nathanxtracy4, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.nathanxtracy5, orientation: 'landscape', size: 'small' },
+        { src: IMAGES.nathanxtracy6, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.nathanxtracy7, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.nathanxtracy8, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.nathanxtracy9, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.nathanxtracy10, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.nathanxtracy11, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.nathanxtracy12, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.nathanxtracy13, orientation: 'landscape', size: 'large' },
+      ]
+    },
+    tienxwilliam: {
+      title: 'QUIET COASTAL LOVE',
+      subtitle: 'Tien & William - Tình Yêu Bên Bờ Biển',
+      category: 'TRANG TRÍ TIỆC CƯỚI',
+      headerImage: IMAGES.tienxwilliam,
+      description: `Đám cưới bên bờ biển yên bình với phong cách tối giản, thanh lịch. Sắc trắng tinh khôi hòa quyện cùng màu xanh của biển cả tạo nên không gian trong trẻo, đầy cảm xúc.
+
+Concept "Quiet Coastal Love" mang đến sự nhẹ nhàng, thanh thoát như làn gió biển. Mỗi chi tiết được thiết kế tối giản nhưng đầy tinh tế, từ backdrop hoa tươi đến bàn tiệc được trang trí với tông màu pastel nhẹ nhàng.
+
+Không gian tiệc cưới được bố trí hướng ra biển, tận dụng vẻ đẹp tự nhiên của thiên nhiên. Ánh nắng chiều vàng óng kết hợp với sóng biển tạo nên bầu không khí lãng mạn, đáng nhớ cho ngày trọng đại của cặp đôi.`,
+      details: {
+        concept: 'Quiet Coastal Love Decoration',
+        address: 'Nha Trang',
+        photographer: 'Ant Wedding Studio'
+      },
+      contact: {
+        hotline: '079 467 2928',
+        email: 'antwedding79@gmail.com'
+      },
+      tags: ['Tiệc Cưới', 'Beach Wedding', 'Destination', 'Tông Trắng', 'Minimalist'],
+      images: [
+        { src: IMAGES.tienxwilliam, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.tienxwillam1, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.tienxwillam2, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.tienxwillam3, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.tienxwillam4, orientation: 'landscape', size: 'small' },
+        { src: IMAGES.tienxwillam5, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.tienxwillam6, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.tienxwillam7, orientation: 'portrait', size: 'large' },
+        { src: IMAGES.tienxwillam8, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.tienxwillam9, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.tienxwillam10, orientation: 'landscape', size: 'large' }
+      ]
+    },
+    hanxtuan: {
+      title: 'ELEGANT GARDEN ROMANCE',
+      subtitle: 'Han & Tuan - Lãng Mạn Vườn Hoa',
+      category: 'TRANG TRÍ TIỆC CƯỚI',
+      headerImage: IMAGES.service,
+      description: `Lễ cưới của Han & Tuan là sự kết hợp hoàn hảo giữa vẻ đẹp cổ điển và hiện đại. Không gian được thiết kế với concept vườn hoa lãng mạn, nơi mỗi chi tiết đều toát lên sự tinh tế và sang trọng.
+
+Hoa tươi được lựa chọn cẩn thận với tông màu pastel nhẹ nhàng, tạo nên bầu không khí ấm áp và thân mật. Ánh sáng vàng dịu nhẹ kết hợp với backdrop hoa tươi tạo nên không gian đầy cảm xúc và lãng mạn.
+
+Từng góc nhỏ trong tiệc cưới đều được chăm chút tỉ mỉ, từ bàn tiệc được trang trí với khăn trải bàn cao cấp, đến những chi tiết nhỏ như thiệp mời, menu, tất cả đều hòa quyện tạo nên một bức tranh hoàn hảo cho ngày trọng đại của cặp đôi.`,
+      details: {
+        concept: 'Elegant Garden Romance Decoration',
+        address: 'Nha Trang',
+        photographer: 'Ant Wedding Studio'
+      },
+      contact: {
+        hotline: '079 467 2928',
+        email: 'antwedding79@gmail.com'
+      },
+      tags: ['Tiệc Cưới', 'Garden Wedding', 'Romantic', 'Tông Pastel', 'Elegant', 'Hoa Tươi'],
+      images: [
+        { src: IMAGES.service, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.hanxtuan1, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.hanxtuan2, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.hanxtuan3, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.hanxtuan4, orientation: 'landscape', size: 'small' },
+        { src: IMAGES.hanxtuan5, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.hanxtuan6, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.hanxtuan7, orientation: 'portrait', size: 'large' },
+        { src: IMAGES.hanxtuan8, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.hanxtuan9, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.hanxtuan10, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.hanxtuan11, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.hanxtuan12, orientation: 'landscape', size: 'large' }
+      ]
+    },
+    duyenxsteven: {
+      title: 'TIMELESS ELEGANCE',
+      subtitle: 'Duyen & Steven - Vẻ Đẹp Vượt Thời Gian',
+      category: 'TRANG TRÍ TIỆC CƯỚI',
+      headerImage: IMAGES.duyenxsteven,
+      description: `Lễ cưới của Duyen & Steven là sự kết hợp hoàn hảo giữa phong cách cổ điển châu Âu và nét đẹp hiện đại. Không gian được thiết kế với concept "Timeless Elegance" - vẻ đẹp vượt thời gian, nơi mỗi chi tiết đều toát lên sự sang trọng và tinh tế.
+
+Tông màu chủ đạo là trắng kem và vàng gold, tạo nên bầu không khí ấm áp và lộng lẫy. Hoa tươi được lựa chọn cẩn thận với những bông hồng trắng, hoa cẩm chướng và lá xanh tươi mát, tạo nên backdrop và centerpiece đầy ấn tượng.
+
+Ánh sáng được bố trí khéo léo với đèn chùm pha lê và nến trang trí, tạo nên không gian lãng mạn và lung linh. Từng góc nhỏ trong tiệc cưới đều được chăm chút tỉ mỉ, từ bàn gallery đến khu vực chụp ảnh, tất cả đều hòa quyện tạo nên một bức tranh hoàn hảo cho ngày trọng đại.`,
+      details: {
+        concept: 'Timeless Elegance Decoration',
+        address: 'Nha Trang',
+        photographer: 'Ant Wedding Studio'
+      },
+      contact: {
+        hotline: '079 467 2928',
+        email: 'antwedding79@gmail.com'
+      },
+      tags: ['Tiệc Cưới', 'Classic Wedding', 'Elegant', 'Tông Trắng Vàng', 'Luxury', 'Hoa Tươi'],
+      images: [
+        { src: IMAGES.duyenxsteven, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.duyenxsteven1, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.duyenxsteven2, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.duyenxsteven3, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.duyenxsteven4, orientation: 'landscape', size: 'small' },
+        { src: IMAGES.duyenxsteven5, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.duyenxsteven6, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.duyenxsteven7, orientation: 'portrait', size: 'large' },
+        { src: IMAGES.duyenxsteven8, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.duyenxsteven9, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.duyenxsteven10, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.duyenxsteven11, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.duyenxsteven12, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.duyenxsteven13, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.duyenxsteven14, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.duyenxsteven15, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.duyenxsteven16, orientation: 'landscape', size: 'small' },
+        { src: IMAGES.duyenxsteven17, orientation: 'portrait', size: 'large' },
+        { src: IMAGES.duyenxsteven18, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.duyenxsteven19, orientation: 'portrait', size: 'medium' }
+      ]
+    },
+    vanxtuc: {
+      title: 'MODERN MINIMALIST',
+      subtitle: 'Van & Tuc - Tối Giản Hiện Đại',
+      category: 'TRANG TRÍ TIỆC CƯỚI',
+      headerImage: IMAGES.vanxtuc,
+      description: `Lễ cưới của Van & Tuc mang phong cách tối giản hiện đại với những đường nét sạch sẽ và tinh tế. Không gian được thiết kế với concept "Modern Minimalist" - vẻ đẹp trong sự đơn giản, nơi mỗi chi tiết đều được lựa chọn cẩn thận để tạo nên sự hài hòa hoàn hảo.
+
+Tông màu chủ đạo là trắng và xanh pastel nhẹ nhàng, tạo nên bầu không khí trong lành và thanh thoát. Hoa tươi được sử dụng tiết chế nhưng đầy ấn tượng, với những bông hoa trắng và lá xanh tươi mát tạo điểm nhấn cho không gian.
+
+Ánh sáng tự nhiên được tận dụng tối đa, kết hợp với đèn LED hiện đại tạo nên không gian sáng sủa và thoáng đãng. Từng góc nhỏ đều toát lên vẻ đẹp tinh tế và sang trọng, phù hợp với phong cách hiện đại của cặp đôi.`,
+      details: {
+        concept: 'Modern Minimalist Decoration',
+        address: 'Nha Trang',
+        photographer: 'Ant Wedding Studio'
+      },
+      contact: {
+        hotline: '079 467 2928',
+        email: 'antwedding79@gmail.com'
+      },
+      tags: ['Tiệc Cưới', 'Modern Wedding', 'Minimalist', 'Tông Trắng Xanh', 'Contemporary'],
+      images: [
+        { src: IMAGES.vanxtuc, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.vanxtuc1, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.vanxtuc2, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.vanxtuc3, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.vanxtuc4, orientation: 'landscape', size: 'small' },
+        { src: IMAGES.vanxtuc5, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.vanxtuc6, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.vanxtuc7, orientation: 'portrait', size: 'large' },
+        { src: IMAGES.vanxtuc8, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.vanxtuc9, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.vanxtuc10, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.vanxtuc11, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.vanxtuc12, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.vanxtuc13, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.vanxtuc14, orientation: 'landscape', size: 'medium' }
+      ]
+    },
+    tranxtai: {
+      title: 'FAIRY TALE GARDEN',
+      subtitle: 'Tran & Tai - Vườn Cổ Tích',
+      category: 'TRANG TRÍ TIỆC CƯỚI',
+      headerImage: IMAGES.tranxtai,
+      description: `Lễ cưới của Tran & Tai là một câu chuyện cổ tích được hiện thực hóa. Không gian được thiết kế với concept "Fairy Tale Garden" - vườn cổ tích, nơi mỗi góc nhỏ đều mang đến sự kỳ diệu và lãng mạn.
+
+Tông màu chủ đạo là trắng và hồng pastel, tạo nên bầu không khí ngọt ngào và mơ mộng. Hoa hồng trắng, hoa cẩm tú cầu và lá xanh tươi mát được sắp xếp tinh tế, tạo nên những backdrop và centerpiece đầy ấn tượng.
+
+Ánh đèn vàng ấm áp kết hợp với nến trang trí tạo nên không gian lung linh như trong truyện cổ tích. Từng chi tiết nhỏ từ bàn gallery đến khu vực chụp ảnh đều được thiết kế cẩn thận, mang đến cho cặp đôi một ngày cưới đáng nhớ nhất.`,
+      details: {
+        concept: 'Fairy Tale Garden Decoration',
+        address: 'Nha Trang',
+        photographer: 'Ant Wedding Studio'
+      },
+      contact: {
+        hotline: '079 467 2928',
+        email: 'antwedding79@gmail.com'
+      },
+      tags: ['Tiệc Cưới', 'Garden Wedding', 'Romantic', 'Tông Trắng Hồng', 'Fairy Tale', 'Hoa Tươi'],
+      images: [
+        { src: IMAGES.tranxtai, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.tranxtai1, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.tranxtai2, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.tranxtai3, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.tranxtai4, orientation: 'landscape', size: 'small' },
+        { src: IMAGES.tranxtai5, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.tranxtai6, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.tranxtai7, orientation: 'portrait', size: 'large' },
+        { src: IMAGES.tranxtai8, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.tranxtai9, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.tranxtai10, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.tranxtai11, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.tranxtai12, orientation: 'landscape', size: 'large' }
+      ]
+    },
+    mayxmat: {
+      title: 'ASIAN CONTEMPORARY',
+      subtitle: 'May & Matt - Á Đông Đương Đại',
+      category: 'TRANG TRÍ LỄ GIA TIÊN',
+      headerImage: IMAGES.mayxmat,
+      description: `Lễ gia tiên của May & Matt là sự kết hợp hoàn hảo giữa truyền thống Á Đông và phong cách đương đại. Không gian được thiết kế với concept "Asian Contemporary" - Á Đông đương đại, nơi nét đẹp truyền thống được làm mới một cách tinh tế.
+
+Tông màu chủ đạo là vàng gold và đỏ truyền thống, tạo nên bầu không khí trang trọng và ấm cúng. Hoa cúc vàng, hoa sen và hương trầm được bố trí cẩn thận, thể hiện sự kính trọng với tổ tiên và giữ gìn nét đẹp văn hóa.
+
+Ánh nến lung linh kết hợp với ánh sáng vàng dịu nhẹ tạo nên không gian thiêng liêng và đầy cảm xúc. Mỗi chi tiết từ bàn thờ gia tiên đến các vật phẩm trang trí đều được chăm chút tỉ mỉ, mang đến một nghi lễ đầy ý nghĩa cho cặp đôi.`,
+      details: {
+        concept: 'Asian Contemporary Decoration',
+        address: 'Nha Trang',
+        photographer: 'Ant Wedding Studio'
+      },
+      contact: {
+        hotline: '079 467 2928',
+        email: 'antwedding79@gmail.com'
+      },
+      tags: ['Lễ Gia Tiên', 'Asian Style', 'Traditional', 'Tông Vàng Đỏ', 'Contemporary', 'Hương Trầm'],
+      images: [
+        { src: IMAGES.mayxmat, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.mayxmat1, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.mayxmat2, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.mayxmat3, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.mayxmat4, orientation: 'landscape', size: 'small' },
+        { src: IMAGES.mayxmat5, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.mayxmat6, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.mayxmat7, orientation: 'portrait', size: 'large' },
+        { src: IMAGES.mayxmat8, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.mayxmat9, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.mayxmat10, orientation: 'landscape', size: 'large' }
+      ]
+    },
+    hieuxbrian: {
+      title: 'WELCOME HOME',
+      subtitle: 'Hieu & Brian - Chào Đón Về Nhà',
+      category: 'TRANG TRÍ TIỆC CƯỚI',
+      headerImage: IMAGES.hieuxbrian,
+      description: `Lễ cưới của Hieu & Brian là câu chuyện về sự trở về - trở về với tổ ấm, với tình yêu và với chính mình. Không gian được thiết kế với concept "Welcome Home" - chào đón về nhà, nơi mỗi chi tiết đều toát lên sự ấm áp và gần gũi.
+
+Tông màu chủ đạo là kem và vàng gold, tạo nên bầu không khí ấm cúng như chính ngôi nhà của cặp đôi. Hoa tươi với sắc trắng và hồng pastel được sắp xếp tinh tế, kết hợp với ánh nến lung linh tạo nên không gian đầy cảm xúc.
+
+Từng góc nhỏ trong tiệc cưới đều được thiết kế để mang lại cảm giác thân thuộc và ấm áp. Backdrop, centerpiece và các chi tiết trang trí đều hướng đến việc tạo nên một "tổ ấm" mới cho cặp đôi, nơi tình yêu được nuôi dưỡng và phát triển.`,
+      details: {
+        concept: 'Welcome Home Decoration',
+        address: 'Nha Trang',
+        photographer: 'Ant Wedding Studio'
+      },
+      contact: {
+        hotline: '079 467 2928',
+        email: 'antwedding79@gmail.com'
+      },
+      tags: ['Tiệc Cưới', 'Warm Wedding', 'Cozy', 'Tông Kem Vàng', 'Home Style', 'Hoa Tươi'],
+      images: [
+        { src: IMAGES.hieuxbrian, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.hieuxbrian1, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.hieuxbrian2, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.hieuxbrian3, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.hieuxbrian4, orientation: 'landscape', size: 'small' },
+        { src: IMAGES.hieuxbrian5, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.hieuxbrian6, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.hieuxbrian7, orientation: 'portrait', size: 'large' },
+        { src: IMAGES.hieuxbrian8, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.hieuxbrian9, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.hieuxbrian10, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.hieuxbrian11, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.hieuxbrian12, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.hieuxbrian13, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.hieuxbrian14, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.hieuxbrian15, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.hieuxbrian16, orientation: 'landscape', size: 'large' }
+      ]
+    },
+    duyxmy: {
+      title: 'SWEET CEREMONY',
+      subtitle: 'Duy & My - Nghi Lễ Ngọt Ngào',
+      category: 'TRANG TRÍ LỄ GIA TIÊN',
+      headerImage: IMAGES.duyxmy,
+      description: `Lễ gia tiên của Duy & My là sự kết hợp hoàn hảo giữa nét đẹp truyền thống và phong cách hiện đại. Không gian được thiết kế với concept "Sweet Ceremony" - nghi lễ ngọt ngào, nơi mỗi chi tiết đều toát lên sự ấm áp và gần gũi.
+
+Tông màu chủ đạo là hồng pastel và trắng, tạo nên bầu không khí nhẹ nhàng và dịu dàng. Hoa tươi với sắc hồng nhạt, hoa sen trắng và nến thơm được bố trí tinh tế, mang đến không gian vừa trang trọng vừa ấm cúng.
+
+Bàn thờ gia tiên được trang hoàng cẩn thận với các vật phẩm truyền thống, kết hợp với hoa tươi và ánh nến tạo nên không khí thiêng liêng. Mỗi chi tiết đều được chăm chút kỹ lưỡng để tạo nên một nghi lễ đầy ý nghĩa cho ngày trọng đại của cặp đôi.`,
+      details: {
+        concept: 'Sweet Ceremony Decoration',
+        address: 'Nha Trang',
+        photographer: 'Ant Wedding Studio'
+      },
+      contact: {
+        hotline: '079 467 2928',
+        email: 'antwedding79@gmail.com'
+      },
+      tags: ['Lễ Gia Tiên', 'Traditional', 'Sweet', 'Tông Hồng Trắng', 'Pastel', 'Hoa Tươi'],
+      images: [
+        { src: IMAGES.duyxmy, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.duyxmy1, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.duyxmy2, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.duyxmy3, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.duyxmy4, orientation: 'landscape', size: 'small' },
+        { src: IMAGES.duyxmy5, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.duyxmy6, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.duyxmy7, orientation: 'portrait', size: 'large' },
+        { src: IMAGES.duyxmy8, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.duyxmy9, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.duyxmy10, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.duyxmy11, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.duyxmy12, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.duyxmy13, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.duyxmy14, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.duyxmy15, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.duyxmy16, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.duyxmy17, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.duyxmy18, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.duyxmy19, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.duyxmy20, orientation: 'landscape', size: 'large' }
+      ]
+    },
+    phuongxhien: {
+      title: 'SACRED HARMONY',
+      subtitle: 'Phuong & Hien - Hài Hòa Thiêng Liêng',
+      category: 'TRANG TRÍ LỄ GIA TIÊN',
+      headerImage: IMAGES.phuongxhien,
+      description: `Lễ gia tiên của Phuong & Hien là sự kết hợp hoàn hảo giữa nét đẹp truyền thống và sự tinh tế hiện đại. Không gian được thiết kế với concept "Sacred Harmony" - hài hòa thiêng liêng, nơi mỗi chi tiết đều toát lên sự trang trọng và ý nghĩa sâu sắc.
+
+Tông màu chủ đạo là trắng và vàng gold, tạo nên bầu không khí trang nghiêm và linh thiêng. Hoa sen trắng, hương trầm và nến được bố trí cẩn thận theo nghi lễ truyền thống, thể hiện sự kính trọng với tổ tiên và giữ gìn bản sắc văn hóa.
+
+Bàn thờ gia tiên được trang hoàng tỉ mỉ với các vật phẩm truyền thống, kết hợp với hoa tươi và ánh nến tạo nên không khí thiêng liêng. Mỗi chi tiết đều được chăm chút kỹ lưỡng để tạo nên một nghi lễ đầy ý nghĩa và trang trọng cho ngày trọng đại của cặp đôi.`,
+      details: {
+        concept: 'Sacred Harmony Decoration',
+        address: 'Nha Trang',
+        photographer: 'Ant Wedding Studio'
+      },
+      contact: {
+        hotline: '079 467 2928',
+        email: 'antwedding79@gmail.com'
+      },
+      tags: ['Lễ Gia Tiên', 'Traditional', 'Sacred', 'Tông Trắng Vàng', 'Harmony', 'Hương Trầm'],
+      images: [
+        { src: IMAGES.phuongxhien, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.phuongxhien1, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.phuongxhien2, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.phuongxhien3, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.phuongxhien4, orientation: 'landscape', size: 'small' },
+        { src: IMAGES.phuongxhien5, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.phuongxhien6, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.phuongxhien7, orientation: 'portrait', size: 'large' },
+        { src: IMAGES.phuongxhien8, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.phuongxhien9, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.phuongxhien10, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.phuongxhien11, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.phuongxhien12, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.phuongxhien13, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.phuongxhien14, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.phuongxhien17, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.phuongxhien18, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.phuongxhien19, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.phuongxhien20, orientation: 'landscape', size: 'large' }
+      ]
+    },
+    phuongxhien2: {
+      title: 'ROMANTIC BLOOM',
+      subtitle: 'Phuong & Hien - Hoa Nở Lãng Mạn',
+      category: 'TRANG TRÍ TIỆC CƯỚI',
+      headerImage: IMAGES.phuongxhien2,
+      description: `Tiệc cưới của Phuong & Hien là một bức tranh hoa tươi tràn ngập sắc màu và hương thơm. Không gian được thiết kế với concept "Romantic Bloom" - hoa nở lãng mạn, nơi mỗi góc nhỏ đều toát lên vẻ đẹp sang trọng và đẳng cấp.
+
+Tông màu chủ đạo là trắng và hồng pastel, tạo nên bầu không khí lãng mạn và ngọt ngào. Backdrop hoa hồng trắng kết hợp với ánh đèn vàng ấm áp tạo nên không gian lung linh như trong giấc mơ.
+
+Từng chi tiết từ bàn tiệc, centerpiece đến khu vực chụp ảnh đều được trang trí với hoa tươi cao cấp. Sự kết hợp hoàn hảo giữa hoa hồng, hoa cẩm tú cầu và lá xanh tươi mát tạo nên một không gian tiệc cưới đáng nhớ và đầy cảm xúc.`,
+      details: {
+        concept: 'Romantic Bloom Decoration',
+        address: 'Nha Trang',
+        photographer: 'Ant Wedding Studio'
+      },
+      contact: {
+        hotline: '079 467 2928',
+        email: 'antwedding79@gmail.com'
+      },
+      tags: ['Tiệc Cưới', 'Romantic', 'Bloom', 'Tông Trắng Hồng', 'Luxury', 'Hoa Tươi'],
+      images: [
+        { src: IMAGES.phuongxhien2, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.phuongxhien2_1, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.phuongxhien2_2, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.phuongxhien2_3, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.phuongxhien2_4, orientation: 'landscape', size: 'small' },
+        { src: IMAGES.phuongxhien2_5, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.phuongxhien2_6, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.phuongxhien2_7, orientation: 'portrait', size: 'large' },
+        { src: IMAGES.phuongxhien2_8, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.phuongxhien2_9, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.phuongxhien2_10, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.phuongxhien2_11, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.phuongxhien2_12, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.phuongxhien2_13, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.phuongxhien2_14, orientation: 'landscape', size: 'large' }
+      ]
+    },
+    elopement: {
+      title: 'INTIMATE ESCAPE',
+      subtitle: 'Elopement - Trốn Chạy Riêng Tư',
+      category: 'TRANG TRÍ TIỆC CƯỚI',
+      headerImage: IMAGES.elopement,
+      description: `Đám cưới Elopement là câu chuyện về sự riêng tư và thân mật - chỉ có hai người trong không gian tràn ngập tình yêu. Không gian được thiết kế với concept "Intimate Escape" - trốn chạy riêng tư, nơi mỗi chi tiết đều mang ý nghĩa sâu sắc và cá nhân.
+
+Tông màu chủ đạo là trắng và xanh pastel, tạo nên bầu không khí trong trẻo và thanh thoát. Hoa tươi được sử dụng tiết chế nhưng đầy tinh tế, với những bông hoa nhỏ xinh và lá xanh tươi mát tạo điểm nhấn cho không gian.
+
+Mỗi chi tiết nhỏ đều được chăm chút kỹ lưỡng để tạo nên khoảnh khắc đáng nhớ nhất cho cặp đôi. Từ backdrop đơn giản nhưng đầy cảm xúc đến những vật phẩm trang trí mang dấu ấn riêng, tất cả đều hướng đến việc tạo nên một ngày cưới thật sự đặc biệt và ý nghĩa.`,
+      details: {
+        concept: 'Intimate Escape Decoration',
+        address: 'Nha Trang',
+        photographer: 'Ant Wedding Studio'
+      },
+      contact: {
+        hotline: '079 467 2928',
+        email: 'antwedding79@gmail.com'
+      },
+      tags: ['Tiệc Cưới', 'Elopement', 'Intimate', 'Tông Trắng Xanh', 'Minimalist', 'Private'],
+      images: [
+        { src: IMAGES.elopement, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.elopement1, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.elopement2, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.elopement3, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.elopement4, orientation: 'landscape', size: 'small' },
+        { src: IMAGES.elopement5, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.elopement6, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.elopement7, orientation: 'portrait', size: 'large' },
+        { src: IMAGES.elopement8, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.elopement9, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.elopement10, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.elopement11, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.elopement12, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.elopement13, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.elopement14, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.elopement15, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.elopement16, orientation: 'landscape', size: 'large' }
+      ]
+    }
+  };
+
+  const portfolio = portfolioData[endpoint] || portfolioData.nathanxtracy;
+
+  const openLightbox = (index) => {
+    setCurrentImageIndex(index);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+  };
+
+  const goToPrevImage = () => {
+    setCurrentImageIndex((prev) => (prev > 0 ? prev - 1 : portfolio.images.length - 1));
+  };
+
+  const goToNextImage = () => {
+    setCurrentImageIndex((prev) => (prev < portfolio.images.length - 1 ? prev + 1 : 0));
+  };
+
+  return (
+    <div className="bg-gray-50 min-h-screen">
+      {/* Hero Header with Background Image */}
+      <div
+        className="relative h-[400px] bg-cover bg-center flex items-center justify-center"
+        style={{ backgroundImage: `url(${portfolio.headerImage})` }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <motion.h1
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="relative text-5xl md:text-6xl font-bold text-white tracking-wider"
+        >
+          {portfolio.title}
+        </motion.h1>
+      </div>
+
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          {/* Left Column - Description & Info */}
+          <div className="lg:col-span-1">
+            <div className="bg-white rounded-lg shadow-md p-8 sticky top-8">
+              {/* Title */}
+              <h2 className="text-3xl font-bold text-gray-800 mb-2">{portfolio.title}</h2>
+              <p className="text-sm text-gray-500 mb-6">{portfolio.subtitle}</p>
+
+              {/* Description */}
+              <div className="text-gray-700 text-sm leading-relaxed mb-8 whitespace-pre-line">
+                {portfolio.description}
+              </div>
+
+              {/* Details */}
+              <div className="border-t border-gray-200 pt-6 mb-6">
+                <p className="text-sm mb-2">
+                  <span className="font-semibold">{t('concept')}</span> {portfolio.details.concept}
+                </p>
+                <p className="text-sm mb-2">
+                  <span className="font-semibold">{t('weddingAddress')}</span> {portfolio.details.address}
+                </p>
+                <p className="text-sm">
+                  <span className="font-semibold">{t('photographer')}</span> {portfolio.details.photographer}
+                </p>
+              </div>
+
+              {/* Contact Info */}
+              <div className="border-t border-gray-200 pt-6 mb-6">
+                <h3 className="font-bold text-gray-800 mb-3">ANT WEDDING - DECOR & MORE</h3>
+                <p className="text-sm mb-2">
+                  <span className="font-semibold">Hotline:</span> {portfolio.contact.hotline}
+                </p>
+                <p className="text-sm">
+                  <span className="font-semibold">Email:</span> {portfolio.contact.email}
+                </p>
+              </div>
+
+              {/* Tags */}
+              <div className="border-t border-gray-200 pt-6">
+                <h4 className="font-semibold text-gray-800 mb-3">{t('tags')}</h4>
+                <div className="flex flex-wrap gap-2">
+                  {portfolio.tags.map((tag, index) => (
+                    <span
+                      key={index}
+                      className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full hover:bg-orange-100 hover:text-orange-600 transition-colors cursor-pointer"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column - Masonry Gallery Layout */}
+          <div className="lg:col-span-2">
+            <div className="columns-1 md:columns-2 gap-4">
+              {portfolio.images.map((image, index) => (
+                <div
+                  key={index}
+                  onClick={() => openLightbox(index)}
+                  className="relative break-inside-avoid mb-4 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group cursor-pointer bg-gray-50"
+                >
+                  <img
+                    src={image.src}
+                    alt={`${portfolio.title} - ${index + 1}`}
+                    className="w-full h-auto object-contain group-hover:opacity-95 transition-opacity duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center pointer-events-none">
+                    <div className="bg-white/90 rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg">
+                      <ZoomIn className="w-6 h-6 text-gray-800" />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Navigation Footer */}
+        <div className="mt-16 border-t border-gray-300 pt-8">
+          <div className="flex items-center justify-between">
+            {/* Previous Button */}
+            <button
+              onClick={() => prevEndpoint && navigate(`/portfolio/${prevEndpoint}`)}
+              disabled={!prevEndpoint}
+              className={`flex items-center gap-3 group ${prevEndpoint
+                ? 'text-gray-700 hover:text-orange-400 cursor-pointer'
+                : 'text-gray-300 cursor-not-allowed'
+                } transition-colors`}
+            >
+              <ChevronLeft className="w-6 h-6" />
+              <div className="text-left">
+                <div className="text-xs text-gray-400 uppercase">{t('newer')}</div>
+                <div className="text-sm font-medium">
+                  {prevEndpoint ? portfolioData[prevEndpoint]?.title || 'Previous Portfolio' : t('noPrevious')}
+                </div>
+              </div>
+            </button>
+
+            {/* Back to Grid Button */}
+            <button
+              onClick={() => navigate('/portfolio')}
+              className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-300 hover:border-orange-400 hover:text-orange-400 transition-colors group"
+            >
+              <Grid3x3 className="w-5 h-5" />
+            </button>
+
+            {/* Next Button */}
+            <button
+              onClick={() => nextEndpoint && navigate(`/portfolio/${nextEndpoint}`)}
+              disabled={!nextEndpoint}
+              className={`flex items-center gap-3 group ${nextEndpoint
+                ? 'text-gray-700 hover:text-orange-400 cursor-pointer'
+                : 'text-gray-300 cursor-not-allowed'
+                } transition-colors`}
+            >
+              <div className="text-right">
+                <div className="text-xs text-gray-400 uppercase">{t('older')}</div>
+                <div className="text-sm font-medium">
+                  {nextEndpoint ? portfolioData[nextEndpoint]?.title || 'Next Portfolio' : t('noNext')}
+                </div>
+              </div>
+              <ChevronRight className="w-6 h-6" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Lightbox Modal */}
+      {lightboxOpen && (
+        <div className="fixed inset-0 z-50 bg-black flex items-center justify-center">
+          {/* Top Bar */}
+          <div className="absolute top-0 left-0 right-0 flex items-center justify-between p-4 bg-gradient-to-b from-black/80 to-transparent z-10">
+            <div className="text-white text-sm">
+              {currentImageIndex + 1} / {portfolio.images.length}
+            </div>
+            <div className="flex items-center gap-4">
+              <button
+                onClick={closeLightbox}
+                className="text-white hover:text-gray-300 transition-colors"
+                title="Zoom In"
+              >
+                <ZoomIn className="w-6 h-6" />
+              </button>
+              <button
+                onClick={closeLightbox}
+                className="text-white hover:text-gray-300 transition-colors"
+                title="Fullscreen"
+              >
+                <Maximize2 className="w-6 h-6" />
+              </button>
+              <button
+                onClick={closeLightbox}
+                className="text-white hover:text-gray-300 transition-colors"
+                title="Share"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                </svg>
+              </button>
+              <button
+                onClick={closeLightbox}
+                className="text-white hover:text-gray-300 transition-colors"
+                title="Close"
+              >
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+          </div>
+
+          {/* Previous Button */}
+          <button
+            onClick={goToPrevImage}
+            className="absolute left-4 text-white hover:text-gray-300 transition-colors z-10"
+          >
+            <ChevronLeft className="w-12 h-12" />
+          </button>
+
+          {/* Image */}
+          <div className="relative max-w-7xl max-h-[90vh] mx-auto px-16">
+            {portfolio.images[currentImageIndex] && (
+              <img
+                src={portfolio.images[currentImageIndex].src}
+                alt={`${portfolio.title} - ${currentImageIndex + 1}`}
+                className="max-w-full max-h-[90vh] object-contain"
+              />
+            )}
+          </div>
+
+          {/* Next Button */}
+          <button
+            onClick={goToNextImage}
+            className="absolute right-4 text-white hover:text-gray-300 transition-colors z-10"
+          >
+            <ChevronRight className="w-12 h-12" />
+          </button>
+
+          {/* Close on background click */}
+          <div
+            onClick={closeLightbox}
+            className="absolute inset-0 -z-10"
+          ></div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default PortfolioDetail;

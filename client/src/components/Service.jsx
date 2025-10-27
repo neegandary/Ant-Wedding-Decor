@@ -107,34 +107,34 @@ const Service = () => {
             <section className="relative w-full overflow-hidden shadow-xl">
                 <div className="relative min-h-[500px] md:min-h-[600px] bg-cover bg-center" style={{ backgroundImage: `url(${IMAGES.service})` }}>
                     <div className="absolute inset-0 bg-black/40"></div>
-                    <div className="relative h-full flex items-center text-white min-h-[500px] md:min-h-[600px]">
+                    <div className="relative h-full flex flex-col md:flex-row items-center text-white min-h-[500px] md:min-h-[600px]">
                         {/* Left Side - Stats */}
-                        <div className="w-1/2 flex flex-row items-center justify-center px-8">
+                        <div className="w-full md:w-1/2 flex flex-row items-center justify-center px-4 md:px-8 py-8 md:py-0">
                             <div className="text-center flex-1">
-                                <div className="text-7xl font-bold mb-2"><CountUpNumber target={15} /></div>
-                                <div className="text-sm uppercase tracking-wide">{t('yearsExperience')}</div>
+                                <div className="text-4xl md:text-5xl lg:text-7xl font-bold mb-2"><CountUpNumber target={15} /></div>
+                                <div className="text-xs md:text-sm uppercase tracking-wide">{t('yearsExperience')}</div>
                             </div>
-                            <div className="h-32 w-px bg-white/50 mx-8"></div>
+                            <div className="h-20 md:h-32 w-px bg-white/50 mx-4 md:mx-8"></div>
                             <div className="text-center flex-1">
-                                <div className="text-7xl font-bold mb-2"><CountUpNumber target={8000} /></div>
-                                <div className="text-sm uppercase tracking-wide">{t('couplesServed')}</div>
+                                <div className="text-4xl md:text-5xl lg:text-7xl font-bold mb-2"><CountUpNumber target={8000} /></div>
+                                <div className="text-xs md:text-sm uppercase tracking-wide">{t('couplesServed')}</div>
                             </div>
                         </div>
 
                         {/* Right Side - Content */}
                         <motion.div
-                            className="w-1/2 px-12 py-8"
+                            className="w-full md:w-1/2 px-6 md:px-12 py-8"
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
                         >
-                            <h2 className="text-4xl font-black mb-2">{t('bannerTitle1')}</h2>
-                            <h3 className="text-3xl font-bold mb-4">{t('bannerTitle2')}</h3>
-                            <p className="text-sm leading-relaxed mb-6 text-justify font-light">
+                            <h2 className="text-2xl md:text-3xl lg:text-4xl font-black mb-2">{t('bannerTitle1')}</h2>
+                            <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">{t('bannerTitle2')}</h3>
+                            <p className="text-xs md:text-sm leading-relaxed mb-6 text-justify font-light">
                                 {t('bannerDesc')}
                             </p>
-                            <button className="bg-white text-gray-800 px-6 py-2 rounded text-sm font-bold hover:bg-gray-100 transition">
+                            <button className="bg-white text-gray-800 px-4 md:px-6 py-2 rounded text-xs md:text-sm font-bold hover:bg-gray-100 transition">
                                 {t('designPackages')}
                             </button>
                         </motion.div>

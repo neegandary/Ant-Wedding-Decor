@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion, useInView, animate } from "framer-motion";
 
-export const CountUpNumber = ({ target = 100, duration = 1.2 }) => {
+export const CountUpNumber = ({ target = 100, duration = 1.2, suffix = "" }) => {
   const ref = React.useRef(null);
   const inView = useInView(ref, { once: true, margin: "-50px" });
   const [displayValue, setDisplayValue] = useState(0);
@@ -23,7 +23,7 @@ export const CountUpNumber = ({ target = 100, duration = 1.2 }) => {
 
   return (
     <span ref={ref}>
-      {displayValue}
+      {displayValue}{suffix}
     </span>
   );
 };

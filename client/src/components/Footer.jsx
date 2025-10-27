@@ -1,16 +1,28 @@
 import { IMAGES } from "../constants/image";
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 export const Footer = () => {
     const { t } = useTranslation();
-    
+
     return (
-        <footer className="bg-[#cbb9a4] text-white py-12">
+        <motion.footer
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: false, amount: 0.2, margin: '-100px' }}
+            transition={{ duration: 1 }}
+            className="bg-[#cbb9a4] text-white py-12"
+        >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Main Footer Content */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                     {/* Left Column - Logo & Contact Us */}
-                    <div>
+                    <motion.div
+                        initial={{ x: -80, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        viewport={{ once: false, amount: 0.2, margin: '-100px' }}
+                        transition={{ duration: 1, delay: 0.2 }}
+                    >
                         <div className="mb-6">
                             <div className="flex justify-center gap-2 mb-2">
                                 <img src={IMAGES.logo_rmbg} alt="logo" className="h-50 w-50" />
@@ -19,10 +31,16 @@ export const Footer = () => {
                         <div className="border-t border-white/30 pt-4 flex justify-center">
                             <h3 className="text-5xl font-bold text-[#806a56] mb-4">{t('contactUs')}</h3>
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* Middle Column - Contact Info */}
-                    <div className="space-y-4">
+                    <motion.div
+                        className="space-y-4"
+                        initial={{ y: 80, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        viewport={{ once: false, amount: 0.2, margin: '-100px' }}
+                        transition={{ duration: 1, delay: 0.4 }}
+                    >
                         <div>
                             <div className="flex items-start gap-3">
                                 <svg className="w-5 h-5 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -62,10 +80,15 @@ export const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* Right Column - Social Media */}
-                    <div>
+                    <motion.div
+                        initial={{ x: 80, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        viewport={{ once: false, amount: 0.2, margin: '-100px' }}
+                        transition={{ duration: 1, delay: 0.6 }}
+                    >
                         <h3 className="text-lg font-bold mb-4">{t('followAnt')}</h3>
                         <div className="bg-white rounded-lg p-4">
                             <div className="mb-3">
@@ -96,7 +119,7 @@ export const Footer = () => {
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* Bottom Footer */}
@@ -108,7 +131,7 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
-        </footer>
+        </motion.footer>
     );
 }
 
