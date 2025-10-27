@@ -1,28 +1,35 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { useNavigate } from 'react-router-dom';
 import { IMAGES } from '../constants/image';
 
 const Experience = () => {
+    const navigate = useNavigate();
+
     // Hàng 1: 6 hình với thông tin
     const row1Images = [
-        { img: `${IMAGES.nathanxtracy}`, title: 'FOUND BY FATE', tags: [ 'Trang Trí Tiệc Cướ'] },
-        { img: `${IMAGES.tienxwilliam}`, title: 'QUIET COASTAL LOVE ', tags: [ 'Trang Trí Tiệc Cưới'] },
-        { img: `${IMAGES.vanxtuc}`, title: 'VAN & TUC', tags: [ 'Trang Trí Gia Tiên'] },
-        { img: `${IMAGES.tranxtai}`, title: 'TRAN & TAI', tags: [ 'Trang Trí Tiệc Cưới'] },
-        { img: `${IMAGES.mayxmat}`, title: 'EAT.PRAY.LOVE', tags: [ 'Trang Trí Gia Tiên'] },
-        { img: `${IMAGES.duyenxsteven}`, title: 'DUYEN & STEVEN', tags: [ 'Trang Trí Tiệc Cưới'] },
+        { img: `${IMAGES.nathanxtracy}`, title: 'FOUND BY FATE', tags: [ 'Trang Trí Tiệc Cướ'], endpoint: 'nathanxtracy' },
+        { img: `${IMAGES.tienxwilliam}`, title: 'QUIET COASTAL LOVE ', tags: [ 'Trang Trí Tiệc Cưới'], endpoint: 'tienxwilliam' },
+        { img: `${IMAGES.vanxtuc}`, title: 'VAN & TUC', tags: [ 'Trang Trí Gia Tiên'], endpoint: 'vanxtuc' },
+        { img: `${IMAGES.tranxtai}`, title: 'TRAN & TAI', tags: [ 'Trang Trí Tiệc Cưới'], endpoint: 'tranxtai' },
+        { img: `${IMAGES.mayxmat}`, title: 'EAT.PRAY.LOVE', tags: [ 'Trang Trí Gia Tiên'], endpoint: 'mayxmat' },
+        { img: `${IMAGES.duyenxsteven}`, title: 'DUYEN & STEVEN', tags: [ 'Trang Trí Tiệc Cưới'], endpoint: 'duyenxsteven' },
     ];
 
     // Hàng 2: 6 hình với thông tin
     const row2Images = [
-        { img: `${IMAGES.service}`, title: 'THE JOURNEY WITHIN', tags: [ 'Trang Trí Tiệc Cưới'] },
-        { img: `${IMAGES.phuongxhien}`, title: 'PHUONG & HIEN', tags: [ 'Trang Trí Gia Tiên'] },
-        { img: `${IMAGES.duyxmy}`, title: 'SWEETEST DAY', tags: [ 'Trang Trí Gia Tiên'] },
-        { img: `${IMAGES.phuongxhien2}`, title: 'PHUONG & HIEN', tags: [ 'Trang Trí Tiệc Cưới'] },
-        { img: `${IMAGES.elopement}`, title: 'ELOPE WEDDING', tags: [ 'Trang Trí Tiệc Cưới'] },
-        { img: `${IMAGES.hieuxbrian}`, title: 'WELCOME HOME', tags: [ 'Trang Trí Tiệc Cưới'] },
+        { img: `${IMAGES.service}`, title: 'THE JOURNEY WITHIN', tags: [ 'Trang Trí Tiệc Cưới'], endpoint: 'service' },
+        { img: `${IMAGES.phuongxhien}`, title: 'PHUONG & HIEN', tags: [ 'Trang Trí Gia Tiên'], endpoint: 'phuongxhien' },
+        { img: `${IMAGES.duyxmy}`, title: 'SWEETEST DAY', tags: [ 'Trang Trí Gia Tiên'], endpoint: 'duyxmy' },
+        { img: `${IMAGES.phuongxhien2}`, title: 'PHUONG & HIEN', tags: [ 'Trang Trí Tiệc Cưới'], endpoint: 'phuongxhien2' },
+        { img: `${IMAGES.elopement}`, title: 'ELOPE WEDDING', tags: [ 'Trang Trí Tiệc Cưới'], endpoint: 'elopement' },
+        { img: `${IMAGES.hieuxbrian}`, title: 'WELCOME HOME', tags: [ 'Trang Trí Tiệc Cưới'], endpoint: 'hieuxbrian' },
     ];
+
+    const handleImageClick = (endpoint) => {
+        navigate(`/portfolio/${endpoint}`);
+    };
 
     const settings = {
         dots: true,
@@ -67,7 +74,7 @@ const Experience = () => {
                     <Slider {...settings}>
                         {row1Images.map((item, idx) => (
                             <div key={`row1-${idx}`} className="px-2">
-                                <div className="relative group overflow-hidden rounded-lg">
+                                <div className="relative group overflow-hidden rounded-lg cursor-pointer" onClick={() => handleImageClick(item.endpoint)}>
                                     <img
                                         src={item.img}
                                         alt={item.title}
@@ -106,7 +113,7 @@ const Experience = () => {
                     <Slider {...settings}>
                         {row2Images.map((item, idx) => (
                             <div key={`row2-${idx}`} className="px-2">
-                                <div className="relative group overflow-hidden rounded-lg">
+                                <div className="relative group overflow-hidden rounded-lg cursor-pointer" onClick={() => handleImageClick(item.endpoint)}>
                                     <img
                                         src={item.img}
                                         alt={item.title}
