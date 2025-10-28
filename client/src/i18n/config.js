@@ -62,7 +62,7 @@ const resources = {
       ourPhone: "Our phone number:",
       ourEmail: "Our Email:",
       ourAddress: "Our Address:",
-      addressDetail: "Destination Wedding Decoration based in Nha Trang",
+      addressDetail: "Chung Cư Ngô Gia Tự - Nha Trang - Khánh Hòa - Việt Nam",
       appointmentNote: "(Vui lòng đặt lịch hẹn trước)",
       followAnt: "FOLLOW ANT",
       followers: "người theo dõi",
@@ -73,7 +73,7 @@ const resources = {
 
       // Contact Page
       officeAddress: "Văn phòng & Xưởng sản xuất:",
-      nhatrangAddress: "Nha Trang, Khánh Hòa",
+      nhatrangAddress: "Chung Cư Ngô Gia Tự - Nha Trang - Khánh Hòa - Việt Nam",
       makeAppointment: "(Vui lòng đặt lịch hẹn trước khi đến)",
       contactInfo: "Liên hệ:",
       consultant: "Tư vấn dịch vụ:",
@@ -347,7 +347,7 @@ const resources = {
 
       // Hero
       wedding: "Wedding",
-      heroTitle: "Transform Your Dream Wedding Into Reality",
+      heroTitle: "Where Your Dream Wedding Comes to Life",
       readMore: "Read more",
 
       // Service Cards
@@ -387,7 +387,7 @@ const resources = {
       ourPhone: "Our phone number:",
       ourEmail: "Our Email:",
       ourAddress: "Our Address:",
-      addressDetail: "Destination Wedding Decoration based in Nha Trang",
+      addressDetail: "Ngô Gia Tự Apartment - Nha Trang - Khánh Hòa - Việt Nam",
       appointmentNote: "(Please make an appointment in advance)",
       followAnt: "FOLLOW ANT",
       followers: "followers",
@@ -398,7 +398,7 @@ const resources = {
 
       // Contact Page
       officeAddress: "Office & Production:",
-      nhatrangAddress: "Nha Trang, Khanh Hoa",
+      nhatrangAddress: "Ngô Gia Tự Apartment - Nha Trang - Khánh Hòa - Việt Nam",
       makeAppointment: "(Please make an appointment in advance)",
       contactInfo: "Contact:",
       consultant: "Service Consultant:",
