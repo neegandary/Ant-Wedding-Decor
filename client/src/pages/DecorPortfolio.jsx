@@ -122,6 +122,17 @@ const DecorPortfolio = () => {
       endpoint: 'duyxmy'
     },
     {
+      id: 29,
+      date: { day: '10', month: 'TH11', year: '2022' },
+      categoryKey: 'weddingDecor',
+      title: 'DUY & MY ',
+      author: 'Ant Wedding',
+      descriptionKey: 'duyMy2Desc',
+      image: IMAGES.duyxmy2,
+      likes: 20,
+      endpoint: 'duyxmy2'
+    },
+    {
       id: 10,
       date: { day: '14', month: 'TH6', year: '2022' },
       categoryKey: 'weddingDecor',
@@ -131,6 +142,17 @@ const DecorPortfolio = () => {
       image: IMAGES.phuongxhien2,
       likes: 25,
       endpoint: 'phuongxhien2'
+    },
+    {
+      id: 31,
+      date: { day: '15', month: 'TH6', year: '2022' },
+      categoryKey: 'weddingDecor',
+      title: 'PHUONG & HIEN (GOLDEN)',
+      author: 'Ant Wedding',
+      descriptionKey: 'phuongHien3Desc',
+      image: IMAGES.phuongxhien3,
+      likes: 26,
+      endpoint: 'phuongxhien3'
     },
     {
       id: 11,
@@ -153,6 +175,193 @@ const DecorPortfolio = () => {
       image: IMAGES.hieuxbrian,
       likes: 23,
       endpoint: 'hieuxbrian'
+    },
+    {
+      id: 13,
+      date: { day: '10', month: 'TH5', year: '2023' },
+      categoryKey: 'weddingDecor',
+      title: 'DUY & YEN',
+      author: 'Ant Wedding',
+      descriptionKey: 'duyYenDesc',
+      image: IMAGES.duyxyen,
+      likes: 20,
+      endpoint: 'duyxyen'
+    },
+    {
+      id: 14,
+      date: { day: '15', month: 'TH4', year: '2023' },
+      categoryKey: 'weddingDecor',
+      title: 'THOA & BINH',
+      author: 'Ant Wedding',
+      descriptionKey: 'thoaBinhDesc',
+      image: IMAGES.thoaxbinh,
+      likes: 18,
+      endpoint: 'thoaxbinh'
+    },
+    {
+      id: 15,
+      date: { day: '08', month: 'TH3', year: '2023' },
+      categoryKey: 'weddingDecor',
+      title: 'AN & NGHI',
+      author: 'Ant Wedding',
+      descriptionKey: 'anNghiDesc',
+      image: IMAGES.anxnghi,
+      likes: 19,
+      endpoint: 'anxnghi'
+    },
+    {
+      id: 16,
+      date: { day: '22', month: 'TH2', year: '2023' },
+      categoryKey: 'weddingDecor',
+      title: 'ANH & TOAN',
+      author: 'Ant Wedding',
+      descriptionKey: 'anhToanDesc',
+      image: IMAGES.anxtoan,
+      likes: 21,
+      endpoint: 'anxtoan'
+    },
+    {
+      id: 17,
+      date: { day: '12', month: 'TH1', year: '2023' },
+      categoryKey: 'weddingDecor',
+      title: 'HAN & TUNG',
+      author: 'Ant Wedding',
+      descriptionKey: 'hanTungDesc',
+      image: IMAGES.hanxtung,
+      likes: 17,
+      endpoint: 'hanxtung'
+    },
+    {
+      id: 18,
+      date: { day: '05', month: 'TH12', year: '2022' },
+      categoryKey: 'weddingDecor',
+      title: 'JOSH & LINDA',
+      author: 'Ant Wedding',
+      descriptionKey: 'joshLindaDesc',
+      image: IMAGES.joshxlinda,
+      likes: 24,
+      endpoint: 'joshxlinda'
+    },
+    {
+      id: 19,
+      date: { day: '18', month: 'TH11', year: '2022' },
+      categoryKey: 'weddingDecor',
+      title: 'MAI MY & TOAN EM',
+      author: 'Ant Wedding',
+      descriptionKey: 'maiMyToanEmDesc',
+      image: IMAGES.maimyxtoanem,
+      likes: 22,
+      endpoint: 'maimyxtoanem'
+    },
+    {
+      id: 20,
+      date: { day: '25', month: 'TH10', year: '2022' },
+      categoryKey: 'weddingDecor',
+      title: 'NGAN & NHAT',
+      author: 'Ant Wedding',
+      descriptionKey: 'nganNhatDesc',
+      image: IMAGES.nganxnhat,
+      likes: 20,
+      endpoint: 'nganxnhat'
+    },
+    {
+      id: 21,
+      date: { day: '10', month: 'TH9', year: '2022' },
+      categoryKey: 'weddingDecor',
+      title: 'NGHIA & NGUYET',
+      author: 'Ant Wedding',
+      descriptionKey: 'nghiaNguyetDesc',
+      image: IMAGES.nghiaxnguyet,
+      likes: 18,
+      endpoint: 'nghiaxnguyet'
+    },
+    {
+      id: 22,
+      date: { day: '28', month: 'TH8', year: '2022' },
+      categoryKey: 'weddingDecor',
+      title: 'THONG & HUYEN',
+      author: 'Ant Wedding',
+      descriptionKey: 'thongHuyenDesc',
+      image: IMAGES.thongxhuyen,
+      likes: 19,
+      endpoint: 'thongxhuyen'
+    },
+    {
+      id: 23,
+      date: { day: '15', month: 'TH7', year: '2022' },
+      categoryKey: 'weddingDecor',
+      title: 'TRAM & MAX',
+      author: 'Ant Wedding',
+      descriptionKey: 'tramMaxDesc',
+      image: IMAGES.tramxmax,
+      likes: 23,
+      endpoint: 'tramxmax'
+    },
+    {
+      id: 24,
+      date: { day: '05', month: 'TH6', year: '2022' },
+      categoryKey: 'ancestorDecorCategory',
+      title: 'TRAN & TAI',
+      author: 'Ant Wedding',
+      descriptionKey: 'tranTai2Desc',
+      image: IMAGES.tranxtai2,
+      likes: 16,
+      endpoint: 'tranxtai2'
+    },
+    {
+      id: 25,
+      date: { day: '20', month: 'TH5', year: '2022' },
+      categoryKey: 'weddingDecor',
+      title: 'VIET & QUYNH',
+      author: 'Ant Wedding',
+      descriptionKey: 'vietQuynhDesc',
+      image: IMAGES.vietxquynh,
+      likes: 21,
+      endpoint: 'vietxquynh'
+    },
+    {
+      id: 26,
+      date: { day: '18', month: 'TH5', year: '2022' },
+      categoryKey: 'ancestorDecorCategory',
+      title: 'VIET & QUYNH ',
+      author: 'Ant Wedding',
+      descriptionKey: 'vietQuynh2Desc',
+      image: IMAGES.vietxquynh2,
+      likes: 17,
+      endpoint: 'vietxquynh2'
+    },
+    {
+      id: 27,
+      date: { day: '10', month: 'TH4', year: '2022' },
+      categoryKey: 'weddingDecor',
+      title: 'VY & KHANG',
+      author: 'Ant Wedding',
+      descriptionKey: 'vyKhangDesc',
+      image: IMAGES.vyxkhang,
+      likes: 20,
+      endpoint: 'vyxkhang'
+    },
+    {
+      id: 30,
+      date: { day: '28', month: 'TH3', year: '2022' },
+      categoryKey: 'weddingDecor',
+      title: 'TRANG & VINI',
+      author: 'Ant Wedding',
+      descriptionKey: 'trangViniDesc',
+      image: IMAGES.trangxvini,
+      likes: 22,
+      endpoint: 'trangxvini'
+    },
+    {
+      id: 28,
+      date: { day: '25', month: 'TH3', year: '2022' },
+      categoryKey: 'weddingDecor',
+      title: 'EVENT BENANG',
+      author: 'Ant Wedding',
+      descriptionKey: 'benangDesc',
+      image: IMAGES.eventxbenang,
+      likes: 19,
+      endpoint: 'benang'
     }
   ];
 
