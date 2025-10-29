@@ -19,7 +19,19 @@ const AboutUs = () => {
     IMAGES.antweddingteam10,
     IMAGES.antweddingteam11,
     IMAGES.antweddingteam12,
-    IMAGES.antweddingteam13
+    IMAGES.antweddingteam13,
+    IMAGES.antweddingteam14,
+    IMAGES.antweddingteam15,
+    IMAGES.antweddingteam16,
+    IMAGES.antweddingteam17,
+    IMAGES.antweddingteam18,
+    IMAGES.antweddingteam19,
+    IMAGES.antweddingteam20,
+    IMAGES.antweddingteam21,
+    IMAGES.antweddingteam22,
+    IMAGES.antweddingteam23,
+    IMAGES.antweddingteam24,
+    IMAGES.antweddingteam25
   ];
 
   const values = [
@@ -60,7 +72,7 @@ const AboutUs = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         className="relative h-[500px] bg-cover bg-center"
-        style={{ backgroundImage: `url(${IMAGES.antweddingteam1})` }}
+        style={{ backgroundImage: `url(${IMAGES.antweddingteam16})` }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative h-full flex items-center justify-center">
