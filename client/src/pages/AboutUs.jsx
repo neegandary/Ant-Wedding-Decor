@@ -7,13 +7,9 @@ const AboutUs = () => {
   const { t } = useTranslation();
 
   const teamImages = [
-    IMAGES.antweddingteam1,
     IMAGES.antweddingteam2,
-    IMAGES.antweddingteam3,
-    IMAGES.antweddingteam4,
     IMAGES.antweddingteam5,
     IMAGES.antweddingteam6,
-    IMAGES.antweddingteam7,
     IMAGES.antweddingteam8,
     IMAGES.antweddingteam9,
     IMAGES.antweddingteam10,
@@ -31,7 +27,6 @@ const AboutUs = () => {
     IMAGES.antweddingteam22,
     IMAGES.antweddingteam23,
     IMAGES.antweddingteam24,
-    IMAGES.antweddingteam25
   ];
 
   const values = [

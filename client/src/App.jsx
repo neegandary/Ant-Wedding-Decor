@@ -7,6 +7,7 @@ import PortfolioDetail from "./pages/PortfolioDetail";
 import Contact from "./pages/Contact";
 import MainLayout from "./layout/MainLayout";
 import { BackToTop } from "./components/BackToTop";
+import SocialMediaButtons from "./components/SocialMediaButtons";
 import { Destination } from "./pages/service/Destination";
 import { Ancestor } from "./pages/service/Ancestor";
 import { Restaurant } from "./pages/service/Restaurant";
@@ -31,6 +32,7 @@ const App = () => {
         </Route>
       </Routes>
       <BackToTop />
+      <SocialMediaButtons />
     </>
   )
 }

@@ -5,7 +5,8 @@ export const IMAGES = {
     background: `${IMAGE_BASE_URL}/image/background.jpg`,
     hero1: `${IMAGE_BASE_URL}/image/hero1.jpg`,
     hero2: `${IMAGE_BASE_URL}/image/hero2.jpg`,
-    hero3: `${IMAGE_BASE_URL}/image/hero3.jpg`,
+    hero6: `${IMAGE_BASE_URL}/image/hero6.jpg`,
+    hero7: `${IMAGE_BASE_URL}/image/hero7.jpg`,
     intro1: `${IMAGE_BASE_URL}/image/intro1.jpg`,
     intro2: `${IMAGE_BASE_URL}/image/intro2.jpg`,
     intro3: `${IMAGE_BASE_URL}/image/intro3.jpg`,
@@ -565,13 +566,9 @@ export const IMAGES = {
     trangxvini21: `${IMAGE_BASE_URL}/image/trangxvini21.webp?t=${Date.now()}`,
 
     // Ant Team gallery
-    antweddingteam1: `${IMAGE_BASE_URL}/image/antweddingteam1.webp?t=${Date.now()}`,
     antweddingteam2: `${IMAGE_BASE_URL}/image/antweddingteam2.webp?t=${Date.now()}`,
-    antweddingteam3: `${IMAGE_BASE_URL}/image/antweddingteam3.webp?t=${Date.now()}`,
-    antweddingteam4: `${IMAGE_BASE_URL}/image/antweddingteam4.webp?t=${Date.now()}`,
     antweddingteam5: `${IMAGE_BASE_URL}/image/antweddingteam5.webp?t=${Date.now()}`,
     antweddingteam6: `${IMAGE_BASE_URL}/image/antweddingteam6.webp?t=${Date.now()}`,
-    antweddingteam7: `${IMAGE_BASE_URL}/image/antweddingteam7.webp?t=${Date.now()}`,
     antweddingteam8: `${IMAGE_BASE_URL}/image/antweddingteam8.webp?t=${Date.now()}`,
     antweddingteam9: `${IMAGE_BASE_URL}/image/antweddingteam9.webp?t=${Date.now()}`,
     antweddingteam10: `${IMAGE_BASE_URL}/image/antweddingteam10.webp?t=${Date.now()}`,
