@@ -130,7 +130,7 @@ Không gian tiệc cưới được bố trí hướng ra biển, tận dụng v
       ]
     },
     hanxtuan: {
-      title: 'ELEGANT GARDEN ROMANCE',
+      title: 'THE JOURNEY WITHIN',
       subtitle: 'Han & Tuan - Lãng Mạn Vườn Hoa',
       category: 'TRANG TRÍ TIỆC CƯỚI',
       headerImage: IMAGES.service,
@@ -283,7 +283,7 @@ Tông màu chủ đạo là trắng và hồng pastel, tạo nên bầu không k
       ]
     },
     mayxmat: {
-      title: 'ASIAN CONTEMPORARY',
+      title: 'EAT.PRAY.LOVE',
       subtitle: 'May & Matt - Á Đông Đương Đại',
       category: 'TRANG TRÍ LỄ GIA TIÊN',
       headerImage: IMAGES.mayxmat,
@@ -401,10 +401,10 @@ Bàn thờ gia tiên được trang hoàng cẩn thận với các vật phẩm 
       ]
     },
     duyxmy2: {
-      title: 'ELEGANT CELEBRATION',
+      title: 'SWEETEST DAY',
       subtitle: 'Duy & My - Lễ Kỷ Niệm Thanh Lịch',
       category: 'TRANG TRÍ TIỆC CƯỚI',
-      headerImage: IMAGES.duyxmy2,
+      headerImage: IMAGES.duyxmy2_1,
       description: `Tiệc cưới của Duy & My là sự kết hợp hoàn hảo giữa vẻ đẹp thanh lịch và phong cách hiện đại. Không gian được thiết kế với concept "Elegant Celebration" - lễ kỷ niệm thanh lịch, nơi mỗi chi tiết đều toát lên sự tinh tế và sang trọng.
 
 Tông màu chủ đạo là trắng và xanh pastel, tạo nên bầu không khí trong lành và thanh thoát. Hoa tươi với sắc trắng tinh khôi và xanh nhẹ nhàng được sắp xếp tinh tế, kết hợp với ánh đèn LED hiện đại tạo nên không gian đầy ấn tượng.
@@ -433,7 +433,7 @@ Từng góc nhỏ trong tiệc cưới đều được thiết kế với sự c
       ]
     },
     phuongxhien: {
-      title: 'SACRED HARMONY',
+      title: 'TỪ BẠN, CHO ĐẾN BẠN ĐỜI',
       subtitle: 'Phuong & Hien - Hài Hòa Thiêng Liêng',
       category: 'TRANG TRÍ LỄ GIA TIÊN',
       headerImage: IMAGES.phuongxhien,
@@ -475,10 +475,10 @@ Bàn thờ gia tiên được trang hoàng tỉ mỉ với các vật phẩm tru
       ]
     },
     phuongxhien2: {
-      title: 'ROMANTIC BLOOM',
+      title: 'TỪ BẠN, CHO ĐẾN BẠN ĐỜI',
       subtitle: 'Phuong & Hien - Hoa Nở Lãng Mạn',
       category: 'TRANG TRÍ TIỆC CƯỚI',
-      headerImage: IMAGES.phuongxhien2,
+      headerImage: IMAGES.phuongxhien2_8,
       description: `Tiệc cưới của Phuong & Hien là một bức tranh hoa tươi tràn ngập sắc màu và hương thơm. Không gian được thiết kế với concept "Romantic Bloom" - hoa nở lãng mạn, nơi mỗi góc nhỏ đều toát lên vẻ đẹp sang trọng và đẳng cấp.
 
 Tông màu chủ đạo là trắng và hồng pastel, tạo nên bầu không khí lãng mạn và ngọt ngào. Backdrop hoa hồng trắng kết hợp với ánh đèn vàng ấm áp tạo nên không gian lung linh như trong giấc mơ.
@@ -495,7 +495,6 @@ Từng chi tiết từ bàn tiệc, centerpiece đến khu vực chụp ảnh đ
       },
       tags: ['Tiệc Cưới', 'Romantic', 'Bloom', 'Tông Trắng Hồng', 'Luxury', 'Hoa Tươi'],
       images: [
-        { src: IMAGES.phuongxhien2, orientation: 'landscape', size: 'large' },
         { src: IMAGES.phuongxhien2_1, orientation: 'portrait', size: 'medium' },
         { src: IMAGES.phuongxhien2_2, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.phuongxhien2_3, orientation: 'portrait', size: 'medium' },
@@ -513,10 +512,10 @@ Từng chi tiết từ bàn tiệc, centerpiece đến khu vực chụp ảnh đ
       ]
     },
     phuongxhien3: {
-      title: 'GOLDEN ELEGANCE',
+      title: 'TỪ BẠN, CHO ĐẾN BẠN ĐỜI',
       subtitle: 'Phuong & Hien - Thanh Lịch Vàng Kim',
       category: 'TRANG TRÍ TIỆC CƯỚI',
-      headerImage: IMAGES.phuongxhien3,
+      headerImage: IMAGES.phuongxhien3_1,
       description: `Tiệc cưới của Phuong & Hien lần thứ ba là đỉnh cao của sự sang trọng và đẳng cấp. Không gian được thiết kế với concept "Golden Elegance" - thanh lịch vàng kim, nơi mỗi chi tiết đều toát lên vẻ đẹp lộng lẫy và quý phái.
 
 Tông màu chủ đạo là vàng gold, trắng ngà và xanh emerald, tạo nên bầu không khí xa hoa và tinh tế. Hoa hồng cao cấp, pha lê, vàng kim và các chi tiết trang trí tinh xảo được kết hợp khéo léo, tạo nên những backdrop và centerpiece đầy ấn tượng.
@@ -597,7 +596,7 @@ Mỗi chi tiết nhỏ đều được chăm chút kỹ lưỡng để tạo nê
       ]
     },
     duyxyen: {
-      title: 'ETERNAL LOVE',
+      title: 'REFLECTIONS OF US',
       subtitle: 'Duy & Yen - Tình Yêu Vĩnh Cửu',
       category: 'TRANG TRÍ TIỆC CƯỚI',
       headerImage: IMAGES.duyxyen,
@@ -617,7 +616,7 @@ Tông màu chủ đạo là trắng và hồng pastel, tạo nên bầu không k
       },
       tags: ['Tiệc Cưới', 'Romantic', 'Eternal', 'Tông Trắng Hồng', 'Classic', 'Hoa Tươi'],
       images: [
-        
+
         { src: IMAGES.duyxyen1, orientation: 'portrait', size: 'medium' },
         { src: IMAGES.duyxyen2, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.duyxyen3, orientation: 'portrait', size: 'medium' },
@@ -653,7 +652,7 @@ Tông màu chủ đạo là xanh lá và trắng, tạo nên bầu không khí t
       },
       tags: ['Tiệc Cưới', 'Garden Wedding', 'Paradise', 'Tông Xanh Trắng', 'Tropical', 'Hoa Tươi'],
       images: [
-       
+
         { src: IMAGES.thoaxbinh1, orientation: 'portrait', size: 'medium' },
         { src: IMAGES.thoaxbinh2, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.thoaxbinh3, orientation: 'portrait', size: 'medium' },
@@ -693,7 +692,7 @@ Từng góc nhỏ trong tiệc cưới đều được thiết kế với sự c
       },
       tags: ['Tiệc Cưới', 'Modern Wedding', 'Elegant', 'Tông Trắng Xám', 'Minimalist', 'Contemporary'],
       images: [
-        
+
         { src: IMAGES.anxnghi1, orientation: 'portrait', size: 'medium' },
         { src: IMAGES.anxnghi2, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.anxnghi3, orientation: 'portrait', size: 'medium' },
@@ -712,7 +711,7 @@ Từng góc nhỏ trong tiệc cưới đều được thiết kế với sự c
     },
     anxtoan: {
       title: 'ROMANTIC BLUSH',
-      subtitle: 'Anh & Toan - Hồng Lãng Mạn',
+      subtitle: 'An & Toan - Hồng Lãng Mạn',
       category: 'TRANG TRÍ TIỆC CƯỚI',
       headerImage: IMAGES.anxtoan,
       description: `Lễ cưới của Anh & Toan là bức tranh tình yêu được vẽ bằng sắc hồng lãng mạn. Không gian được thiết kế với concept "Romantic Blush" - hồng lãng mạn, nơi mỗi chi tiết đều toát lên sự ngọt ngào và dịu dàng.
@@ -731,7 +730,7 @@ Tông màu chủ đạo là hồng blush và trắng kem, tạo nên bầu khôn
       },
       tags: ['Tiệc Cưới', 'Romantic Wedding', 'Blush', 'Tông Hồng Trắng', 'Pastel', 'Hoa Tươi'],
       images: [
-       
+
         { src: IMAGES.anxtoan1, orientation: 'portrait', size: 'medium' },
         { src: IMAGES.anxtoan2, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.anxtoan3, orientation: 'portrait', size: 'medium' },
@@ -750,7 +749,7 @@ Tông màu chủ đạo là hồng blush và trắng kem, tạo nên bầu khôn
       ]
     },
     hanxtung: {
-      title: 'VINTAGE ROMANCE',
+      title: 'FROM A SMILE TO A KISS',
       subtitle: 'Han & Tung - Lãng Mạn Cổ Điển',
       category: 'TRANG TRÍ TIỆC CƯỚI',
       headerImage: IMAGES.hanxtung,
@@ -770,7 +769,7 @@ Tông màu chủ đạo là kem, vàng gold và nâu gỗ, tạo nên bầu khô
       },
       tags: ['Tiệc Cưới', 'Vintage Wedding', 'Romance', 'Tông Kem Vàng', 'Classic', 'Retro'],
       images: [
-        
+
         { src: IMAGES.hanxtung1, orientation: 'portrait', size: 'medium' },
         { src: IMAGES.hanxtung2, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.hanxtung3, orientation: 'portrait', size: 'medium' },
@@ -792,7 +791,7 @@ Tông màu chủ đạo là kem, vàng gold và nâu gỗ, tạo nên bầu khô
       ]
     },
     joshxlinda: {
-      title: 'TROPICAL PARADISE',
+      title: 'SHINING LIFE',
       subtitle: 'Josh & Linda - Thiên Đường Nhiệt Đới',
       category: 'TRANG TRÍ TIỆC CƯỚI',
       headerImage: IMAGES.joshxlinda,
@@ -812,7 +811,7 @@ Tông màu chủ đạo là xanh lá, cam và vàng, tạo nên bầu không kh�
       },
       tags: ['Tiệc Cưới', 'Tropical Wedding', 'Paradise', 'Tông Xanh Cam', 'Vibrant', 'Hoa Nhiệt Đới'],
       images: [
-       
+
         { src: IMAGES.joshxlinda1, orientation: 'portrait', size: 'medium' },
         { src: IMAGES.joshxlinda2, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.joshxlinda3, orientation: 'portrait', size: 'medium' },
@@ -846,7 +845,7 @@ Tông màu chủ đạo là nâu gỗ, trắng kem và xanh lá nhạt, tạo n�
       },
       tags: ['Tiệc Cưới', 'Rustic Wedding', 'Charm', 'Tông Nâu Kem', 'Vintage', 'Gỗ Tự Nhiên'],
       images: [
-       
+
         { src: IMAGES.maimyxtoanem1, orientation: 'portrait', size: 'medium' },
         { src: IMAGES.maimyxtoanem2, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.maimyxtoanem3, orientation: 'portrait', size: 'medium' },
@@ -863,7 +862,7 @@ Tông màu chủ đạo là nâu gỗ, trắng kem và xanh lá nhạt, tạo n�
       ]
     },
     nganxnhat: {
-      title: 'MODERN LUXURY',
+      title: 'THE RHYTHM',
       subtitle: 'Ngan & Nhat - Sang Trọng Hiện Đại',
       category: 'TRANG TRÍ TIỆC CƯỚI',
       headerImage: IMAGES.nganxnhat,
@@ -883,7 +882,7 @@ Hệ thống ánh sáng LED hiện đại kết hợp với đèn chùm pha lê 
       },
       tags: ['Tiệc Cưới', 'Luxury Wedding', 'Modern', 'Tông Trắng Vàng', 'Glamorous', 'Pha Lê'],
       images: [
-      
+
         { src: IMAGES.nganxnhat1, orientation: 'portrait', size: 'medium' },
         { src: IMAGES.nganxnhat2, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.nganxnhat3, orientation: 'portrait', size: 'medium' },
@@ -902,7 +901,7 @@ Hệ thống ánh sáng LED hiện đại kết hợp với đèn chùm pha lê 
       ]
     },
     nghiaxnguyet: {
-      title: 'FAIRY TALE ROMANCE',
+      title: 'LOVE ME TENDER',
       subtitle: 'Nghia & Nguyet - Cổ Tích Lãng Mạn',
       category: 'TRANG TRÍ TIỆC CƯỚI',
       headerImage: IMAGES.nghiaxnguyet,
@@ -922,7 +921,7 @@ Tông màu chủ đạo là hồng phấn, trắng và vàng gold, tạo nên b�
       },
       tags: ['Tiệc Cưới', 'Fairy Tale Wedding', 'Romance', 'Tông Hồng Trắng', 'Dreamy', 'Hoa Hồng'],
       images: [
-       
+
         { src: IMAGES.nghiaxnguyet1, orientation: 'portrait', size: 'medium' },
         { src: IMAGES.nghiaxnguyet2, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.nghiaxnguyet3, orientation: 'portrait', size: 'medium' },
@@ -936,7 +935,7 @@ Tông màu chủ đạo là hồng phấn, trắng và vàng gold, tạo nên b�
       ]
     },
     thongxhuyen: {
-      title: 'ELEGANT MINIMALISM',
+      title: 'THE WAY TO HAPPINESS ',
       subtitle: 'Thong & Huyen - Thanh Lịch Tối Giản',
       category: 'TRANG TRÍ TIỆC CƯỚI',
       headerImage: IMAGES.thongxhuyen,
@@ -956,7 +955,7 @@ Tông màu chủ đạo là trắng, be và xanh nhạt, tạo nên bầu không
       },
       tags: ['Tiệc Cưới', 'Minimalist Wedding', 'Elegant', 'Tông Trắng Be', 'Clean', 'Tối Giản'],
       images: [
-        
+
         { src: IMAGES.thongxhuyen1, orientation: 'portrait', size: 'medium' },
         { src: IMAGES.thongxhuyen2, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.thongxhuyen3, orientation: 'portrait', size: 'medium' },
@@ -971,8 +970,8 @@ Tông màu chủ đạo là trắng, be và xanh nhạt, tạo nên bầu không
         { src: IMAGES.thongxhuyen12, orientation: 'landscape', size: 'large' }
       ]
     },
-    tmxmax: {
-      title: 'BOHO CHIC',
+    tramxmax: {
+      title: 'OUR SPRING DAYS',
       subtitle: 'Tram & Max - Boho Tự Do',
       category: 'TRANG TRÍ TIỆC CƯỚI',
       headerImage: IMAGES.tramxmax,
@@ -992,6 +991,7 @@ Tông màu chủ đạo là đất, cam đỏ và xanh olive, tạo nên bầu k
       },
       tags: ['Tiệc Cưới', 'Boho Wedding', 'Chic', 'Tông Đất Cam', 'Artistic', 'Hoa Dại'],
       images: [
+        { src: IMAGES.tramxmax, orientation: 'landscape', size: 'large' },
         { src: IMAGES.tramxmax1, orientation: 'portrait', size: 'medium' },
         { src: IMAGES.tramxmax2, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.tramxmax3, orientation: 'portrait', size: 'medium' },
@@ -1045,7 +1045,7 @@ Tông màu chủ đạo là đỏ truyền thống và vàng gold, tạo nên b�
       ]
     },
     vietxquynh: {
-      title: 'CLASSIC ELEGANCE',
+      title: 'SERENDIPITY',
       subtitle: 'Viet & Quynh - Cổ Điển Sang Trọng',
       category: 'TRANG TRÍ TIỆC CƯỚI',
       headerImage: IMAGES.vietxquynh,
@@ -1076,10 +1076,10 @@ Hệ thống ánh sáng đèn chùm pha lê kết hợp với nến trang trí t
       ]
     },
     vietxquynh2: {
-      title: 'HARMONIOUS TRADITION',
+      title: 'SERENDIPITY',
       subtitle: 'Viet & Quynh - Truyền Thống Hài Hòa',
       category: 'TRANG TRÍ LỄ GIA TIÊN',
-      headerImage: IMAGES.vietxquynh2,
+      headerImage: IMAGES.vietxquynh2_1,
       description: `Lễ gia tiên của Viet & Quynh là sự kết hợp hài hòa giữa truyền thống và hiện đại. Không gian được thiết kế với concept "Harmonious Tradition" - truyền thống hài hòa, nơi mỗi chi tiết đều toát lên sự trang trọng và ấm cúng.
 
 Tông màu chủ đạo là đỏ truyền thống, vàng gold và trắng ngà, tạo nên bầu không khí trang nghiêm nhưng vẫn tinh tế. Hoa sen, hoa cúc, hương trầm và các vật phẩm truyền thống được bố trí cẩn thận, thể hiện sự kính trọng với tổ tiên và giữ gìn văn hóa.
@@ -1141,7 +1141,7 @@ Tông màu chủ đạo là hồng đào, vàng và xanh lá non, tạo nên b�
       ]
     },
     trangxvini: {
-      title: 'DREAMY ROMANCE',
+      title: 'YOU ARE MY POTATO!',
       subtitle: 'Trang & Vini - Lãng Mạn Mơ Mộng',
       category: 'TRANG TRÍ TIỆC CƯỚI',
       headerImage: IMAGES.trangxvini,
@@ -1185,7 +1185,7 @@ Từng góc nhỏ trong tiệc cưới đều được thiết kế để tạo 
       ]
     },
     benang: {
-      title: 'CORPORATE EVENT',
+      title: 'HAPPY BIRTHDAY- EM BÉ NẮNG',
       subtitle: 'Event Benang - Sự Kiện Doanh Nghiệp',
       category: 'TRANG TRÍ SỰ KIỆN',
       headerImage: IMAGES.eventxbenang,
@@ -1205,7 +1205,16 @@ Hệ thống ánh sáng chuyên nghiệp kết hợp với màn hình LED tạo 
       },
       tags: ['Sự Kiện', 'Corporate Event', 'Professional', 'Tông Xanh Trắng', 'Business', 'Conference'],
       images: [
-        { src: IMAGES.eventxbenang, orientation: 'landscape', size: 'large' }
+        { src: IMAGES.eventxbenang, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.benang1, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.benang2, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.benang3, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.benang4, orientation: 'landscape', size: 'small' },
+        { src: IMAGES.benang5, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.benang6, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.benang7, orientation: 'portrait', size: 'large' },
+        { src: IMAGES.benang8, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.benang9, orientation: 'portrait', size: 'large' }
       ]
     }
   };

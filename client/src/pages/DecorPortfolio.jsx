@@ -139,7 +139,7 @@ const DecorPortfolio = () => {
       title: 'PHUONG & HIEN',
       author: 'Ant Wedding',
       descriptionKey: 'phuongHien2Desc',
-      image: IMAGES.phuongxhien2,
+      image: IMAGES.phuongxhien2_10,
       likes: 25,
       endpoint: 'phuongxhien2'
     },
@@ -147,10 +147,10 @@ const DecorPortfolio = () => {
       id: 31,
       date: { day: '15', month: 'TH6', year: '2022' },
       categoryKey: 'weddingDecor',
-      title: 'PHUONG & HIEN (GOLDEN)',
+      title: 'PHUONG & HIEN',
       author: 'Ant Wedding',
       descriptionKey: 'phuongHien3Desc',
-      image: IMAGES.phuongxhien3,
+      image: IMAGES.phuongxhien3_2,
       likes: 26,
       endpoint: 'phuongxhien3'
     },
@@ -213,7 +213,7 @@ const DecorPortfolio = () => {
       id: 16,
       date: { day: '22', month: 'TH2', year: '2023' },
       categoryKey: 'weddingDecor',
-      title: 'ANH & TOAN',
+      title: 'AN & TOAN',
       author: 'Ant Wedding',
       descriptionKey: 'anhToanDesc',
       image: IMAGES.anxtoan,
@@ -397,7 +397,7 @@ const DecorPortfolio = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              transition={{ duration: 0.3, delay: index * 0.03 }}
               className="group cursor-pointer"
               onClick={() => handleCardClick(item.endpoint)}
             >

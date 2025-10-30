@@ -23,22 +23,26 @@ const Service = () => {
         {
             title: t('ancestorDecor'),
             img: `${IMAGES.vietxquynh}`,
-            desc: t('ancestorDesc')
+            desc: t('ancestorDesc'),
+            link: '/portfolio/vietxquynh2'
         },
         {
             title: t('outdoorDecor'),
             img: `${IMAGES.nganxnhat}`,
-            desc: t('outdoorDesc')
+            desc: t('outdoorDesc'),
+            link: '/portfolio/nganxnhat'
         },
         {
             title: t('restaurantDecor'),
-            img: `${IMAGES.duyxmy}`,
-            desc: t('restaurantDesc')
+            img: `${IMAGES.vanxtuc}`,
+            desc: t('restaurantDesc'),
+            link: '/portfolio/vanxtuc'
         },
         {
             title: t('eventDecorTitle'),
             img: `${IMAGES.eventxbenang}`,
-            desc: t('eventDecorDesc')
+            desc: t('eventDecorDesc'),
+            link: '/portfolio/benang'
         },
     ], [t]);
 
@@ -62,7 +66,7 @@ const Service = () => {
                                     ease: "easeOut"
                                 }}
                             >
-                                <div className="relative w-full h-56 bg-gray-200 rounded-lg overflow-hidden z-0">
+                                <a href={c.link} className="relative w-full h-56 bg-gray-200 rounded-lg overflow-hidden z-0 cursor-pointer">
                                     {visibleImages.includes(i) ? (
                                         <motion.img
                                             src={c.img}
@@ -80,7 +84,7 @@ const Service = () => {
                                             <div className="w-8 h-8 border-4 border-emerald-700 border-t-transparent rounded-full animate-spin"></div>
                                         </div>
                                     )}
-                                </div>
+                                </a>
                                 <div className="relative bg-white rounded-md shadow-lg p-6 -mt-12 mx-4 flex-1 flex flex-col min-h-[280px] z-10">
                                     <h3 className="text-center text-base font-black text-emerald-700 mb-3 min-h-[48px] flex items-center justify-center">
                                         {c.title}
@@ -91,7 +95,7 @@ const Service = () => {
                                     <div className="text-center mt-auto">
                                         <a
                                             className="inline-block text-sm font-bold text-emerald-700 hover:text-emerald-800 underline transition-colors"
-                                            href="#"
+                                            href={c.link}
                                         >
                                             {t('viewDetails')}
                                         </a>

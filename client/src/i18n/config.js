@@ -15,10 +15,10 @@ const resources = {
       contact: "LIÊN HỆ",
 
       // Services Dropdown
-      destinationWedding: "Trang trí tiệc cưới ngoài trời",
-      ancestorCeremony: "Trang trí lễ gia tiên",
-      restaurantWedding: "Trang trí sảnh nhà hàng",
-      eventDecor: "Trang trí sự kiện",
+      destinationWedding: "Cưới ngoài trời",
+      restaurantWedding: "Sảnh nhà hàng",
+      ancestorCeremony: "Gia tiên",
+      eventDecor: "Sự kiện",
 
       // Hero
       wedding: "Tiệc cưới",
@@ -29,7 +29,7 @@ const resources = {
       ancestorDecor: "TRANG TRÍ LỄ GIA TIÊN",
       ancestorDesc: "Thiết kế không gian lễ gia tiên trang trọng, ấm cúng với đầy đủ các vật phẩm truyền thống. Chúng tôi tư vấn và bố trí theo phong tục từng vùng miền, đảm bảo sự trang nghiêm và ý nghĩa cho nghi lễ quan trọng này.",
       outdoorDecor: "TRANG TRÍ NGOÀI TRỜI",
-      outdoorDesc: "Tạo nên không gian tiệc cưới ngoài trời lãng mạn, sang trọng với hệ thống backdrop, cổng hoa, lối đi và khu vực đón khách ấn tượng. Phù hợp với sân vườn, bãi biển hay không gian mở.",
+      outdoorDesc: "Tạo nên không gian tiệc cưới ngoài trời lãng mạn, hòa mình với thiên nhiên",
       restaurantDecor: "TRANG TRÍ NHÀ HÀNG",
       restaurantDesc: "Biến hóa sảnh tiệc nhà hàng thành không gian cưới lung linh với backdrop sân khấu, bàn tiệc, lối đi và hệ thống ánh sáng chuyên nghiệp. Đa dạng phong cách từ cổ điển đến hiện đại.",
       eventDecorTitle: "TRANG TRÍ SỰ KIỆN",
@@ -160,7 +160,7 @@ const resources = {
 
       // Ancestor Service
       ancestorServiceTitle: "Về Dịch Vụ Trang Trí Lễ Gia Tiên",
-      ancestorServiceSubtitle: "Tổ chức lễ gia tiên trang trọng, đúng phong tục truyền thống Việt Nam",
+      ancestorServiceSubtitle: "Lễ gia tiên trang trọng, ý nghĩa,\n đúng phong tục truyền thống của Việt Nam",
       ancestorAltar: "Bàn Thờ Gia Tiên",
       ancestorAltarDesc: "Thiết kế bàn thờ trang trọng, tôn nghiêm theo phong tục truyền thống",
       flowersAndFruits: "Hoa Tươi & Trái Cây",
@@ -194,7 +194,7 @@ const resources = {
 
       // Outdoor/Destination Service
       outdoorServiceTitle: "Về Dịch Vụ Trang Trí Ngoài Trời",
-      outdoorServiceSubtitle: "Tạo nên không gian tiệc cưới ngoài trời lãng mạn, sang trọng với thiên nhiên",
+      outdoorServiceSubtitle: "Tạo nên không gian tiệc cưới ngoài trời lãng mạn, hòa mình với thiên nhiên",
       backdropAndArch: "Backdrop & Cổng Hoa",
       backdropAndArchDesc: "Thiết kế backdrop và cổng hoa ấn tượng, phù hợp với không gian ngoài trời",
       tablesAndWalkway: "Bàn Ghế & Lối Đi",
@@ -210,6 +210,7 @@ const resources = {
       naturalLightDesc: "Tận dụng ánh sáng tự nhiên tạo nên những bức ảnh đẹp lung linh",
       romanticSpace: "Không Gian Lãng Mạn",
       romanticSpaceDesc: "Hòa mình vào thiên nhiên, tạo không gian lãng mạn và đáng nhớ",
+      outdoorHeroSubtitle: "Tạo nên không gian tiệc cưới ngoài trời lãng mạn,\nhòa mình với thiên nhiên",
       readyForOutdoorWedding: "Sẵn Sàng Tạo Nên Tiệc Cưới Ngoài Trời Hoàn Hảo?",
       contactForFreeConsult: "Liên hệ với chúng tôi ngay hôm nay để được tư vấn miễn phí",
 
@@ -359,9 +360,9 @@ const resources = {
       contact: "CONTACT",
 
       // Services Dropdown
-      destinationWedding: "Outdoor Wedding Decoration",
-      ancestorCeremony: "Ancestor Ceremony Decoration",
-      restaurantWedding: "Restaurant Hall Decoration",
+      destinationWedding: "Outdoor Destination Wedding",
+      restaurantWedding: "Wedding Hall Decoration",
+      ancestorCeremony: "Traditional Vietnamese Wedding",
       eventDecor: "Event Decoration",
 
       // Hero
@@ -538,7 +539,7 @@ const resources = {
 
       // Outdoor/Destination Service
       outdoorServiceTitle: "About Outdoor Decoration Service",
-      outdoorServiceSubtitle: "Create romantic and elegant outdoor wedding space with nature",
+      outdoorServiceSubtitle: "Create romantic outdoor wedding space, immersed in nature",
       backdropAndArch: "Backdrop & Flower Arch",
       backdropAndArchDesc: "Design impressive backdrop and flower arch suitable for outdoor space",
       tablesAndWalkway: "Tables & Walkway",
@@ -554,6 +555,7 @@ const resources = {
       naturalLightDesc: "Utilize natural light to create beautiful sparkling photos",
       romanticSpace: "Romantic Space",
       romanticSpaceDesc: "Immerse in nature, create romantic and memorable space",
+      outdoorHeroSubtitle: "Create romantic outdoor wedding space,\nimmersed in nature",
       readyForOutdoorWedding: "Ready to Create Perfect Outdoor Wedding?",
       contactForFreeConsult: "Contact us today for free consultation",
 

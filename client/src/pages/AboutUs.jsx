@@ -120,24 +120,24 @@ const AboutUs = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white rounded-lg p-8 shadow-lg text-center">
-              <div className="w-24 h-24 bg-gradient-to-br from-[#cbb9a4] to-[#b8a490] rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-3xl font-bold">NA</span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-2">Ngọc Anh</h3>
-              <p className="text-[#cbb9a4] font-semibold mb-3">{t('coFounderCreativeDirector')}</p>
-              <p className="text-gray-600">
-                {t('founderDesc1')}
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg p-8 shadow-lg text-center">
-              <div className="w-24 h-24 bg-gradient-to-br from-[#cbb9a4] to-[#b8a490] rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-3xl font-bold">NT</span>
+              <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 border-4 border-[#cbb9a4]">
+                <img src={IMAGES.founder2} alt="Nhã Tịnh" className="w-full h-full object-cover object-top" />
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-2">Nhã Tịnh</h3>
               <p className="text-[#cbb9a4] font-semibold mb-3">{t('coFounderOperationsDirector')}</p>
               <p className="text-gray-600">
                 {t('founderDesc2')}
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg p-8 shadow-lg text-center">
+              <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 border-4 border-[#cbb9a4]">
+                <img src={IMAGES.founder1} alt="Ngọc Anh" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">Ngọc Anh</h3>
+              <p className="text-[#cbb9a4] font-semibold mb-3">{t('coFounderCreativeDirector')}</p>
+              <p className="text-gray-600">
+                {t('founderDesc1')}
               </p>
             </div>
           </div>

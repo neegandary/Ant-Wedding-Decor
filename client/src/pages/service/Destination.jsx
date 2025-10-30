@@ -79,8 +79,8 @@ export const Destination = () => {
                         <h1 className="text-5xl md:text-6xl font-bold mb-4">
                             {t('outdoorDecor')}
                         </h1>
-                        <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-                            Tạo nên không gian tiệc cưới ngoài trời lãng mạn, sang trọng với thiên nhiên
+                        <p className="text-xl md:text-2xl max-w-3xl mx-auto whitespace-pre-line">
+                            {t('outdoorHeroSubtitle')}
                         </p>
                     </motion.div>
                 </div>
@@ -96,7 +96,7 @@ export const Destination = () => {
                     className="max-w-4xl mx-auto text-center mb-16"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                        Về Dịch Vụ Trang Trí Ngoài Trời
+                        {t('outdoorServiceTitle')}
                     </h2>
                     <p className="text-gray-600 leading-relaxed text-lg">
                         {t('outdoorDesc')}

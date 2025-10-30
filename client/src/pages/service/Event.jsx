@@ -45,10 +45,8 @@ export const Event = () => {
     ];
 
     const portfolioImages = [
-        { src: IMAGES.eventxbenang, title: 'Sự Kiện Doanh Nghiệp' },
-        { src: IMAGES.phuongxhien, title: 'Tiệc Sinh Nhật' },
-        { src: IMAGES.elopement, title: 'Sự Kiện Ngoài Trời' },
-        { src: IMAGES.service, title: 'Hội Nghị & Gala' }
+        { src: IMAGES.benang1, title: 'Tiệc Sinh Nhật' },
+        { src: IMAGES.duyxyen2, title: 'Chụp Pre Wedding' },
     ];
 
     return (
@@ -73,7 +71,7 @@ export const Event = () => {
                             {t('eventDecor')}
                         </h1>
                         <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-                            Tổ chức và trang trí các sự kiện đặc biệt chuyên nghiệp
+                            Tổ chức và trang trí các sự kiện đặc biệt
                         </p>
                     </motion.div>
                 </div>

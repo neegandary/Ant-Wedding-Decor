@@ -13,6 +13,8 @@ export const IMAGES = {
     logo_rmbg: `${IMAGE_BASE_URL}/image/logo-rmbg.png`,
     logo: `${IMAGE_BASE_URL}/image/logo.png`,
     service: `${IMAGE_BASE_URL}/image/service.jpg`,
+    founder1: `${IMAGE_BASE_URL}/image/founder1.webp`,
+    founder2: `${IMAGE_BASE_URL}/image/founder2.webp`,
 
     // Portfolio thumbnails
     nathanxtracy: `${IMAGE_BASE_URL}/image/nathanxtracy.webp`,
@@ -24,12 +26,11 @@ export const IMAGES = {
     vietxquynh: `${IMAGE_BASE_URL}/image/vietxquynh.webp`,
     nganxnhat: `${IMAGE_BASE_URL}/image/nganxnhat.webp`,
     duyxmy: `${IMAGE_BASE_URL}/image/duyxmy.webp`,
-    duyxmy2: `${IMAGE_BASE_URL}/image/duyxmy2.webp`,
     trangxvini: `${IMAGE_BASE_URL}/image/trangxvini.webp`,
     eventxbenang: `${IMAGE_BASE_URL}/image/eventxbenang.webp`,
     phuongxhien: `${IMAGE_BASE_URL}/image/phuongxhien.webp`,
-    phuongxhien2: `${IMAGE_BASE_URL}/image/phuongxhien2.webp`,
-    phuongxhien3: `${IMAGE_BASE_URL}/image/phuongxhien3.webp`,
+    phuongxhien2: `${IMAGE_BASE_URL}/image/phuongxhien2_1.webp`,
+    phuongxhien3: `${IMAGE_BASE_URL}/image/phuongxhien3_1.webp`,
     elopement: `${IMAGE_BASE_URL}/image/elopement.webp`,
     hieuxbrian: `${IMAGE_BASE_URL}/image/hieuxbrian.webp`,
     hanxtuan: `${IMAGE_BASE_URL}/image/hanxtuan.webp`,
@@ -338,14 +339,6 @@ export const IMAGES = {
     anxtoan5: `${IMAGE_BASE_URL}/image/anxtoan5.webp?t=${Date.now()}`,
     anxtoan6: `${IMAGE_BASE_URL}/image/anxtoan6.webp?t=${Date.now()}`,
     anxtoan7: `${IMAGE_BASE_URL}/image/anxtoan7.webp?t=${Date.now()}`,
-    anxtoan8: `${IMAGE_BASE_URL}/image/anxtoan8.webp?t=${Date.now()}`,
-    anxtoan9: `${IMAGE_BASE_URL}/image/anxtoan9.webp?t=${Date.now()}`,
-    anxtoan10: `${IMAGE_BASE_URL}/image/anxtoan10.webp?t=${Date.now()}`,
-    anxtoan11: `${IMAGE_BASE_URL}/image/anxtoan11.webp?t=${Date.now()}`,
-    anxtoan12: `${IMAGE_BASE_URL}/image/anxtoan12.webp?t=${Date.now()}`,
-    anxtoan13: `${IMAGE_BASE_URL}/image/anxtoan13.webp?t=${Date.now()}`,
-    anxtoan14: `${IMAGE_BASE_URL}/image/anxtoan14.webp?t=${Date.now()}`,
-    anxtoan15: `${IMAGE_BASE_URL}/image/anxtoan15.webp?t=${Date.now()}`,
 
     // Han x Tung gallery
     hanxtung1: `${IMAGE_BASE_URL}/image/hanxtung1.webp?t=${Date.now()}`,

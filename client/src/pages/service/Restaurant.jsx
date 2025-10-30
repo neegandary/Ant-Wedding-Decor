@@ -73,8 +73,8 @@ export const Restaurant = () => {
           className="relative z-10 text-center"
         >
           <h1 className="text-5xl font-bold mb-4">NHÀ HÀNG TIỆC CƯỚI</h1>
-          <p className="text-lg max-w-2xl mx-auto">
-            Tận hưởng không gian sang trọng, thực đơn đa dạng và dịch vụ chuyên nghiệp cho ngày trọng đại
+          <p className="text-lg max-w-2xl mx-auto ">
+            Biến đổi không gian sảnh cưới vốn có thành lễ đường riêng của bạn
           </p>
         </motion.div>
       </section>
