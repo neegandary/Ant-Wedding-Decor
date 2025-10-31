@@ -1,10 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import { IMAGES } from '../../constants/image';
 
 export const Restaurant = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const features = [
     {
@@ -46,9 +48,9 @@ export const Restaurant = () => {
   ];
 
   const portfolioImages = [
-    { src: IMAGES.phuongxhien2_8, title: 'Tiệc Cưới Nhà Hàng Sang Trọng' },
-    { src: IMAGES.vanxtuc, title: 'Tiệc Cưới Phong Cách Hiện Đại' },
-    { src: IMAGES.duyenxsteven7, title: 'Tiệc Cưới Ấm Cúng' },
+    { src: IMAGES.phuongxhien2_8, title: 'Tiệc Cưới Nhà Hàng Sang Trọng', endpoint: 'phuongxhien2' },
+    { src: IMAGES.vanxtuc, title: 'Tiệc Cưới Phong Cách Hiện Đại', endpoint: 'vanxtuc' },
+    { src: IMAGES.duyenxsteven7, title: 'Tiệc Cưới Ấm Cúng', endpoint: 'duyenxsteven' },
   ];
 
   const processSteps = [
@@ -129,9 +131,20 @@ export const Restaurant = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
-              className="overflow-hidden rounded-lg shadow-lg hover:shadow-xl"
+              onClick={() => navigate(`/portfolio/${item.endpoint}`)}
+              className="overflow-hidden rounded-lg shadow-lg hover:shadow-xl cursor-pointer group"
             >
-              <img src={item.src} alt={item.title} className="w-full h-64 object-cover hover:scale-105 transition-transform" />
+              <div className="relative">
+                <img src={item.src} alt={item.title} className="w-full h-64 object-cover group-hover:scale-105 transition-transform" />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
+                  <div className="bg-white/90 rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg">
+                    <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
               <div className="p-4 bg-white text-center">
                 <h3 className="font-semibold text-gray-700">{item.title}</h3>
               </div>
