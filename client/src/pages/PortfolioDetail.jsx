@@ -3,7 +3,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, Grid3x3, X, ZoomIn, Maximize2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import StickyBox from 'react-sticky-box';
 import { PORTFOLIO_DETAIL_DATA, PORTFOLIO_LIST } from '../data';
 
 const PortfolioDetail = () => {
@@ -17,6 +16,70 @@ const PortfolioDetail = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [endpoint]);
+
+  // JavaScript sticky implementation with bottom boundary
+  useEffect(() => {
+    const stickyEl = document.querySelector('[data-sticky-sidebar]');
+    if (!stickyEl) return;
+
+    // Create placeholder to maintain layout
+    const placeholder = document.createElement('div');
+    placeholder.style.display = 'none';
+    stickyEl.parentElement.insertBefore(placeholder, stickyEl);
+
+    const container = stickyEl.parentElement; // Grid container
+    const stickyOffset = 100;
+    const sidebarWidth = stickyEl.offsetWidth;
+
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const sidebarHeight = stickyEl.offsetHeight;
+      
+      // Calculate boundaries
+      const containerRect = container.getBoundingClientRect();
+      const containerTop = containerRect.top + scrollY;
+      const containerBottom = containerTop + container.offsetHeight;
+      
+      // Start sticking point
+      const startSticky = containerTop - stickyOffset;
+      // Stop sticking point (when sidebar bottom reaches container bottom)
+      const stopSticky = containerBottom - sidebarHeight - stickyOffset;
+      
+      if (scrollY >= startSticky && scrollY < stopSticky) {
+        // Stick it (fixed position)
+        placeholder.style.display = 'block';
+        placeholder.style.height = `${sidebarHeight}px`;
+        stickyEl.style.position = 'fixed';
+        stickyEl.style.top = `${stickyOffset}px`;
+        stickyEl.style.width = `${sidebarWidth}px`;
+        stickyEl.style.zIndex = '10';
+      } else if (scrollY >= stopSticky) {
+        // Stop at bottom (absolute position)
+        placeholder.style.display = 'block';
+        placeholder.style.height = `${sidebarHeight}px`;
+        stickyEl.style.position = 'absolute';
+        stickyEl.style.top = `${container.offsetHeight - sidebarHeight}px`;
+        stickyEl.style.width = `${sidebarWidth}px`;
+        stickyEl.style.zIndex = '10';
+      } else {
+        // Normal position (static)
+        placeholder.style.display = 'none';
+        stickyEl.style.position = 'static';
+        stickyEl.style.width = 'auto';
+        stickyEl.style.zIndex = 'auto';
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);
+    handleScroll();
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+      placeholder.remove();
+    };
+  }, []);
 
   const currentIndex = PORTFOLIO_LIST.indexOf(endpoint);
   const prevEndpoint = currentIndex > 0 ? PORTFOLIO_LIST[currentIndex - 1] : null;
@@ -61,17 +124,14 @@ const PortfolioDetail = () => {
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="flex flex-col lg:flex-row gap-12">
-          {/* Left Column - Description & Info (Sticky) */}
-          <div className="lg:w-1/3 flex-shrink-0">
-            <StickyBox 
-              offsetTop={32} 
-              offsetBottom={32}
-              style={{ zIndex: 10 }}
-            >
-              <div className="bg-white rounded-lg shadow-md p-8">
-                {/* Title */}
-                <h2 className="text-3xl font-bold text-gray-800 mb-2">{portfolio.title}</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 relative">
+          {/* Left Column - Description & Info (Sticky via JS) */}
+          <aside 
+            data-sticky-sidebar
+            className="lg:col-span-1 bg-white rounded-lg shadow-md p-8"
+          >
+            {/* Title */}
+            <h2 className="text-3xl font-bold text-gray-800 mb-2">{portfolio.title}</h2>
                 <p className="text-sm text-gray-500 mb-6">{portfolio.subtitle}</p>
 
                 {/* Description */}
@@ -117,12 +177,10 @@ const PortfolioDetail = () => {
                     ))}
                   </div>
                 </div>
-              </div>
-            </StickyBox>
-          </div>
+          </aside>
 
           {/* Right Column - Masonry Gallery Layout (Scrollable) */}
-          <div className="lg:w-2/3 flex-grow">
+          <div className="lg:col-span-2">
             <div className="columns-1 md:columns-2 gap-4">
               {portfolio.images.map((image, index) => (
                 <div
