@@ -72,7 +72,7 @@ const resources = {
       footerNote: "from Ant Wedding with Love",
 
       // Contact Page
-      officeAddress: "Văn phòng & Xưởng sản xuất:",
+      officeAddress: "Văn phòng",
       nhatrangAddress: "Chung Cư Ngô Gia Tự - Nha Trang - Khánh Hòa - Việt Nam",
       makeAppointment: "(Vui lòng đặt lịch hẹn trước khi đến)",
       contactInfo: "Liên hệ:",
@@ -232,8 +232,9 @@ const resources = {
       // Portfolio Page
       portfolioHeroTitle1: "We'll create",
       portfolioHeroTitle2: "wedding décor to suit your",
-      weddingDecor: "TRANG TRÍ TIỆC CƯỚI",
-      ancestorDecorCategory: "TRANG TRÍ GIA TIÊN",
+      weddingDecor: "TRANG TRÍ TIỆC CƯỚI NGOÀI TRỜI",
+      ancestorDecorCategory: "LỄ GIA TIÊN",
+      restaurantDecorCategory: "TRANG TRÍ SẢNH CƯỚI",
       by: "By",
       continueReading: "Continue Reading",
 
@@ -507,7 +508,7 @@ const resources = {
 
       // Ancestor Service
       ancestorServiceTitle: "About Ancestor Ceremony Decoration Service",
-      ancestorServiceSubtitle: "Organize solemn ancestor ceremony according to Vietnamese traditional customs",
+      ancestorServiceSubtitle: "Organize solemn ancestor ceremony according to\n Vietnamese traditional customs",
       ancestorAltar: "Ancestor Altar",
       ancestorAltarDesc: "Design solemn and dignified altar according to traditional customs",
       flowersAndFruits: "Fresh Flowers & Fruits",
@@ -579,8 +580,9 @@ const resources = {
       // Portfolio Page
       portfolioHeroTitle1: "We'll create",
       portfolioHeroTitle2: "wedding décor to suit your",
-      weddingDecor: "WEDDING DECORATION",
+      weddingDecor: "OUTDOOR WEDDING DECORATION",
       ancestorDecorCategory: "ANCESTOR CEREMONY DECORATION",
+      restaurantDecorCategory: "WEDDING HALL DECORATION",
       by: "By",
       continueReading: "Continue Reading",
 

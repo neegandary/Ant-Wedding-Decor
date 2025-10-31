@@ -14,7 +14,7 @@ const Contact = () => {
         className="w-full h-[400px] relative"
       >
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.7234567890!2d109.1943!3d12.2388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDE0JzE5LjciTiAxMDnCsDExJzM5LjUiRQ!5e0!3m2!1svi!2s!4v1234567890"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.130893671664!2d109.18716859999999!3d12.239415399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31705d006ccc0f39%3A0x3e48a7ce8f49a831!2sANT%20Wedding!5e0!3m2!1svi!2s!4v1761882159235!5m2!1svi!2s"
           width="100%"
           height="100%"
           style={{ border: 0 }}

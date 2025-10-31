@@ -117,7 +117,6 @@ Không gian tiệc cưới được bố trí hướng ra biển, tận dụng v
       },
       tags: ['Tiệc Cưới', 'Beach Wedding', 'Destination', 'Tông Trắng', 'Minimalist'],
       images: [
-        { src: IMAGES.tienxwilliam, orientation: 'landscape', size: 'large' },
         { src: IMAGES.tienxwillam1, orientation: 'portrait', size: 'medium' },
         { src: IMAGES.tienxwillam2, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.tienxwillam3, orientation: 'portrait', size: 'medium' },
@@ -127,7 +126,15 @@ Không gian tiệc cưới được bố trí hướng ra biển, tận dụng v
         { src: IMAGES.tienxwillam7, orientation: 'portrait', size: 'large' },
         { src: IMAGES.tienxwillam8, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.tienxwillam9, orientation: 'portrait', size: 'medium' },
-        { src: IMAGES.tienxwillam10, orientation: 'landscape', size: 'large' }
+        { src: IMAGES.tienxwillam10, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.tienxwillam11, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.tienxwillam12, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.tienxwillam13, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.tienxwillam14, orientation: 'landscape', size: 'small' },
+        { src: IMAGES.tienxwillam15, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.tienxwillam16, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.tienxwillam17, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.tienxwillam18, orientation: 'landscape', size: 'medium' }
       ]
     },
     hanxtuan: {
@@ -304,7 +311,6 @@ Tông màu chủ đạo là vàng gold và đỏ truyền thống, tạo nên b�
       },
       tags: ['Lễ Gia Tiên', 'Asian Style', 'Traditional', 'Tông Vàng Đỏ', 'Contemporary', 'Hương Trầm'],
       images: [
-        { src: IMAGES.mayxmat, orientation: 'landscape', size: 'large' },
         { src: IMAGES.mayxmat1, orientation: 'portrait', size: 'medium' },
         { src: IMAGES.mayxmat2, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.mayxmat3, orientation: 'portrait', size: 'medium' },
@@ -314,7 +320,26 @@ Tông màu chủ đạo là vàng gold và đỏ truyền thống, tạo nên b�
         { src: IMAGES.mayxmat7, orientation: 'portrait', size: 'large' },
         { src: IMAGES.mayxmat8, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.mayxmat9, orientation: 'portrait', size: 'medium' },
-        { src: IMAGES.mayxmat10, orientation: 'landscape', size: 'large' }
+        { src: IMAGES.mayxmat10, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.mayxmat11, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.mayxmat12, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.mayxmat13, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.mayxmat14, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.mayxmat15, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.mayxmat16, orientation: 'landscape', size: 'small' },
+        { src: IMAGES.mayxmat17, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.mayxmat18, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.mayxmat19, orientation: 'portrait', size: 'large' },
+        { src: IMAGES.mayxmat20, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.mayxmat21, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.mayxmat22, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.mayxmat23, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.mayxmat24, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.mayxmat25, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.mayxmat26, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.mayxmat27, orientation: 'portrait', size: 'large' },
+        { src: IMAGES.mayxmat28, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.mayxmat29, orientation: 'portrait', size: 'medium' }
       ]
     },
     hieuxbrian: {
@@ -693,7 +718,6 @@ Từng góc nhỏ trong tiệc cưới đều được thiết kế với sự c
       },
       tags: ['Tiệc Cưới', 'Modern Wedding', 'Elegant', 'Tông Trắng Xám', 'Minimalist', 'Contemporary'],
       images: [
-
         { src: IMAGES.anxnghi1, orientation: 'portrait', size: 'medium' },
         { src: IMAGES.anxnghi2, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.anxnghi3, orientation: 'portrait', size: 'medium' },
@@ -707,7 +731,12 @@ Từng góc nhỏ trong tiệc cưới đều được thiết kế với sự c
         { src: IMAGES.anxnghi11, orientation: 'portrait', size: 'small' },
         { src: IMAGES.anxnghi12, orientation: 'landscape', size: 'large' },
         { src: IMAGES.anxnghi13, orientation: 'portrait', size: 'medium' },
-        { src: IMAGES.anxnghi14, orientation: 'landscape', size: 'medium' }
+        { src: IMAGES.anxnghi14, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.anxnghi15, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.anxnghi16, orientation: 'landscape', size: 'small' },
+        { src: IMAGES.anxnghi17, orientation: 'portrait', size: 'large' },
+        { src: IMAGES.anxnghi18, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.anxnghi19, orientation: 'portrait', size: 'medium' }
       ]
     },
     anxtoan: {
@@ -787,7 +816,7 @@ Tông màu chủ đạo là kem, vàng gold và nâu gỗ, tạo nên bầu khô
       title: 'SHINING LIFE',
       subtitle: 'Josh & Linda - Thiên Đường Nhiệt Đới',
       category: 'TRANG TRÍ TIỆC CƯỚI',
-      headerImage: IMAGES.joshxlinda,
+      headerImage: IMAGES.joshxlinda10,
       description: `Lễ cưới của Josh & Linda là một thiên đường nhiệt đới đầy màu sắc và sức sống. Không gian được thiết kế với concept "Tropical Paradise" - thiên đường nhiệt đới, nơi mỗi góc nhỏ đều tràn ngập hương thơm và sắc màu của hoa nhiệt đới.
 
 Tông màu chủ đạo là xanh lá, cam và vàng, tạo nên bầu không khí tươi mới và năng động. Hoa thiên điểu, hoa lan và các loại lá nhiệt đới được sắp xếp táo bạo, tạo nên những backdrop và centerpiece đầy ấn tượng và sống động.
@@ -804,7 +833,6 @@ Tông màu chủ đạo là xanh lá, cam và vàng, tạo nên bầu không kh�
       },
       tags: ['Tiệc Cưới', 'Tropical Wedding', 'Paradise', 'Tông Xanh Cam', 'Vibrant', 'Hoa Nhiệt Đới'],
       images: [
-
         { src: IMAGES.joshxlinda1, orientation: 'portrait', size: 'medium' },
         { src: IMAGES.joshxlinda2, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.joshxlinda3, orientation: 'portrait', size: 'medium' },
@@ -814,7 +842,11 @@ Tông màu chủ đạo là xanh lá, cam và vàng, tạo nên bầu không kh�
         { src: IMAGES.joshxlinda7, orientation: 'portrait', size: 'large' },
         { src: IMAGES.joshxlinda8, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.joshxlinda9, orientation: 'portrait', size: 'medium' },
-        { src: IMAGES.joshxlinda10, orientation: 'landscape', size: 'large' }
+        { src: IMAGES.joshxlinda10, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.joshxlinda11, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.joshxlinda12, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.joshxlinda13, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.joshxlinda14, orientation: 'landscape', size: 'medium' }
       ]
     },
     maimyxtoanem: {

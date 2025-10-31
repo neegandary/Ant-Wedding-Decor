@@ -47,7 +47,7 @@ const DecorPortfolio = () => {
     {
       id: 3,
       date: { day: '20', month: 'TH8', year: '2024' },
-      categoryKey: 'ancestorDecorCategory',
+      categoryKey: 'restaurantDecorCategory',
       title: 'VAN & TUC',
       descriptionKey: 'vanTucDesc',
       author: 'Ant Wedding',
@@ -69,7 +69,7 @@ const DecorPortfolio = () => {
     {
       id: 5,
       date: { day: '24', month: 'TH5', year: '2024' },
-      categoryKey: 'ancestorDecorCategory',
+      categoryKey: 'weddingDecor',
       title: 'MAY & MATT',
       author: 'Ant Wedding',
       descriptionKey: 'mayMattDesc',
@@ -135,7 +135,7 @@ const DecorPortfolio = () => {
     {
       id: 10,
       date: { day: '14', month: 'TH6', year: '2022' },
-      categoryKey: 'weddingDecor',
+      categoryKey: 'restaurantDecorCategory',
       title: 'PHUONG & HIEN',
       author: 'Ant Wedding',
       descriptionKey: 'phuongHien2Desc',
@@ -179,7 +179,7 @@ const DecorPortfolio = () => {
     {
       id: 13,
       date: { day: '10', month: 'TH5', year: '2023' },
-      categoryKey: 'weddingDecor',
+      categoryKey: 'PRE WEDDING',
       title: 'DUY & YEN',
       author: 'Ant Wedding',
       descriptionKey: 'duyYenDesc',
@@ -190,7 +190,7 @@ const DecorPortfolio = () => {
     {
       id: 14,
       date: { day: '15', month: 'TH4', year: '2023' },
-      categoryKey: 'weddingDecor',
+      categoryKey: 'ancestorDecorCategory',
       title: 'THOA & BINH',
       author: 'Ant Wedding',
       descriptionKey: 'thoaBinhDesc',
@@ -212,7 +212,7 @@ const DecorPortfolio = () => {
     {
       id: 16,
       date: { day: '22', month: 'TH2', year: '2023' },
-      categoryKey: 'weddingDecor',
+      categoryKey: 'ancestorDecorCategory',
       title: 'AN & TOAN',
       author: 'Ant Wedding',
       descriptionKey: 'anhToanDesc',
@@ -311,7 +311,7 @@ const DecorPortfolio = () => {
     {
       id: 25,
       date: { day: '20', month: 'TH5', year: '2022' },
-      categoryKey: 'weddingDecor',
+      categoryKey: 'restaurantDecorCategory',
       title: 'VIET & QUYNH',
       author: 'Ant Wedding',
       descriptionKey: 'vietQuynhDesc',
@@ -333,7 +333,7 @@ const DecorPortfolio = () => {
     {
       id: 27,
       date: { day: '10', month: 'TH4', year: '2022' },
-      categoryKey: 'weddingDecor',
+      categoryKey: 'ancestorDecorCategory',
       title: 'VY & KHANG',
       author: 'Ant Wedding',
       descriptionKey: 'vyKhangDesc',
@@ -355,7 +355,7 @@ const DecorPortfolio = () => {
     {
       id: 28,
       date: { day: '25', month: 'TH3', year: '2022' },
-      categoryKey: 'weddingDecor',
+      categoryKey: 'birthday',
       title: 'EVENT BENANG',
       author: 'Ant Wedding',
       descriptionKey: 'benangDesc',
