@@ -30,7 +30,7 @@ const resources = {
       ancestorDesc: "Thiết kế không gian lễ gia tiên trang trọng, ấm cúng với đầy đủ các vật phẩm truyền thống. Chúng tôi tư vấn và bố trí theo phong tục từng vùng miền, đảm bảo sự trang nghiêm và ý nghĩa cho nghi lễ quan trọng này.",
       outdoorDecor: "TRANG TRÍ NGOÀI TRỜI",
       outdoorDesc: "Tạo nên không gian tiệc cưới ngoài trời lãng mạn, hòa mình với thiên nhiên",
-      restaurantDecor: "TRANG TRÍ SẢNH TIỆC CƯỚI",
+      restaurantDecor: "TRANG TRÍ SẢNH CƯỚI",
       restaurantDesc: "Biến đổi không gian sảnh cưới vốn có thành lễ đường của riêng bạn",
       eventDecorTitle: "TRANG TRÍ SỰ KIỆN",
       eventDecorDesc: "Cung cấp giải pháp trang trí toàn diện cho các sự kiện đặc biệt như lễ đính hôn, tiệc thôi nôi, sinh nhật. Thiết kế theo chủ đề riêng với đội ngũ thi công chuyên nghiệp, đúng tiến độ.",
@@ -374,7 +374,7 @@ const resources = {
       readMore: "Read more",
 
       // Service Cards
-      ancestorDecor: "ANCESTOR CEREMONY DECORATION",
+      ancestorDecor: "TRADITIONAL VIETNAMESE CEREMONY",
       ancestorDesc: "Design a solemn and warm ancestor ceremony space with complete traditional items. We consult and arrange according to regional customs, ensuring dignity and meaning for this important ritual.",
       outdoorDecor: "OUTDOOR DECORATION",
       outdoorDesc: "Create a romantic and elegant outdoor wedding space with backdrop systems, flower arches, walkways and impressive guest reception areas. Suitable for gardens, beaches or open spaces.",
@@ -508,7 +508,7 @@ const resources = {
 
       // Ancestor Service
       ancestorServiceTitle: "About Ancestor Ceremony Decoration Service",
-      ancestorServiceSubtitle: "Organize solemn ancestor ceremony according to\n Vietnamese traditional customs",
+      ancestorServiceSubtitle: "A heartfelt Vietnamese traditional ceremony\n that honors timeless customs",
       ancestorAltar: "Ancestor Altar",
       ancestorAltarDesc: "Design solemn and dignified altar according to traditional customs",
       flowersAndFruits: "Fresh Flowers & Fruits",
@@ -563,7 +563,7 @@ const resources = {
       contactForFreeConsult: "Contact us today for free consultation",
 
       // Event Service
-      eventServiceTitle: "Event Decoration Service",
+      eventServiceTitle: "EVENT DECORATION",
       eventServiceTitle2: "Event Decoration Service",
       eventServiceSubtitle: "Event Organization and Decoration",
       birthday: "Birthday",
@@ -581,7 +581,7 @@ const resources = {
       portfolioHeroTitle1: "We'll create",
       portfolioHeroTitle2: "wedding décor to suit your",
       weddingDecor: "OUTDOOR WEDDING DECORATION",
-      ancestorDecorCategory: "ANCESTOR CEREMONY DECORATION",
+      ancestorDecorCategory: "TRADITIONAL VIETNAMESE CEREMONY",
       restaurantDecorCategory: "WEDDING HALL DECORATION",
       by: "By",
       continueReading: "Continue Reading",

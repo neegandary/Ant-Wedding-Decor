@@ -1,10 +1,12 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { IMAGES } from "../constants/image";
 import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
     const { t } = useTranslation();
+    const navigate = useNavigate();
     const images = [
         IMAGES.hero1,
         IMAGES.hero2,
@@ -137,7 +139,10 @@ const Hero = () => {
                         custom={0.8}
                         className="mt-6 flex justify-center"
                     >
-                        <button className="inline-block px-6 py-2 border-2 border-white text-white rounded-full hover:bg-white/10 transition font-bold">
+                        <button
+                            onClick={() => navigate('/portfolio')}
+                            className="inline-block px-6 py-2 border-2 border-white text-white rounded-full hover:bg-white/10 transition font-bold cursor-pointer"
+                        >
                             {t('readMore')}
                         </button>
                     </motion.div>

@@ -9,22 +9,22 @@ const Experience = () => {
 
     // Hàng 1: 6 hình với thông tin
     const row1Images = [
-        { img: `${IMAGES.nathanxtracy}`, title: 'FOUND BY FATE', tags: [ 'Trang Trí Tiệc Cướ'], endpoint: 'nathanxtracy' },
-        { img: `${IMAGES.tienxwilliam}`, title: 'QUIET COASTAL LOVE ', tags: [ 'Trang Trí Tiệc Cưới'], endpoint: 'tienxwilliam' },
-        { img: `${IMAGES.vanxtuc}`, title: 'VAN & TUC', tags: [ 'Trang Trí Gia Tiên'], endpoint: 'vanxtuc' },
-        { img: `${IMAGES.tranxtai}`, title: 'TRAN & TAI', tags: [ 'Trang Trí Tiệc Cưới'], endpoint: 'tranxtai' },
-        { img: `${IMAGES.mayxmat}`, title: 'EAT.PRAY.LOVE', tags: [ 'Trang Trí Gia Tiên'], endpoint: 'mayxmat' },
-        { img: `${IMAGES.duyenxsteven}`, title: 'DUYEN & STEVEN', tags: [ 'Trang Trí Tiệc Cưới'], endpoint: 'duyenxsteven' },
+        { img: `${IMAGES.nathanxtracy}`, title: 'FOUND BY FATE', tags: [ 'TRANG TRÍ TIỆC CƯỚI NGOÀI TRỜI'], endpoint: 'nathanxtracy' },
+        { img: `${IMAGES.tienxwilliam}`, title: 'QUIET COASTAL LOVE ', tags: [ 'TRANG TRÍ TIỆC CƯỚI NGOÀI TRỜI'], endpoint: 'tienxwilliam' },
+        { img: `${IMAGES.vanxtuc}`, title: 'VAN & TUC', tags: [ 'TRANG TRÍ SẢNH CƯỚI'], endpoint: 'vanxtuc' },
+        { img: `${IMAGES.tranxtai}`, title: 'TRAN & TAI', tags: [ 'TRANG TRÍ TIỆC CƯỚI NGOÀI TRỜI'], endpoint: 'tranxtai' },
+        { img: `${IMAGES.mayxmat}`, title: 'EAT.PRAY.LOVE', tags: [ 'TRANG TRÍ TIỆC CƯỚI NGOÀI TRỜI'], endpoint: 'mayxmat' },
+        { img: `${IMAGES.duyenxsteven}`, title: 'DUYEN & STEVEN', tags: [ 'TRANG TRÍ SẢNH CƯỚI'], endpoint: 'duyenxsteven' },
     ];
 
     // Hàng 2: 6 hình với thông tin
     const row2Images = [
-        { img: `${IMAGES.service}`, title: 'THE JOURNEY WITHIN', tags: [ 'Trang Trí Tiệc Cưới'], endpoint: 'service' },
-        { img: `${IMAGES.phuongxhien}`, title: 'PHUONG & HIEN', tags: [ 'Trang Trí Gia Tiên'], endpoint: 'phuongxhien' },
-        { img: `${IMAGES.duyxmy}`, title: 'SWEETEST DAY', tags: [ 'Trang Trí Gia Tiên'], endpoint: 'duyxmy' },
-        { img: `${IMAGES.phuongxhien2}`, title: 'PHUONG & HIEN', tags: [ 'Trang Trí Tiệc Cưới'], endpoint: 'phuongxhien2' },
-        { img: `${IMAGES.elopement}`, title: 'ELOPE WEDDING', tags: [ 'Trang Trí Tiệc Cưới'], endpoint: 'elopement' },
-        { img: `${IMAGES.hieuxbrian}`, title: 'WELCOME HOME', tags: [ 'Trang Trí Tiệc Cưới'], endpoint: 'hieuxbrian' },
+        { img: `${IMAGES.service}`, title: 'THE JOURNEY WITHIN', tags: [ 'TRANG TRÍ TIỆC CƯỚI NGOÀI TRỜI'], endpoint: 'hanxtuan' },
+        { img: `${IMAGES.phuongxhien}`, title: 'PHUONG & HIEN', tags: [ 'LỄ GIA TIÊN'], endpoint: 'phuongxhien' },
+        { img: `${IMAGES.duyxmy}`, title: 'SWEETEST DAY', tags: [ 'LỄ GIA TIÊN'], endpoint: 'duyxmy' },
+        { img: `${IMAGES.phuongxhien2_3}`, title: 'PHUONG & HIEN', tags: [ 'TRANG TRÍ SẢNH CƯỚI'], endpoint: 'phuongxhien2' },
+        { img: `${IMAGES.elopement}`, title: 'ELOPE WEDDING', tags: [ 'TRANG TRÍ TIỆC CƯỚI NGOÀI TRỜI'], endpoint: 'elopement' },
+        { img: `${IMAGES.hieuxbrian}`, title: 'WELCOME HOME', tags: [ 'TRANG TRÍ TIỆC CƯỚI NGOÀI TRỜI'], endpoint: 'hieuxbrian' },
     ];
 
     const handleImageClick = (endpoint) => {

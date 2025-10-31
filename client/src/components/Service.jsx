@@ -24,25 +24,25 @@ const Service = () => {
             title: t('ancestorDecor'),
             img: `${IMAGES.vietxquynh}`,
             desc: t('ancestorDesc'),
-            link: '/portfolio/vietxquynh2'
+            link: '/services/ancestor'
         },
         {
             title: t('outdoorDecor'),
             img: `${IMAGES.nganxnhat}`,
             desc: t('outdoorDesc'),
-            link: '/portfolio/nganxnhat'
+            link: '/services/destination'
         },
         {
             title: t('restaurantDecor'),
             img: `${IMAGES.vanxtuc}`,
             desc: t('restaurantDesc'),
-            link: '/portfolio/vanxtuc'
+            link: '/services/restaurant'
         },
         {
             title: t('eventDecorTitle'),
             img: `${IMAGES.eventxbenang}`,
             desc: t('eventDecorDesc'),
-            link: '/portfolio/benang'
+            link: '/services/event'
         },
     ], [t]);
 
