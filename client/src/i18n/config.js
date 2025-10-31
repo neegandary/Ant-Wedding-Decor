@@ -15,10 +15,10 @@ const resources = {
       contact: "LIÊN HỆ",
 
       // Services Dropdown
-      destinationWedding: "Cưới ngoài trời",
-      restaurantWedding: "Sảnh nhà hàng",
-      ancestorCeremony: "Gia tiên",
-      eventDecor: "Sự kiện",
+      destinationWedding: "Trang trí tiệc cưới ngoài trời",
+      restaurantWedding: "Trang trí sảnh cưới",
+      ancestorCeremony: "Trang trí lễ gia tiên",
+      eventDecor: "Trang trí sự kiện",
 
       // Hero
       wedding: "Tiệc cưới",
@@ -30,8 +30,8 @@ const resources = {
       ancestorDesc: "Thiết kế không gian lễ gia tiên trang trọng, ấm cúng với đầy đủ các vật phẩm truyền thống. Chúng tôi tư vấn và bố trí theo phong tục từng vùng miền, đảm bảo sự trang nghiêm và ý nghĩa cho nghi lễ quan trọng này.",
       outdoorDecor: "TRANG TRÍ NGOÀI TRỜI",
       outdoorDesc: "Tạo nên không gian tiệc cưới ngoài trời lãng mạn, hòa mình với thiên nhiên",
-      restaurantDecor: "TRANG TRÍ NHÀ HÀNG",
-      restaurantDesc: "Biến hóa sảnh tiệc nhà hàng thành không gian cưới lung linh với backdrop sân khấu, bàn tiệc, lối đi và hệ thống ánh sáng chuyên nghiệp. Đa dạng phong cách từ cổ điển đến hiện đại.",
+      restaurantDecor: "TRANG TRÍ SẢNH TIỆC CƯỚI",
+      restaurantDesc: "Biến đổi không gian sảnh cưới vốn có thành lễ đường của riêng bạn",
       eventDecorTitle: "TRANG TRÍ SỰ KIỆN",
       eventDecorDesc: "Cung cấp giải pháp trang trí toàn diện cho các sự kiện đặc biệt như lễ đính hôn, tiệc thôi nôi, sinh nhật. Thiết kế theo chủ đề riêng với đội ngũ thi công chuyên nghiệp, đúng tiến độ.",
       viewDetails: "XEM CHI TIẾT",
@@ -129,8 +129,8 @@ const resources = {
       ourFounders: "Người Sáng Lập",
       coFounderCreativeDirector: "Co-Founder & Creative Director",
       coFounderOperationsDirector: "Co-Founder & Operations Director",
-      founderDesc1: "Với tài năng thiết kế và khả năng sáng tạo không giới hạn, Ngọc Anh là người đứng sau những concept độc đáo và ấn tượng.",
-      founderDesc2: "Với kinh nghiệm quản lý và tổ chức sự kiện, Nhã Tịnh đảm bảo mọi dự án được thực hiện hoàn hảo từ A đến Z.",
+      founderDesc1: "Với tài năng thiết kế và khả năng sáng tạo không giới hạn, Nhã Tịnh là người đứng sau những concept độc đáo và ấn tượng.",
+      founderDesc2: "Với kinh nghiệm quản lý và tổ chức sự kiện, Ngọc Anh đảm bảo mọi dự án được thực hiện hoàn hảo từ A đến Z.",
       coreValues: "Giá Trị Cốt Lõi",
       dedicated: "Tận Tâm",
       dedicatedDesc: "Đặt trái tim vào từng chi tiết, mang đến sự hoàn hảo cho ngày trọng đại",
@@ -215,8 +215,9 @@ const resources = {
       contactForFreeConsult: "Liên hệ với chúng tôi ngay hôm nay để được tư vấn miễn phí",
 
       // Event Service
-      eventServiceTitle: "Dịch Vụ Trang Trí Sự Kiện",
-      eventServiceSubtitle: "Tổ chức và trang trí các sự kiện đặc biệt chuyên nghiệp",
+      eventServiceTitle: "TRANG TRÍ SỰ KIỆN",
+      eventServiceSubtitle: "Tổ chức và trang trí các sự kiện đặc biệt",
+      eventServiceTitle2: "Dịch Vụ Trang Trí Sự Kiện",
       birthday: "Sinh Nhật",
       birthdayDesc: "Trang trí tiệc sinh nhật ấn tượng, vui nhộn",
       conference: "Hội Nghị",
@@ -268,6 +269,7 @@ const resources = {
       vyKhangDesc: "Hoa xuân nở rộ với không gian tràn đầy sức sống và màu sắc. Tông màu hồng đào, vàng và xanh lá non kết hợp với hoa đào, hoa mai và hoa lan tạo nên bầu không khí tươi vui và rực rỡ.",
       trangViniDesc: "Lãng mạn mơ mộng với không gian tràn ngập hoa tươi và ánh sáng. Tông màu trắng, hồng pastel và xanh mint nhẹ nhàng kết hợp với voan lụa và fairy lights tạo nên bầu không khí lung linh như trong giấc mơ.",
       benangDesc: "Sự kiện đặc biệt với không gian trang trí chuyên nghiệp và ấn tượng. Thiết kế linh hoạt phù hợp với nhiều loại hình sự kiện từ hội nghị, tiệc tất niên đến các buổi gặp gỡ doanh nghiệp.",
+      ngocShawnDesc: "Tình yêu vĩnh cửu vượt biên giới với không gian kết hợp tinh tế giữa Á Đông và phương Tây. Tông màu trắng, hồng pastel và vàng gold nhẹ nhàng tạo nên bầu không khí lãng mạn và sang trọng cho đám cưới quốc tế.",
 
       // Ancestor Page Details
       ancestorAltarTitle: "Bàn Thờ Gia Tiên",
@@ -375,8 +377,8 @@ const resources = {
       ancestorDesc: "Design a solemn and warm ancestor ceremony space with complete traditional items. We consult and arrange according to regional customs, ensuring dignity and meaning for this important ritual.",
       outdoorDecor: "OUTDOOR DECORATION",
       outdoorDesc: "Create a romantic and elegant outdoor wedding space with backdrop systems, flower arches, walkways and impressive guest reception areas. Suitable for gardens, beaches or open spaces.",
-      restaurantDecor: "RESTAURANT DECORATION",
-      restaurantDesc: "Transform restaurant halls into sparkling wedding spaces with stage backdrops, banquet tables, walkways and professional lighting systems. Diverse styles from classic to modern.",
+      restaurantDecor: "WEDDING HALL DECORATION",
+      restaurantDesc: "Redefine the ballroom into your one-of-a-kind wedding aisle",
       eventDecorTitle: "EVENT DECORATION",
       eventDecorDesc: "Provide comprehensive decoration solutions for special events such as engagement ceremonies, baby showers, birthdays. Custom theme design with professional construction team, on schedule.",
       viewDetails: "VIEW DETAILS",
@@ -561,7 +563,8 @@ const resources = {
 
       // Event Service
       eventServiceTitle: "Event Decoration Service",
-      eventServiceSubtitle: "Organize and decorate special events professionally",
+      eventServiceTitle2: "Event Decoration Service",
+      eventServiceSubtitle: "Event Organization and Decoration",
       birthday: "Birthday",
       birthdayDesc: "Impressive and fun birthday party decoration",
       conference: "Conference",
@@ -613,6 +616,7 @@ const resources = {
       vyKhangDesc: "Spring blossom with vibrant and colorful space. Peach pink, yellow and light green tones combined with peach blossoms, apricot flowers and orchids create a joyful and brilliant atmosphere.",
       trangViniDesc: "Dreamy romance with space full of fresh flowers and lights. White, pink pastel and light mint green tones combined with tulle and fairy lights create a sparkling atmosphere like in a dream.",
       benangDesc: "Special event with professional and impressive decoration space. Flexible design suitable for various types of events from conferences, year-end parties to corporate gatherings.",
+      ngocShawnDesc: "Eternal love across borders with space that subtly combines East and West. White, pink pastel and light gold tones create a romantic and elegant atmosphere for an international wedding.",
 
       // Ancestor Page Details
       ancestorAltarTitle: "Ancestor Altar",

@@ -128,7 +128,7 @@ const DecorPortfolio = () => {
       title: 'DUY & MY ',
       author: 'Ant Wedding',
       descriptionKey: 'duyMy2Desc',
-      image: IMAGES.duyxmy2,
+      image: IMAGES.duyxmy2_1,
       likes: 20,
       endpoint: 'duyxmy2'
     },
@@ -304,7 +304,7 @@ const DecorPortfolio = () => {
       title: 'TRAN & TAI',
       author: 'Ant Wedding',
       descriptionKey: 'tranTai2Desc',
-      image: IMAGES.tranxtai2,
+      image: IMAGES.tranxtai2_4,
       likes: 16,
       endpoint: 'tranxtai2'
     },
@@ -315,7 +315,7 @@ const DecorPortfolio = () => {
       title: 'VIET & QUYNH',
       author: 'Ant Wedding',
       descriptionKey: 'vietQuynhDesc',
-      image: IMAGES.vietxquynh,
+      image: IMAGES.vietxquynh1,
       likes: 21,
       endpoint: 'vietxquynh'
     },
@@ -326,7 +326,7 @@ const DecorPortfolio = () => {
       title: 'VIET & QUYNH ',
       author: 'Ant Wedding',
       descriptionKey: 'vietQuynh2Desc',
-      image: IMAGES.vietxquynh2,
+      image: IMAGES.vietxquynh,
       likes: 17,
       endpoint: 'vietxquynh2'
     },
@@ -362,6 +362,17 @@ const DecorPortfolio = () => {
       image: IMAGES.eventxbenang,
       likes: 19,
       endpoint: 'benang'
+    },
+    {
+      id: 31,
+      date: { day: '15', month: 'TH2', year: '2022' },
+      categoryKey: 'weddingDecor',
+      title: 'NGOC & SHAWN',
+      author: 'Ant Wedding',
+      descriptionKey: 'ngocShawnDesc',
+      image: IMAGES.ngocxshawn,
+      likes: 24,
+      endpoint: 'ngocxshawn'
     }
   ];
 

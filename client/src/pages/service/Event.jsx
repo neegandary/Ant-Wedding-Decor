@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import { IMAGES } from '../../constants/image';
 
 export const Event = () => {
     const { t } = useTranslation();
+    const navigate = useNavigate();
 
     const features = [
         {
@@ -45,8 +47,8 @@ export const Event = () => {
     ];
 
     const portfolioImages = [
-        { src: IMAGES.benang1, title: 'Tiệc Sinh Nhật' },
-        { src: IMAGES.duyxyen2, title: 'Chụp Pre Wedding' },
+        { src: IMAGES.benang1, title: 'Tiệc Sinh Nhật', route: '/portfolio/benang' },
+        { src: IMAGES.duyxyen2, title: 'Chụp Pre Wedding', route: '/portfolio/duyxyen' },
     ];
 
     return (
@@ -57,7 +59,7 @@ export const Event = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
                 className="relative h-[500px] bg-cover bg-center"
-                style={{ backgroundImage: `url(${IMAGES.eventxbenang})` }}
+                style={{ backgroundImage: `url(${IMAGES.event1})` }}
             >
                 <div className="absolute inset-0 bg-black/40"></div>
                 <div className="relative h-full flex items-center justify-center">
@@ -68,10 +70,10 @@ export const Event = () => {
                         className="text-center text-white px-4"
                     >
                         <h1 className="text-5xl md:text-6xl font-bold mb-4">
-                            {t('eventDecor')}
+                            {t('eventServiceTitle')}
                         </h1>
                         <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-                            Tổ chức và trang trí các sự kiện đặc biệt
+                            {t('eventServiceSubtitle')}
                         </p>
                     </motion.div>
                 </div>
@@ -87,9 +89,9 @@ export const Event = () => {
                     className="max-w-4xl mx-auto text-center mb-16"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                        Dịch Vụ Trang Trí Sự Kiện
+                        {t('eventServiceTitle2')}
                     </h2>
-                    
+
                 </motion.div>
 
                 {/* Features Grid */}
@@ -133,6 +135,7 @@ export const Event = () => {
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6, delay: index * 0.1 }}
+                                onClick={() => navigate(image.route)}
                                 className="relative h-80 rounded-lg overflow-hidden group cursor-pointer"
                             >
                                 <img

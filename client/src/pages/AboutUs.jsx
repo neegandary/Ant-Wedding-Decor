@@ -124,9 +124,9 @@ const AboutUs = () => {
                 <img src={IMAGES.founder2} alt="Nhã Tịnh" className="w-full h-full object-cover object-top" />
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-2">Nhã Tịnh</h3>
-              <p className="text-[#cbb9a4] font-semibold mb-3">{t('coFounderOperationsDirector')}</p>
+              <p className="text-[#cbb9a4] font-semibold mb-3">{t('coFounderCreativeDirector')}</p>
               <p className="text-gray-600">
-                {t('founderDesc2')}
+                {t('founderDesc1')}
               </p>
             </div>
 
@@ -135,9 +135,9 @@ const AboutUs = () => {
                 <img src={IMAGES.founder1} alt="Ngọc Anh" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-2">Ngọc Anh</h3>
-              <p className="text-[#cbb9a4] font-semibold mb-3">{t('coFounderCreativeDirector')}</p>
+              <p className="text-[#cbb9a4] font-semibold mb-3">{t('coFounderOperationsDirector')}</p>
               <p className="text-gray-600">
-                {t('founderDesc1')}
+                {t('founderDesc2')}
               </p>
             </div>
           </div>
@@ -200,7 +200,9 @@ const AboutUs = () => {
                 <img
                   src={image}
                   alt={`Team ${index + 1}`}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ${
+                    image === IMAGES.antweddingteam15 ? '-rotate-90' : ''
+                  }`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </motion.div>

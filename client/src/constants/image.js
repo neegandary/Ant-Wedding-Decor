@@ -28,6 +28,7 @@ export const IMAGES = {
     duyxmy: `${IMAGE_BASE_URL}/image/duyxmy.webp`,
     trangxvini: `${IMAGE_BASE_URL}/image/trangxvini.webp`,
     eventxbenang: `${IMAGE_BASE_URL}/image/eventxbenang.webp`,
+    event1: `${IMAGE_BASE_URL}/image/event1.webp`,
     phuongxhien: `${IMAGE_BASE_URL}/image/phuongxhien.webp`,
     phuongxhien2: `${IMAGE_BASE_URL}/image/phuongxhien2_1.webp`,
     phuongxhien3: `${IMAGE_BASE_URL}/image/phuongxhien3_1.webp`,
@@ -48,6 +49,7 @@ export const IMAGES = {
     vietxquynh2: `${IMAGE_BASE_URL}/image/vietxquynh2_1.webp`,
     vyxkhang: `${IMAGE_BASE_URL}/image/vyxkhang1.webp`,
     trangxvini: `${IMAGE_BASE_URL}/image/trangxvini1.webp`,
+    ngocxshawn: `${IMAGE_BASE_URL}/image/ngocxshawn1.webp`,
 
     // Nathan x Tracy gallery
     nathanxtracy1: `${IMAGE_BASE_URL}/image/nathanxtracy1.webp?t=${Date.now()}`,
@@ -438,6 +440,13 @@ export const IMAGES = {
     thongxhuyen10: `${IMAGE_BASE_URL}/image/thongxhuyen10.webp?t=${Date.now()}`,
     thongxhuyen11: `${IMAGE_BASE_URL}/image/thongxhuyen11.webp?t=${Date.now()}`,
     thongxhuyen12: `${IMAGE_BASE_URL}/image/thongxhuyen12.webp?t=${Date.now()}`,
+    thongxhuyen13: `${IMAGE_BASE_URL}/image/thongxhuyen13.webp?t=${Date.now()}`,
+    thongxhuyen14: `${IMAGE_BASE_URL}/image/thongxhuyen14.webp?t=${Date.now()}`,
+    thongxhuyen15: `${IMAGE_BASE_URL}/image/thongxhuyen15.webp?t=${Date.now()}`,
+    thongxhuyen16: `${IMAGE_BASE_URL}/image/thongxhuyen16.webp?t=${Date.now()}`,
+    thongxhuyen17: `${IMAGE_BASE_URL}/image/thongxhuyen17.webp?t=${Date.now()}`,
+    thongxhuyen18: `${IMAGE_BASE_URL}/image/thongxhuyen18.webp?t=${Date.now()}`,
+    thongxhuyen19: `${IMAGE_BASE_URL}/image/thongxhuyen19.webp?t=${Date.now()}`,
 
     // Tram x Max gallery
     tramxmax1: `${IMAGE_BASE_URL}/image/tramxmax1.webp?t=${Date.now()}`,
@@ -469,16 +478,14 @@ export const IMAGES = {
     vietxquynh6: `${IMAGE_BASE_URL}/image/vietxquynh6.webp?t=${Date.now()}`,
     vietxquynh7: `${IMAGE_BASE_URL}/image/vietxquynh7.webp?t=${Date.now()}`,
     vietxquynh8: `${IMAGE_BASE_URL}/image/vietxquynh8.webp?t=${Date.now()}`,
-
-    // Viet  x Quynh gallery
-    vietxquynh1: `${IMAGE_BASE_URL}/image/vietxquynh1.webp?t=${Date.now()}`,
-    vietxquynh2: `${IMAGE_BASE_URL}/image/vietxquynh2.webp?t=${Date.now()}`,
-    vietxquynh3: `${IMAGE_BASE_URL}/image/vietxquynh3.webp?t=${Date.now()}`,
-    vietxquynh4: `${IMAGE_BASE_URL}/image/vietxquynh4.webp?t=${Date.now()}`,
-    vietxquynh5: `${IMAGE_BASE_URL}/image/vietxquynh5.webp?t=${Date.now()}`,
-    vietxquynh6: `${IMAGE_BASE_URL}/image/vietxquynh6.webp?t=${Date.now()}`,
-    vietxquynh7: `${IMAGE_BASE_URL}/image/vietxquynh7.webp?t=${Date.now()}`,
-    vietxquynh8: `${IMAGE_BASE_URL}/image/vietxquynh8.webp?t=${Date.now()}`,
+    vietxquynh9: `${IMAGE_BASE_URL}/image/vietxquynh9.webp?t=${Date.now()}`,
+    vietxquynh10: `${IMAGE_BASE_URL}/image/vietxquynh10.webp?t=${Date.now()}`,
+    vietxquynh11: `${IMAGE_BASE_URL}/image/vietxquynh11.webp?t=${Date.now()}`,
+    vietxquynh12: `${IMAGE_BASE_URL}/image/vietxquynh12.webp?t=${Date.now()}`,
+    vietxquynh13: `${IMAGE_BASE_URL}/image/vietxquynh13.webp?t=${Date.now()}`,
+    vietxquynh14: `${IMAGE_BASE_URL}/image/vietxquynh14.webp?t=${Date.now()}`,
+    vietxquynh15: `${IMAGE_BASE_URL}/image/vietxquynh15.webp?t=${Date.now()}`,
+    vietxquynh16: `${IMAGE_BASE_URL}/image/vietxquynh16.webp?t=${Date.now()}`,
 
     // Viet x Quynh 2_ gallery
     vietxquynh2_1: `${IMAGE_BASE_URL}/image/vietxquynh2_1.webp?t=${Date.now()}`,
@@ -557,6 +564,24 @@ export const IMAGES = {
     trangxvini19: `${IMAGE_BASE_URL}/image/trangxvini19.webp?t=${Date.now()}`,
     trangxvini20: `${IMAGE_BASE_URL}/image/trangxvini20.webp?t=${Date.now()}`,
     trangxvini21: `${IMAGE_BASE_URL}/image/trangxvini21.webp?t=${Date.now()}`,
+
+    // Ngoc x Shawn gallery
+    ngocxshawn1: `${IMAGE_BASE_URL}/image/ngocxshawn1.webp?t=${Date.now()}`,
+    ngocxshawn2: `${IMAGE_BASE_URL}/image/ngocxshawn2.webp?t=${Date.now()}`,
+    ngocxshawn3: `${IMAGE_BASE_URL}/image/ngocxshawn3.webp?t=${Date.now()}`,
+    ngocxshawn4: `${IMAGE_BASE_URL}/image/ngocxshawn4.webp?t=${Date.now()}`,
+    ngocxshawn5: `${IMAGE_BASE_URL}/image/ngocxshawn5.webp?t=${Date.now()}`,
+    ngocxshawn6: `${IMAGE_BASE_URL}/image/ngocxshawn6.webp?t=${Date.now()}`,
+    ngocxshawn7: `${IMAGE_BASE_URL}/image/ngocxshawn7.webp?t=${Date.now()}`,
+    ngocxshawn8: `${IMAGE_BASE_URL}/image/ngocxshawn8.webp?t=${Date.now()}`,
+    ngocxshawn9: `${IMAGE_BASE_URL}/image/ngocxshawn9.webp?t=${Date.now()}`,
+    ngocxshawn10: `${IMAGE_BASE_URL}/image/ngocxshawn10.webp?t=${Date.now()}`,
+    ngocxshawn11: `${IMAGE_BASE_URL}/image/ngocxshawn11.webp?t=${Date.now()}`,
+    ngocxshawn12: `${IMAGE_BASE_URL}/image/ngocxshawn12.webp?t=${Date.now()}`,
+    ngocxshawn13: `${IMAGE_BASE_URL}/image/ngocxshawn13.webp?t=${Date.now()}`,
+    ngocxshawn14: `${IMAGE_BASE_URL}/image/ngocxshawn14.webp?t=${Date.now()}`,
+    ngocxshawn15: `${IMAGE_BASE_URL}/image/ngocxshawn15.webp?t=${Date.now()}`,
+    ngocxshawn16: `${IMAGE_BASE_URL}/image/ngocxshawn16.webp?t=${Date.now()}`,
 
     // Ant Team gallery
     antweddingteam2: `${IMAGE_BASE_URL}/image/antweddingteam2.webp?t=${Date.now()}`,

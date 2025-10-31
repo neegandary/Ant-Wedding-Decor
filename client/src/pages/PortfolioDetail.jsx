@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, Grid3x3, X, ZoomIn, Maximize2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import StickyBox from 'react-sticky-box';
 import { IMAGES } from '../constants/image';
 
 const PortfolioDetail = () => {
@@ -11,7 +12,6 @@ const PortfolioDetail = () => {
   const navigate = useNavigate();
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
   // Scroll to top when endpoint changes
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -49,7 +49,8 @@ const PortfolioDetail = () => {
     'vietxquynh2',
     'vyxkhang',
     'trangxvini',
-    'benang'
+    'benang',
+    'ngocxshawn'
   ];
 
   const currentIndex = portfolioList.indexOf(endpoint);
@@ -738,14 +739,6 @@ Tông màu chủ đạo là hồng blush và trắng kem, tạo nên bầu khôn
         { src: IMAGES.anxtoan5, orientation: 'portrait', size: 'small' },
         { src: IMAGES.anxtoan6, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.anxtoan7, orientation: 'portrait', size: 'large' },
-        { src: IMAGES.anxtoan8, orientation: 'landscape', size: 'medium' },
-        { src: IMAGES.anxtoan9, orientation: 'portrait', size: 'medium' },
-        { src: IMAGES.anxtoan10, orientation: 'landscape', size: 'medium' },
-        { src: IMAGES.anxtoan11, orientation: 'portrait', size: 'small' },
-        { src: IMAGES.anxtoan12, orientation: 'landscape', size: 'large' },
-        { src: IMAGES.anxtoan13, orientation: 'portrait', size: 'medium' },
-        { src: IMAGES.anxtoan14, orientation: 'landscape', size: 'medium' },
-        { src: IMAGES.anxtoan15, orientation: 'portrait', size: 'large' }
       ]
     },
     hanxtung: {
@@ -825,7 +818,7 @@ Tông màu chủ đạo là xanh lá, cam và vàng, tạo nên bầu không kh�
       ]
     },
     maimyxtoanem: {
-      title: 'RUSTIC CHARM',
+      title: "IT'S YOU",
       subtitle: 'Mai My & Toan Em - Quyến Rũ Mộc Mạc',
       category: 'TRANG TRÍ TIỆC CƯỚI',
       headerImage: IMAGES.maimyxtoanem,
@@ -955,7 +948,6 @@ Tông màu chủ đạo là trắng, be và xanh nhạt, tạo nên bầu không
       },
       tags: ['Tiệc Cưới', 'Minimalist Wedding', 'Elegant', 'Tông Trắng Be', 'Clean', 'Tối Giản'],
       images: [
-
         { src: IMAGES.thongxhuyen1, orientation: 'portrait', size: 'medium' },
         { src: IMAGES.thongxhuyen2, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.thongxhuyen3, orientation: 'portrait', size: 'medium' },
@@ -967,7 +959,14 @@ Tông màu chủ đạo là trắng, be và xanh nhạt, tạo nên bầu không
         { src: IMAGES.thongxhuyen9, orientation: 'portrait', size: 'medium' },
         { src: IMAGES.thongxhuyen10, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.thongxhuyen11, orientation: 'portrait', size: 'small' },
-        { src: IMAGES.thongxhuyen12, orientation: 'landscape', size: 'large' }
+        { src: IMAGES.thongxhuyen12, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.thongxhuyen13, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.thongxhuyen14, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.thongxhuyen15, orientation: 'portrait', size: 'large' },
+        { src: IMAGES.thongxhuyen16, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.thongxhuyen17, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.thongxhuyen18, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.thongxhuyen19, orientation: 'portrait', size: 'medium' }
       ]
     },
     tramxmax: {
@@ -1048,7 +1047,7 @@ Tông màu chủ đạo là đỏ truyền thống và vàng gold, tạo nên b�
       title: 'SERENDIPITY',
       subtitle: 'Viet & Quynh - Cổ Điển Sang Trọng',
       category: 'TRANG TRÍ TIỆC CƯỚI',
-      headerImage: IMAGES.vietxquynh,
+      headerImage: IMAGES.vietxquynh1,
       description: `Lễ cưới của Viet & Quynh là đỉnh cao của sự sang trọng và cổ điển. Không gian được thiết kế với concept "Classic Elegance" - cổ điển sang trọng, nơi mỗi chi tiết đều toát lên vẻ đẹp quý phái và đẳng cấp.
 
 Tông màu chủ đạo là trắng ngà, vàng gold và xanh emerald, tạo nên bầu không khí lộng lẫy và tinh tế. Hoa hồng cao cấp, pha lê, vải lụa và các chi tiết trang trí tinh xảo được kết hợp khéo léo, tạo nên những backdrop và centerpiece đầy ấn tượng và xa hoa.
@@ -1072,7 +1071,15 @@ Hệ thống ánh sáng đèn chùm pha lê kết hợp với nến trang trí t
         { src: IMAGES.vietxquynh5, orientation: 'portrait', size: 'small' },
         { src: IMAGES.vietxquynh6, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.vietxquynh7, orientation: 'portrait', size: 'large' },
-        { src: IMAGES.vietxquynh8, orientation: 'landscape', size: 'large' }
+        { src: IMAGES.vietxquynh8, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.vietxquynh9, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.vietxquynh10, orientation: 'landscape', size: 'small' },
+        { src: IMAGES.vietxquynh11, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.vietxquynh12, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.vietxquynh13, orientation: 'portrait', size: 'large' },
+        { src: IMAGES.vietxquynh14, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.vietxquynh15, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.vietxquynh16, orientation: 'landscape', size: 'large' }
       ]
     },
     vietxquynh2: {
@@ -1216,6 +1223,45 @@ Hệ thống ánh sáng chuyên nghiệp kết hợp với màn hình LED tạo 
         { src: IMAGES.benang8, orientation: 'landscape', size: 'medium' },
         { src: IMAGES.benang9, orientation: 'portrait', size: 'large' }
       ]
+    },
+    ngocxshawn: {
+      title: 'ETERNAL LOVE',
+      subtitle: 'Ngoc & Shawn - Tình Yêu Vĩnh Cửu',
+      category: 'TRANG TRÍ TIỆC CƯỚI',
+      headerImage: IMAGES.ngocxshawn1,
+      description: `Lễ cưới của Ngoc & Shawn là câu chuyện tình yêu vượt biên giới, nơi hai nền văn hóa hòa quyện trong một không gian tràn đầy cảm xúc. Không gian được thiết kế với concept "Eternal Love" - tình yêu vĩnh cửu, kết hợp tinh tế giữa phong cách Á Đông và phương Tây.
+
+Tông màu chủ đạo là trắng tinh khôi, hồng pastel và vàng gold nhẹ nhàng, tạo nên bầu không khí lãng mạn và sang trọng. Hoa hồng trắng, hoa lan và các loại hoa cao cấp được sắp xếp tinh tế, kết hợp với vải lụa, pha lê và ánh nến tạo nên không gian lung linh và đầy cảm xúc.
+
+Từng chi tiết trong tiệc cưới đều được chăm chút kỹ lưỡng, từ backdrop chính đến centerpiece trên bàn tiệc, tất cả đều mang phong cách elegant và tinh tế. Đây là một đám cưới đích thực kết nối hai trái tim, hai gia đình và hai nền văn hóa trong tình yêu và hạnh phúc.`,
+      details: {
+        concept: 'Eternal Love - Cross-Cultural Wedding',
+        address: 'Nha Trang',
+        photographer: 'Ant Wedding Studio'
+      },
+      contact: {
+        hotline: '079 467 2928',
+        email: 'antwedding79@gmail.com'
+      },
+      tags: ['Tiệc Cưới', 'International Wedding', 'Elegant', 'Tông Trắng Hồng', 'Romantic', 'Cross-Cultural'],
+      images: [
+        { src: IMAGES.ngocxshawn1, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.ngocxshawn2, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.ngocxshawn3, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.ngocxshawn4, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.ngocxshawn5, orientation: 'landscape', size: 'small' },
+        { src: IMAGES.ngocxshawn6, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.ngocxshawn7, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.ngocxshawn8, orientation: 'portrait', size: 'large' },
+        { src: IMAGES.ngocxshawn9, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.ngocxshawn10, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.ngocxshawn11, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.ngocxshawn12, orientation: 'portrait', size: 'small' },
+        { src: IMAGES.ngocxshawn13, orientation: 'landscape', size: 'large' },
+        { src: IMAGES.ngocxshawn14, orientation: 'portrait', size: 'medium' },
+        { src: IMAGES.ngocxshawn15, orientation: 'landscape', size: 'medium' },
+        { src: IMAGES.ngocxshawn16, orientation: 'portrait', size: 'large' }
+      ]
     }
   };
 
@@ -1238,6 +1284,8 @@ Hệ thống ánh sáng chuyên nghiệp kết hợp với màn hình LED tạo 
     setCurrentImageIndex((prev) => (prev < portfolio.images.length - 1 ? prev + 1 : 0));
   };
 
+
+
   return (
     <div className="bg-gray-50 min-h-screen">
       {/* Hero Header with Background Image */}
@@ -1258,62 +1306,68 @@ Hệ thống ánh sáng chuyên nghiệp kết hợp với màn hình LED tạo 
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* Left Column - Description & Info */}
-          <div className="lg:col-span-1">
-            <div className="bg-white rounded-lg shadow-md p-8 sticky top-8">
-              {/* Title */}
-              <h2 className="text-3xl font-bold text-gray-800 mb-2">{portfolio.title}</h2>
-              <p className="text-sm text-gray-500 mb-6">{portfolio.subtitle}</p>
+        <div className="flex flex-col lg:flex-row gap-12">
+          {/* Left Column - Description & Info (Sticky) */}
+          <div className="lg:w-1/3 flex-shrink-0">
+            <StickyBox 
+              offsetTop={32} 
+              offsetBottom={32}
+              style={{ zIndex: 10 }}
+            >
+              <div className="bg-white rounded-lg shadow-md p-8">
+                {/* Title */}
+                <h2 className="text-3xl font-bold text-gray-800 mb-2">{portfolio.title}</h2>
+                <p className="text-sm text-gray-500 mb-6">{portfolio.subtitle}</p>
 
-              {/* Description */}
-              <div className="text-gray-700 text-sm leading-relaxed mb-8 whitespace-pre-line">
-                {portfolio.description}
-              </div>
+                {/* Description */}
+                <div className="text-gray-700 text-sm leading-relaxed mb-8 whitespace-pre-line">
+                  {portfolio.description}
+                </div>
 
-              {/* Details */}
-              <div className="border-t border-gray-200 pt-6 mb-6">
-                <p className="text-sm mb-2">
-                  <span className="font-semibold">{t('concept')}</span> {portfolio.details.concept}
-                </p>
-                <p className="text-sm mb-2">
-                  <span className="font-semibold">{t('weddingAddress')}</span> {portfolio.details.address}
-                </p>
-                <p className="text-sm">
-                  <span className="font-semibold">{t('photographer')}</span> {portfolio.details.photographer}
-                </p>
-              </div>
+                {/* Details */}
+                <div className="border-t border-gray-200 pt-6 mb-6">
+                  <p className="text-sm mb-2">
+                    <span className="font-semibold">{t('concept')}</span> {portfolio.details.concept}
+                  </p>
+                  <p className="text-sm mb-2">
+                    <span className="font-semibold">{t('weddingAddress')}</span> {portfolio.details.address}
+                  </p>
+                  <p className="text-sm">
+                    <span className="font-semibold">{t('photographer')}</span> {portfolio.details.photographer}
+                  </p>
+                </div>
 
-              {/* Contact Info */}
-              <div className="border-t border-gray-200 pt-6 mb-6">
-                <h3 className="font-bold text-gray-800 mb-3">ANT WEDDING - DECOR & MORE</h3>
-                <p className="text-sm mb-2">
-                  <span className="font-semibold">Hotline:</span> {portfolio.contact.hotline}
-                </p>
-                <p className="text-sm">
-                  <span className="font-semibold">Email:</span> {portfolio.contact.email}
-                </p>
-              </div>
+                {/* Contact Info */}
+                <div className="border-t border-gray-200 pt-6 mb-6">
+                  <h3 className="font-bold text-gray-800 mb-3">ANT WEDDING - DECOR & MORE</h3>
+                  <p className="text-sm mb-2">
+                    <span className="font-semibold">Hotline:</span> {portfolio.contact.hotline}
+                  </p>
+                  <p className="text-sm">
+                    <span className="font-semibold">Email:</span> {portfolio.contact.email}
+                  </p>
+                </div>
 
-              {/* Tags */}
-              <div className="border-t border-gray-200 pt-6">
-                <h4 className="font-semibold text-gray-800 mb-3">{t('tags')}</h4>
-                <div className="flex flex-wrap gap-2">
-                  {portfolio.tags.map((tag, index) => (
-                    <span
-                      key={index}
-                      className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full hover:bg-orange-100 hover:text-orange-600 transition-colors cursor-pointer"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                {/* Tags */}
+                <div className="border-t border-gray-200 pt-6">
+                  <h4 className="font-semibold text-gray-800 mb-3">{t('tags')}</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {portfolio.tags.map((tag, index) => (
+                      <span
+                        key={index}
+                        className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full hover:bg-orange-100 hover:text-orange-600 transition-colors cursor-pointer"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
+            </StickyBox>
           </div>
 
-          {/* Right Column - Masonry Gallery Layout */}
-          <div className="lg:col-span-2">
+          {/* Right Column - Masonry Gallery Layout (Scrollable) */}
+          <div className="lg:w-2/3 flex-grow">
             <div className="columns-1 md:columns-2 gap-4">
               {portfolio.images.map((image, index) => (
                 <div

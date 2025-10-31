@@ -72,9 +72,9 @@ export const Restaurant = () => {
           transition={{ duration: 0.8 }}
           className="relative z-10 text-center"
         >
-          <h1 className="text-5xl font-bold mb-4">NHÀ HÀNG TIỆC CƯỚI</h1>
+          <h1 className="text-5xl font-bold mb-4">{t('restaurantDecor')}</h1>
           <p className="text-lg max-w-2xl mx-auto ">
-            Biến đổi không gian sảnh cưới vốn có thành lễ đường riêng của bạn
+            {t('restaurantDesc')}
           </p>
         </motion.div>
       </section>

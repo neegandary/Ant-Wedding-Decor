@@ -26,7 +26,7 @@ export const Navbar = () => {
                         </NavLink>
 
                         {/* Menu con (card-style dropdown) */}
-                        <ul className="absolute left-0 top-10 mt-0 min-w-[250px] rounded-md bg-white/70 backdrop-blur-sm shadow-md py-2 opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto group-focus-within:opacity-100 group-focus-within:visible group-focus-within:pointer-events-auto transition-all duration-150 z-50">
+                        <ul className="absolute left-0 top-10 mt-0 min-w-[260px] rounded-md bg-white/70 backdrop-blur-sm shadow-md py-2 opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto group-focus-within:opacity-100 group-focus-within:visible group-focus-within:pointer-events-auto transition-all duration-150 z-50">
                             <li className="flex text-start">
                                 <NavLink
                                     to="/services/destination"
