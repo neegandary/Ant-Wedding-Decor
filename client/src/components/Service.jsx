@@ -38,7 +38,7 @@ const Service = () => {
             title: t('restaurantDecor'),
             img: `${IMAGES.vanxtuc}`,
             desc: t('restaurantDesc'),
-            link: '/services/restaurant'
+            link: '/services/restaurant-wedding'
         },
         {
             title: t('eventDecorTitle'),
