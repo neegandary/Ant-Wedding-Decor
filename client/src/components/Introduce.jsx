@@ -55,38 +55,35 @@ const Introduce = () => {
                         animate={isInView ? "show" : "hidden"}
                         transition={{ delay: 0.3 }}
                     >
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-6 sm:gap-y-0 items-start">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-start h-full mt-20">
                             {/* Left stack */}
-                            <div className="space-y-0">
+                            <div className="flex flex-col gap-4 h-full">
                                 <motion.img
                                     src={IMAGES.intro1}
                                     alt="intro 1"
-                                    className="w-full h-40 object-cover rounded-lg shadow-md mt-5 cursor-pointer"
-                                    whileHover={{ scale: 1.1 }}
-                                    whileTap={{ scale: 0.8 }}
-
+                                    className="w-full h-48 object-cover rounded-xl shadow-lg cursor-pointer overflow-hidden"
+                                    whileHover={{ scale: 1.05 }}
+                                    transition={{ duration: 0.3 }}
                                 />
                                 <motion.img
                                     src={IMAGES.intro2}
                                     alt="intro 2"
-                                    className="w-full h-80 object-cover rounded-lg shadow-md mt-5 cursor-pointer"
-                                    whileHover={{ scale: 1.1 }}
-                                    whileTap={{ scale: 0.8 }}
+                                    className="w-full flex-1 min-h-[300px] object-cover rounded-xl shadow-lg cursor-pointer overflow-hidden"
+                                    whileHover={{ scale: 1.05 }}
+                                    transition={{ duration: 0.3 }}
                                 />
                             </div>
 
                             {/* Right stack */}
-                            <div className="space-y-6 self-start">
-                                <div className="bg-[#68866c] text-white rounded-lg p-6 shadow-lg min-h-[200px] flex flex-col justify-between">
+                            <div className="flex flex-col gap-4 h-full">
+                                <div className="bg-gradient-to-br from-[#68866c] to-[#5a7360] text-white rounded-xl p-6 shadow-lg flex flex-col justify-between min-h-[240px]">
                                     <p className="mb-4 text-justify font-light text-sm leading-relaxed">
                                         {t('introQuote')}
                                     </p>
-                                    <div className="flex items-center gap-3">
-                                        <div>
-                                            <div className="font-semibold text-sm">{t('founders')}</div>
-                                            <div className="text-xs text-white/80">
-                                                {t('founderTitle')}
-                                            </div>
+                                    <div className="border-t border-white/20 pt-4">
+                                        <div className="font-semibold text-base">{t('founders')}</div>
+                                        <div className="text-xs text-white/80 mt-1">
+                                            {t('founderTitle')}
                                         </div>
                                     </div>
                                 </div>
@@ -94,9 +91,9 @@ const Introduce = () => {
                                 <motion.img
                                     src={IMAGES.intro3}
                                     alt="intro 3"
-                                    className="w-full h-36 object-cover rounded-lg shadow-md cursor-pointer"
-                                    whileHover={{ scale: 1.1 }}
-                                    whileTap={{ scale: 0.8 }}
+                                    className="w-full flex-1 min-h-[200px] object-cover rounded-xl shadow-lg cursor-pointer overflow-hidden"
+                                    whileHover={{ scale: 1.05 }}
+                                    transition={{ duration: 0.3 }}
                                 />
                             </div>
                         </div>
