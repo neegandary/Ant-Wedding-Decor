@@ -1,12 +1,14 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { useMemo, useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { CountUpNumber } from "./CountUpNumber";
 import { IMAGES } from "../constants/image";
 import { useTranslation } from 'react-i18next';
 
 const Service = () => {
     const { t } = useTranslation();
+    const navigate = useNavigate();
     const [visibleImages, setVisibleImages] = useState([]);
 
     // Load ảnh tuần tự, mỗi ảnh cách nhau 150ms
@@ -115,13 +117,13 @@ const Service = () => {
                         {/* Left Side - Stats */}
                         <div className="w-full md:w-1/2 flex flex-row items-center justify-center px-4 md:px-8 py-8 md:py-0">
                             <div className="text-center flex-1">
-                                <div className="text-4xl md:text-5xl lg:text-7xl font-bold mb-2"><CountUpNumber target={15} /></div>
+                                <div className="text-4xl md:text-5xl lg:text-7xl font-bold mb-2"><CountUpNumber target={10} /></div>
                                 <div className="text-xs md:text-sm uppercase tracking-wide">{t('yearsExperience')}</div>
                             </div>
                             <div className="h-20 md:h-32 w-px bg-white/50 mx-4 md:mx-8"></div>
                             <div className="text-center flex-1">
-                                <div className="text-4xl md:text-5xl lg:text-7xl font-bold mb-2"><CountUpNumber target={8000} /></div>
-                                <div className="text-xs md:text-sm uppercase tracking-wide">{t('couplesServed')}</div>
+                                <div className="text-4xl md:text-5xl lg:text-7xl font-bold mb-2"><CountUpNumber target={300} /></div>
+                                <div className="text-xs md:text-sm uppercase tracking-wide whitespace-pre">{t('couplesServed')}</div>
                             </div>
                         </div>
 
@@ -138,7 +140,10 @@ const Service = () => {
                             <p className="text-xs md:text-sm leading-relaxed mb-6 text-justify font-light">
                                 {t('bannerDesc')}
                             </p>
-                            <button className="bg-white text-gray-800 px-4 md:px-6 py-2 rounded text-xs md:text-sm font-bold hover:bg-gray-100 transition">
+                            <button
+                                onClick={() => navigate('/portfolio')}
+                                className="bg-white text-gray-800 px-4 md:px-6 py-2 rounded text-xs md:text-sm font-bold hover:bg-gray-100 transition cursor-pointer"
+                            >
                                 {t('designPackages')}
                             </button>
                         </motion.div>
@@ -161,7 +166,7 @@ const Service = () => {
                         <div className="h-px bg-gradient-to-r from-transparent via-[#cbb9a4] to-transparent w-76"></div>
                     </div>
                     <motion.p
-                        className="text-center text-gray-600 max-w-3xl mx-auto mb-12 whitespace-nowrap font-light"
+                        className="text-center text-gray-600 max-w-3xl mx-auto mb-12 whitespace-pre font-light"
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
@@ -181,7 +186,6 @@ const Service = () => {
                         >
                             <div className="text-6xl font-black text-emerald-700/20 mb-2">01.</div>
                             <h3 className="text-xl font-black text-gray-800 mb-2">{t('trustedBrand')}</h3>
-                            <p className="text-sm font-bold text-gray-700 mb-3">{t('experiencedTeam')}</p>
                             <p className="text-sm text-gray-600 leading-relaxed font-light">
                                 {t('trustedBrandDesc')}
                             </p>

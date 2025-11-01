@@ -3,10 +3,12 @@ export const IMAGE_BASE_URL = 'https://pub-42a385b873274532b0f776d49ed5efc4.r2.d
 export const IMAGES = {
     // General Images
     background: `${IMAGE_BASE_URL}/image/background.jpg`,
-    hero1: `${IMAGE_BASE_URL}/image/hero1.jpg`,
-    hero2: `${IMAGE_BASE_URL}/image/hero2.jpg`,
-    hero6: `${IMAGE_BASE_URL}/image/hero6.jpg`,
-    hero7: `${IMAGE_BASE_URL}/image/hero7.jpg`,
+    hero1: `${IMAGE_BASE_URL}/image/hero1.webp`,
+    hero2: `${IMAGE_BASE_URL}/image/hero2.webp`,
+    hero3: `${IMAGE_BASE_URL}/image/hero3.webp`,
+    hero4: `${IMAGE_BASE_URL}/image/hero4.webp`,
+    hero5: `${IMAGE_BASE_URL}/image/hero5.webp`,
+    hero6: `${IMAGE_BASE_URL}/image/hero6.webp`,
     intro1: `${IMAGE_BASE_URL}/image/intro1.jpg`,
     intro2: `${IMAGE_BASE_URL}/image/intro2.jpg`,
     intro3: `${IMAGE_BASE_URL}/image/intro3.jpg`,
@@ -181,6 +183,7 @@ export const IMAGES = {
     mayxmat27: `${IMAGE_BASE_URL}/image/mayxmat27.webp?t=${Date.now()}`,
     mayxmat28: `${IMAGE_BASE_URL}/image/mayxmat28.webp?t=${Date.now()}`,
     mayxmat29: `${IMAGE_BASE_URL}/image/mayxmat29.webp?t=${Date.now()}`,
+    mayxmat30: `${IMAGE_BASE_URL}/image/mayxmat30.webp?t=${Date.now()}`,
 
     // Hieu x Brian gallery
     hieuxbrian1: `${IMAGE_BASE_URL}/image/hieuxbrian1.webp?t=${Date.now()}`,
@@ -522,6 +525,7 @@ export const IMAGES = {
     vietxquynh2_8: `${IMAGE_BASE_URL}/image/vietxquynh2_8.webp?t=${Date.now()}`,
     vietxquynh2_9: `${IMAGE_BASE_URL}/image/vietxquynh2_9.webp?t=${Date.now()}`,
     vietxquynh2_10: `${IMAGE_BASE_URL}/image/vietxquynh2_10.webp?t=${Date.now()}`,
+    vietxquynh2_11: `${IMAGE_BASE_URL}/image/vietxquynh2_11.webp?t=${Date.now()}`,
 
     // Tran x Tai 2_ Team gallery
     tranxtai2_1: `${IMAGE_BASE_URL}/image/tranxtai2_1.webp?t=${Date.now()}`,

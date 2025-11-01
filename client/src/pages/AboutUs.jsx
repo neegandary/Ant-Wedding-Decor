@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { Heart, Lightbulb, HeartHandshake, Palette } from 'lucide-react';
 import { IMAGES } from '../constants/image';
 import { CountUpNumber } from '../components/CountUpNumber';
 
@@ -31,29 +32,17 @@ const AboutUs = () => {
 
   const values = [
     {
-      icon: (
-        <svg className="w-12 h-12 text-[#cbb9a4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-        </svg>
-      ),
+      icon: <Heart className="w-12 h-12 text-[#cbb9a4]" />,
       title: t('dedicated'),
       description: t('dedicatedDesc')
     },
     {
-      icon: (
-        <svg className="w-12 h-12 text-[#cbb9a4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-        </svg>
-      ),
+      icon: <Palette className="w-12 h-12 text-[#cbb9a4]" />,
       title: t('creative'),
       description: t('creativeDesc')
     },
     {
-      icon: (
-        <svg className="w-12 h-12 text-[#cbb9a4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-        </svg>
-      ),
+      icon: <HeartHandshake className="w-12 h-12 text-[#cbb9a4]" />,
       title: t('professional'),
       description: t('professionalDesc')
     }
@@ -200,9 +189,8 @@ const AboutUs = () => {
                 <img
                   src={image}
                   alt={`Team ${index + 1}`}
-                  className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ${
-                    image === IMAGES.antweddingteam15 ? '-rotate-90' : ''
-                  }`}
+                  className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ${image === IMAGES.antweddingteam15 ? '-rotate-90' : ''
+                    }`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </motion.div>
@@ -220,11 +208,11 @@ const AboutUs = () => {
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
             <div>
-              <div className="text-4xl md:text-5xl font-bold mb-2"><CountUpNumber target={500} suffix='+' /></div>
+              <div className="text-4xl md:text-5xl font-bold mb-2"><CountUpNumber target={300} suffix='+' /></div>
               <div className="text-lg">{t('projectsCompleted')}</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold mb-2"><CountUpNumber target={15} suffix='+' /></div>
+              <div className="text-4xl md:text-5xl font-bold mb-2"><CountUpNumber target={10} suffix='+' /></div>
               <div className="text-lg">{t('yearsOfExperience')}</div>
             </div>
             <div>

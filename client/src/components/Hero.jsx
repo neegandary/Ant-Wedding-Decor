@@ -10,8 +10,10 @@ const Hero = () => {
     const images = [
         IMAGES.hero1,
         IMAGES.hero2,
+        IMAGES.hero3,
+        IMAGES.hero4,
+        IMAGES.hero5,
         IMAGES.hero6,
-        IMAGES.hero7,
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);

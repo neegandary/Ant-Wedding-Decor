@@ -65,7 +65,7 @@ export const Restaurant = () => {
       {/* Hero */}
       <section
         className="relative h-[400px] bg-cover bg-center flex items-center justify-center text-white"
-        style={{ backgroundImage: `url(${IMAGES.service})` }}
+        style={{ backgroundImage: `url(${IMAGES.vanxtuc})` }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
         <motion.div

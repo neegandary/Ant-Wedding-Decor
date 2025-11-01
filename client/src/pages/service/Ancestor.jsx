@@ -66,7 +66,7 @@ export const Ancestor = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
                 className="relative h-[500px] bg-cover bg-center"
-                style={{ backgroundImage: `url(${IMAGES.vanxtuc})` }}
+                style={{ backgroundImage: `url(${IMAGES.vietxquynh2_11})` }}
             >
                 <div className="absolute inset-0 bg-black/40"></div>
                 <div className="relative h-full flex items-center justify-center">

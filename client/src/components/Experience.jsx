@@ -3,9 +3,11 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useNavigate } from 'react-router-dom';
 import { IMAGES } from '../constants/image';
+import { useTranslation } from 'react-i18next';
 
 const Experience = () => {
     const navigate = useNavigate();
+    const { t } = useTranslation();
 
     // Hàng 1: 6 hình với thông tin
     const row1Images = [
@@ -66,7 +68,7 @@ const Experience = () => {
                     <h2 className="text-4xl font-bold text-gray-800 mb-2">
                         ANT<span className="font-normal">WORK</span>
                     </h2>
-                    <p className="text-sm text-orange-400">We'll create wedding décor to suit your Inspiration</p>
+                    <p className="text-sm text-orange-400">{t("workSubTitle")}</p>
                 </div>
 
                 {/* First Row Slider - 6 images, show 4 */}
