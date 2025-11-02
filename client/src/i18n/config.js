@@ -32,6 +32,7 @@ const resources = {
       outdoorDesc: "Cùng dâu rể, ANT tạo nên những không gian tiệc cưới ngoài trời đầy cảm xúc – nơi thiên nhiên làm phông nền, và mỗi đám cưới là một bức tranh kể về tình yêu theo cách riêng của hai người.",
       restaurantDecor: "TRANG TRÍ SẢNH CƯỚI",
       restaurantDesc: "Ant giúp bạn thổi hồn vào không gian sảnh cưới, biến nơi ấy thành một lễ đường riêng biệt, nơi mỗi góc nhỏ đều được chăm chút tỉ mỉ để phản chiếu phong cách và cảm xúc của hai bạn.",
+      restaurantDesc1: "Biến đổi không gian sảnh cưới vốn có thành lễ đường của riêng bạn",
       eventDecorTitle: "TRANG TRÍ SỰ KIỆN",
       eventDecorDesc: "Từ những buổi tiệc nhỏ đầy yêu thương đến những sự kiện trọng đại trong đời, ANT hân hoan khi được đồng hành cùng bạn, góp phần tạo nên những khoảnh khắc thật đẹp và ý nghĩa.",
       viewDetails: "XEM CHI TIẾT",
@@ -49,14 +50,14 @@ const resources = {
       // Why Choose Us
       whyChooseUs: "LÝ DO CHỌN ANT WEDDING",
       whyChooseDesc: " Ant Wedding tin rằng mỗi đám cưới đều xứng đáng được thực hiện bằng sự tận tâm, tỉ mỉ\n và tình yêu trọn vẹn như chính câu chuyện của hai bạn.",
-      trustedBrand: "TẬN TÂM - THẤU HIÊU - KHÁC BIỆT",
-      trustedBrandDesc: "Mỗi concept được tạo nên từ sự thấu hiểu và phong cách riêng của từng cặp đôi — không lặp lại, không khuôn mẫu. ANT Wedding không chỉ mang đến một buổi tiệc cưới đẹp, mà là không gian kể chuyện bằng hoa, ánh sáng và cảm xúc.",
+      trustedBrand: "TẬN TÂM - THẤU HIỂU - KHÁC BIỆT",
+      trustedBrandDesc: "Mỗi concept được tạo nên từ sự thấu hiểu và phong cách riêng của từng cặp đôi — không lặp lại, không rập khuôn. ANT Wedding không chỉ mang đến một buổi tiệc cưới đẹp, mà là không gian kể chuyện bằng hoa, ánh sáng và cảm xúc.",
       professionalProcess: "CHUYÊN NGHIỆP - CHỈN CHU",
       professionalProcessDesc: "Luôn đồng hành cùng dâu rể trong suốt hành trình chuẩn bị, để mọi khoảnh khắc đều diễn ra nhẹ nhàng và trọn vẹn. Từ khâu lên ý tưởng, thiết kế đến thi công, mọi chi tiết đều được đội ngũ ANT chăm chút kỹ lưỡng.",
       highExpertise: "KINH NGHIỆM - AM HIỂU",
       highExpertiseDesc: "Với kinh nghiệm tổ chức rất nhiều tiệc cưới tại các resort, bãi biển và không gian sang trọng, Ant Wedding hiểu rõ từng đặc thù địa điểm. Mang đến cho bạn những giải pháp décor thông minh, phù hợp và hiệu quả nhất. Đảm bảo quy trình làm việc rõ ràng, đúng tiến độ và có chất lượng cao nhất.",
 
-      workSubTitle:"Thỏa sức biến tấu tiệc cưới trong mơ",
+      workSubTitle: "Thỏa sức biến tấu tiệc cưới trong mơ",
 
       // Footer
       contactUs: "Contact us",
@@ -153,15 +154,50 @@ const resources = {
       completedProjects: "Các Dự Án Đã Thực Hiện",
       workflowProcess: "Quy Trình Làm Việc",
       consultation: "Tư Vấn",
-      consultationDesc: "Lắng nghe ý tưởng và tư vấn concept phù hợp",
-      preparation: "Chuẩn Bị",
-      preparationDesc: "Thiết kế 3D và báo giá chi tiết",
+      consultationDesc1: "Lắng nghe ý tưởng và tư vấn concept phù hợp",
+      preparation: "Thiết kế",
+      preparationDesc1: "Thiết kế 3D và báo giá chi tiết",
       construction: "Thi Công",
-      constructionDesc: "Thi công và setup tại địa điểm",
+      constructionDesc1: "Thi công và setup tại địa điểm",
       completion: "Hoàn Thiện",
-      completionDesc: "Kiểm tra và bàn giao hoàn hảo",
+      completionDesc1: "Kiểm tra và bàn giao hoàn hảo",
       needConsultation: "Cần Tư Vấn?",
       contactForDetails: "Liên hệ với chúng tôi để được tư vấn chi tiết",
+
+      // Restaurant Wedding Service
+      restaurantFeaturesTitle: "Hạng Mục Trang Trí Sảnh Tiệc Cưới",
+      restaurantFeaturesSubTitle: "Mỗi chi tiết trong không gian sảnh tiệc đều được tính toán kỹ, để tạo nên một tổng thể hài hòa, sang trọng và mang đậm dấu ấn riêng của dâu rể.",
+      restaurantHallTitle: "Backdrop",
+      restaurantHallDesc: "Khu vực backdrop chính là điểm nhấn đầu tiên khi khách bước vào sảnh tiệc — nơi thể hiện phong cách và tinh thần của toàn bộ không gian cưới. Ant thiết kế backdrop vừa hài hòa với tổng thể, vừa đủ nổi bật để ghi dấu ấn trong từng khung hình.",
+      restaurantMenuTitle: "Gallery",
+      restaurantMenuDesc: "Không chỉ là nơi trưng bày ảnh cưới và lưu giữ lời chúc, bàn gallery còn là không gian nhỏ kể lại hành trình tình yêu của hai bạn. Mỗi chi tiết — từ khung ảnh, hoa đến ánh sáng — đều được Ant sắp đặt tinh tế để câu chuyện trở nên sống động và đầy cảm xúc.",
+      restaurantStaffTitle: "Lối đi",
+      restaurantStaffDesc: "Một hành trình ngắn nhưng đầy ý nghĩa — nơi dâu rể bước đi giữa những ánh nhìn yêu thương. Ant thiết kế lối đi như một khung cảnh dẫn vào giấc mơ, nơi từng bông hoa, ánh đèn đều hòa cùng nhịp cảm xúc của ngày trọng đại.",
+      restaurantDecorConceptTitle: "Sân khấu",
+      restaurantDecorConceptDesc: "Là trung tâm của buổi tiệc — nơi cảm xúc thăng hoa và lời hứa được trao gửi. Với sự cân bằng giữa nghệ thuật và cảm xúc, Ant tạo nên một không gian sân khấu sang trọng, tinh tế và đủ gần gũi để mọi khoảnh khắc đều trở nên đáng nhớ.",
+      restaurantProcessTitle: "Quy Trình Tổ Chức Tiệc",
+      restaurantConsultation: "Tư Vấn",
+      restaurantConsultationDesc: "Tư vấn không gian, thực đơn và dịch vụ",
+      restaurantPlanning: "Lên Kế Hoạch",
+      restaurantPlanningDesc: "Thiết kế concept và báo giá chi tiết",
+      restaurantPreparation: "Chuẩn Bị",
+      restaurantPreparationDesc: "Chuẩn bị thực đơn và trang trí sảnh",
+      restaurantExecution: "Tổ Chức",
+      restaurantExecutionDesc: "Phục vụ và điều phối tiệc hoàn hảo",
+      restaurantPortfolioTitle: "Không Gian & Khoảnh Khắc",
+      restaurantPortfolio1: "TỪ BẠN, CHO ĐẾN BẠN ĐỜI",
+      restaurantPortfolio2: "VAN & TUC",
+      restaurantPortfolio3: "DUYEN & STEVEN",
+      restaurantPortfolio4: "SWEETEST DAY",
+      outdoorBenefitsRes: "Tại Sao Nên Tổ Chức Tiệc Cưới Trong Sảnh",
+      spaciousSpaceRes: "Không lo về thời tiết — luôn hoàn hảo dù mưa hay nắng",
+      spaciousSpaceResDesc: "Tiệc cưới trong sảnh mang lại sự an tâm tuyệt đối, giúp bạn không phải lo lắng về gió, mưa hay nắng. Mọi cảm xúc, âm thanh và ánh sáng đều được kiểm soát tốt nhất để buổi tiệc diễn ra trọn vẹn.",
+      naturalLightRes:"Không gian tiện nghi – sang trọng và dễ tùy biến",
+      naturalLightResDesc: "Các sảnh tiệc hiện nay được thiết kế với hệ thống ánh sáng, âm thanh, máy lạnh và dịch vụ chuyên nghiệp. Ant có thể biến đổi không gian ấy theo phong cách riêng của từng cặp đôi — từ tinh tế, nhẹ nhàng đến ấn tượng và cá tính.",
+      romanticSpaceRes:"Dễ dàng kết nối – thuận tiện cho khách mời",
+      romanticSpaceResDesc:"Với vị trí trung tâm và dịch vụ đồng bộ, sảnh tiệc là lựa chọn lý tưởng để người thân, bạn bè dễ dàng di chuyển và tận hưởng trọn vẹn ngày vui. Không cần lo khâu sắp xếp, mọi thứ đều được chuẩn bị chu đáo từ đầu đến cuối.",
+      readyForPerfectWeddingRes: "Sẵn Sàng Tạo Nên Tiệc Cưới Hoàn Hảo?",
+      contactForFreeConsultationRes:"Liên hệ với chúng tôi ngay hôm nay để được tư vấn miễn phí",
 
       // Ancestor Service
       ancestorServiceTitle: "Về Dịch Vụ Trang Trí Lễ Gia Tiên",
@@ -209,12 +245,12 @@ const resources = {
       lightingDesc: "Không gian gắn kết cảm xúc – nơi khách mời cùng nâng ly, sẻ chia niềm vui và lưu lại những khoảnh khắc đáng nhớ trong ngày cưới.",
       themeDecoration: "Hoa Cưới",
       themeDecorationDesc: "Mỗi bó hoa cưới là dấu ấn nhỏ nhưng chứa đựng sự chăm chút và tinh tế của cô dâu. Sự cầu kỳ trong từng cánh hoa phản chiếu tình yêu và tâm huyết mà dâu rể gửi gắm vào ngày trọng đại.",
-      outdoorBenefits: "Tiệc cưới ngoài trời sẽ mang lại...",
-      spaciousSpace: "Không gian tự nhiên, cảm xúc chân thật",
+      outdoorBenefits: "Tiệc Cưới Ngoài Trời Sẽ Mang Lại...",
+      spaciousSpace: "Không gian tự nhiên,\n cảm xúc chân thật",
       spaciousSpaceDesc: "Tiệc cưới ngoài trời mang đến bầu không khí gần gũi và thoải mái, nơi ánh sáng tự nhiên, gió biển hay cỏ xanh trở thành một phần trong lễ cưới — giúp cảm xúc của mọi người được bộc lộ trọn vẹn và chân thật nhất.",
       naturalLight: "Tự do sáng tạo concept & décor",
       naturalLightDesc: "Không bị giới hạn bởi không gian sảnh tiệc, lễ cưới ngoài trời cho phép bạn thỏa sức biến tấu phong cách — từ bohemian phóng khoáng, rustic mộc mạc, đến elegant sang trọng — tất cả đều có thể trở thành câu chuyện riêng của hai bạn.",
-      romanticSpace: "Khoảnh khắc đáng nhớ & hình ảnh tuyệt đẹp",
+      romanticSpace: "Khoảnh khắc đáng nhớ &\nhình ảnh tuyệt đẹp",
       romanticSpaceDesc: "Ánh sáng tự nhiên, khung cảnh trời biển hay khu vườn xanh sẽ tạo nên những bức ảnh cưới sống động và đầy cảm xúc — để mỗi khung hình đều là một kỷ niệm khó quên.",
       outdoorHeroSubtitle: "Tạo nên không gian tiệc cưới ngoài trời lãng mạn,\nhòa mình với thiên nhiên",
       readyForOutdoorWedding: "Sẵn Sàng Tạo Nên Tiệc Cưới Ngoài Trời Hoàn Hảo?",
@@ -382,17 +418,18 @@ const resources = {
       // Service Cards
       ancestorDecor: "TRADITIONAL VIETNAMESE CEREMONY",
       ancestorDesc: "At Ant, the engagement ceremony harmoniously blends Vietnamese tradition with modern elegance — preserving its true meaning while bringing emotions and grace into one.",
-      outdoorDecor: "OUTDOOR DECORATION",
+      outdoorDecor: "OUTDOOR WEDDING",
       outdoorDesc: "With each couple, ANT designs emotional outdoor weddings — where nature becomes the canvas and every celebration tells a love story of its own.",
       restaurantDecor: "WEDDING HALL DECORATION",
       restaurantDesc: "Ant breathes life into your wedding space, turning it into a unique aisle where every corner is delicately crafted to mirror your love and personal style.",
+      restaurantDesc1: "Redefine the ballroom into your one-of-a-kind wedding aisle",
       eventDecorTitle: "EVENT DECORATION",
       eventDecorDesc: "ANT is honored to be part of your most meaningful moments — from birthdays and anniversaries to proposals and many other beautiful celebrations in life.",
       viewDetails: "VIEW DETAILS",
 
       // Stats
       yearsExperience: "YEARS OF EXPERIENCE",
-      couplesServed: "COUPLES HAVE PLACED THEIR TRUST\N IN ANT", 
+      couplesServed: "COUPLES HAVE PLACED THEIR TRUST\N IN ANT",
       // couples have placed their trust in Ant
 
       // Banner
@@ -412,7 +449,7 @@ const resources = {
       highExpertiseDesc: "With extensive experience in organizing weddings at resorts, beaches, and elegant venues, Ant Wedding understands the unique characteristics of each location. We bring you intelligent, suitable, and efficient décor solutions — ensuring a transparent process, on-time delivery, and the highest quality outcomes.",
 
       //ArtWork
-      workSubTitle:"Where Your Dream Wedding Comes to Life",
+      workSubTitle: "Where Your Dream Wedding Comes to Life",
 
       // Footer
       contactUs: "Contact us",
@@ -460,9 +497,9 @@ const resources = {
 
       // Introduce
       helloWeAre: "HELLO, THIS IS ANT WEDDING",
-      introTitle1: "Creative,",
-      introTitle2: "Genuine,",
-      introTitle3: "Trustworthy,\n Always Inspired.",
+      introTitle1: "Creative, Genuine,",
+      introTitle2: "Trustworthy,",
+      introTitle3: "Always Inspired.",
       introDesc: "Founded in 2019, when wedding decoration in Vietnam was becoming more recognized and appreciated by modern couples, ANT Wedding was born from a desire to create weddings that are not only beautiful, but also meaningful.\n From the very beginning, we’ve believed that every celebration should tell a love story – through space, light, and every delicate floral detail🌿\n With a solid foundation in design and years of experience, ANT Wedding proudly stands among the pioneering Wedding Design and Decoration Services in Nha Trang, Khanh Hoa, and surrounding areas. We offer full-service wedding design – from planning and styling to complete decoration – ensuring that every event feels personal, elegant, and truly yours.\n ANT Wedding – where love stories are told through elegance and sincerity. ✨\n Ngoc Anh & Nha Tinh\n Founders of Ant Wedding",
       introQuote: "At Ant Wedding, we believe that true beauty begins with understanding. Every celebration we create reflects the couple’s dreams – just the way they imagined.",
       founders: "Ngoc Anh & Nha Tinh",
@@ -509,13 +546,13 @@ const resources = {
       completedProjects: "Completed Projects",
       workflowProcess: "Workflow Process",
       consultation: "Consultation",
-      consultationDesc: "Listening to your ideas and providing concept recommendations.",
+      consultationDesc1: "Listening to your ideas and providing concept recommendations.",
       preparation: "Design",
-      preparationDesc: "Creating 3D designs and detailed quotations.",
+      preparationDesc1: "Creating 3D designs\n and detailed quotations.",
       construction: "Execution",
-      constructionDesc: "On-site setup and decoration.",
+      constructionDesc1: "On-site setup and decoration.",
       completion: "Completion",
-      completionDesc: "Final inspection and flawless handover.",
+      completionDesc1: "Final inspection and flawless handover.",
       needConsultation: "Need Consultation?",
       contactForDetails: "Contact us for detailed consultation",
 
@@ -553,9 +590,45 @@ const resources = {
       needAncestorConsultation: "Need Consultation About Ancestor Ceremony?",
       contactForCustomDetails: "Contact us for detailed consultation about customs and preparation",
 
+      // Restaurant Wedding Service
+      restaurantFeaturesTitle: "Wedding Hall Decoration Categories",
+      restaurantFeaturesSubTitle: "Every detail is carefully curated to form a harmonious, elegant space that reflects the couple’s personal touch.",
+      restaurantHallTitle: "Backdrop",
+      restaurantHallDesc: "Being the first impression as guests enter — a reflection of the couple’s style and the overall wedding atmosphere. Ant designs each backdrop to be both harmonious and memorable, ensuring it becomes a highlight of every photo.",
+      restaurantMenuTitle: "Gallery",
+      restaurantMenuDesc: "More than just a display table, the gallery is where your love story unfolds. Every detail — from the photos to the flowers and lighting — is thoughtfully curated by Ant to evoke warmth and emotion.",
+      restaurantStaffTitle: "Aisle",
+      restaurantStaffDesc: "Marks a short yet meaningful journey — where the couple walks amidst love and anticipation. Ant transforms it into a dreamy pathway, where every bloom and light leads you toward your forever moment.",
+      restaurantDecorConceptTitle: "Main Stage",
+      restaurantDecorConceptDesc: "This is the heart of the celebration — where emotions peak and promises are made. Ant blends artistry with intimacy to craft a stage that’s elegant, heartfelt, and unforgettable.",
+      restaurantProcessTitle: "Event Organization Process",
+      restaurantConsultation: "Consultation",
+      restaurantConsultationDesc: "Advise on space, menu and services",
+      restaurantPlanning: "Planning",
+      restaurantPlanningDesc: "Design concept and detailed quotation",
+      restaurantPreparation: "Preparation",
+      restaurantPreparationDesc: "Prepare menu and hall decoration",
+      restaurantExecution: "Execution",
+      restaurantExecutionDesc: "Perfect service and event coordination",
+      restaurantPortfolioTitle: "Spaces & Moments",
+      restaurantPortfolio1: "FROM FRIEND TO PARTNER",
+      restaurantPortfolio2: "VAN & TUC",
+      restaurantPortfolio3: "DUYEN & STEVEN",
+      restaurantPortfolio4: "SWEETEST DAY",
+      outdoorBenefitsRes: "The Beauty Of An Indoor Wedding",
+      spaciousSpaceRes: "Worry-free, come rain or shine",
+      spaciousSpaceResDesc: "An indoor wedding gives you absolute peace of mind — no need to worry about the weather. Every sound, every light, and every moment is perfectly managed to ensure your celebration unfolds flawlessly.",
+      naturalLightRes:"Elegant space – comfortable and easily personalized",
+      naturalLightResDesc: "Modern ballrooms offer a full range of amenities: professional lighting, sound, air-conditioning, and service. Ant Wedding transforms these spaces to reflect each couple’s unique story — whether minimalist, romantic, or bold and dramatic.",
+      romanticSpaceRes:"Convenient and connected for all guests",
+      romanticSpaceResDesc:"Located in central areas with full facilities, indoor venues make it easier for guests to gather, celebrate, and share the joy of your day. Every detail is taken care of, so all you need to do is enjoy the moment.",
+      readyForPerfectWeddingRes:"Let's Draw Your Wedding Dream",
+      contactForFreeConsultationRes:"Connect today for a complimentary consultation.",
+
+
       // Outdoor/Destination Service
-      outdoorServiceTitle: "About Outdoor Decoration Service",
-      outdoorServiceSubtitle: "Create romantic outdoor wedding space, immersed in nature",
+      outdoorServiceTitle: "Outdoor Wedding Categories",
+      outdoorServiceSubtitle: "Every wedding detail — is thoughtfully designed to create a harmonious and memorable outdoor celebration.",
       backdropAndArch: "Backdrop & Flower Arch",
       backdropAndArchDesc: "The most iconic area of a wedding — where the couple’s unique style shines through every floral detail. Designed to harmonize with the outdoor setting, this space sets the tone for the entire celebration.",
       tablesAndWalkway: "Gallery Area",
@@ -565,7 +638,7 @@ const resources = {
       themeDecoration: "Bridal Bouquet & Boutonniere",
       themeDecorationDesc: "A bouquet may be small, but it carries the bride’s care and attention to detail — a delicate reflection of love and devotion woven into every petal.",
       outdoorBenefits: "An Outdoor Wedding Brings...",
-      spaciousSpace: "Natural Spaces, Genuine Emotions",
+      spaciousSpace: "Natural Spaces,\n Genuine Emotions",
       spaciousSpaceDesc: "An outdoor wedding brings warmth and authenticity — where natural light, ocean breeze, and soft greenery become part of the celebration. It’s a space where emotions unfold naturally, and every moment feels intimate and real.",
       naturalLight: "Freedom to Create Your Own Concept & Décor",
       naturalLightDesc: "Without the limits of an indoor venue, an outdoor wedding lets you express your unique style — from free-spirited bohemian and rustic charm to timeless elegance. Every detail tells your love story in its own beautiful way.",
@@ -713,15 +786,23 @@ const resources = {
   }
 };
 
+// Get saved language from localStorage or use default
+const savedLanguage = localStorage.getItem('i18nextLng') || 'vi';
+
 i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'vi', // default language
+    lng: savedLanguage, // use saved language
     fallbackLng: 'vi',
     interpolation: {
       escapeValue: false
     }
   });
+
+// Save language to localStorage whenever it changes
+i18n.on('languageChanged', (lng) => {
+  localStorage.setItem('i18nextLng', lng);
+});
 
 export default i18n;

@@ -88,10 +88,10 @@ const Service = () => {
                                     )}
                                 </a>
                                 <div className="relative bg-white rounded-md shadow-lg p-6 -mt-12 mx-4 flex-1 flex flex-col min-h-[280px] z-10">
-                                    <h3 className="text-center text-base font-black text-emerald-700 mb-3 min-h-[48px] flex items-center justify-center">
+                                    <h3 className="text-center text-lg font-black text-emerald-700 mb-3 min-h-[48px] flex items-center justify-center">
                                         {c.title}
                                     </h3>
-                                    <p className="text-sm text-gray-600 text-center mb-4 flex-1 leading-relaxed font-light">
+                                    <p className="text-md text-gray-600 text-center mb-4 flex-1 leading-relaxed font-light">
                                         {c.desc}
                                     </p>
                                     <div className="text-center mt-auto">
@@ -118,12 +118,12 @@ const Service = () => {
                         <div className="w-full md:w-1/2 flex flex-row items-center justify-center px-4 md:px-8 py-8 md:py-0">
                             <div className="text-center flex-1">
                                 <div className="text-4xl md:text-5xl lg:text-7xl font-bold mb-2"><CountUpNumber target={10} /></div>
-                                <div className="text-xs md:text-sm uppercase tracking-wide">{t('yearsExperience')}</div>
+                                <div className="text-xs md:text-lg uppercase tracking-wide">{t('yearsExperience')}</div>
                             </div>
                             <div className="h-20 md:h-32 w-px bg-white/50 mx-4 md:mx-8"></div>
                             <div className="text-center flex-1">
                                 <div className="text-4xl md:text-5xl lg:text-7xl font-bold mb-2"><CountUpNumber target={300} /></div>
-                                <div className="text-xs md:text-sm uppercase tracking-wide whitespace-pre">{t('couplesServed')}</div>
+                                <div className="text-xs md:text-lg uppercase tracking-wide whitespace-pre">{t('couplesServed')}</div>
                             </div>
                         </div>
 
@@ -137,7 +137,7 @@ const Service = () => {
                         >
                             <h2 className="text-2xl md:text-3xl lg:text-4xl font-black mb-2">{t('bannerTitle1')}</h2>
                             <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">{t('bannerTitle2')}</h3>
-                            <p className="text-xs md:text-sm leading-relaxed mb-6 text-justify font-light">
+                            <p className="text-xs md:text-lg leading-relaxed mb-6 text-justify font-light">
                                 {t('bannerDesc')}
                             </p>
                             <button
@@ -166,7 +166,7 @@ const Service = () => {
                         <div className="h-px bg-gradient-to-r from-transparent via-[#cbb9a4] to-transparent w-76"></div>
                     </div>
                     <motion.p
-                        className="text-center text-gray-600 max-w-3xl mx-auto mb-12 whitespace-pre font-light"
+                        className="text-center text-lg  text-gray-600 max-w-3xl mx-auto mb-12 whitespace-pre font-light"
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
@@ -186,7 +186,7 @@ const Service = () => {
                         >
                             <div className="text-6xl font-black text-emerald-700/20 mb-2">01.</div>
                             <h3 className="text-xl font-black text-gray-800 mb-2">{t('trustedBrand')}</h3>
-                            <p className="text-sm text-gray-600 leading-relaxed font-light">
+                            <p className="text-md text-gray-600 leading-relaxed font-light">
                                 {t('trustedBrandDesc')}
                             </p>
                         </motion.div>
@@ -201,7 +201,7 @@ const Service = () => {
                         >
                             <div className="text-6xl font-bold text-emerald-700/20 mb-2">02.</div>
                             <h3 className="text-xl font-bold text-gray-800 mb-2">{t('professionalProcess')}</h3>
-                            <p className="text-sm text-gray-600 leading-relaxed font-light">
+                            <p className="text-md text-gray-600 leading-relaxed font-light">
                                 {t('professionalProcessDesc')}
                             </p>
                         </motion.div>
@@ -216,7 +216,7 @@ const Service = () => {
                         >
                             <div className="text-6xl font-bold text-emerald-700/20 mb-2">03.</div>
                             <h3 className="text-xl font-bold text-gray-800 mb-2">{t('highExpertise')}</h3>
-                            <p className="text-sm text-gray-600 leading-relaxed font-light">
+                            <p className="text-md text-gray-600 leading-relaxed font-light">
                                 {t('highExpertiseDesc')}
                             </p>
                         </motion.div>

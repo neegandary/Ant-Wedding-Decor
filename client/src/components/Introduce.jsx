@@ -77,7 +77,7 @@ const Introduce = () => {
                             {/* Right stack */}
                             <div className="flex flex-col gap-4 h-full">
                                 <div className="bg-gradient-to-br from-[#68866c] to-[#5a7360] text-white rounded-xl p-6 shadow-lg flex flex-col justify-between min-h-[240px]">
-                                    <p className="mb-4 text-justify font-light text-sm leading-relaxed">
+                                    <p className="mb-4 text-justify font-light text-md leading-relaxed">
                                         {t('introQuote')}
                                     </p>
                                     <div className="border-t border-white/20 pt-4">

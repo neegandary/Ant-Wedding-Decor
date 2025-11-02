@@ -39,10 +39,10 @@ export const Destination = () => {
     ];
 
     const processSteps = [
-        { step: '01', title: t('consultation'), desc: t('consultationDesc') },
-        { step: '02', title: t('preparation'), desc: t('preparationDesc') },
-        { step: '03', title: t('construction'), desc: t('constructionDesc') },
-        { step: '04', title: t('completion'), desc: t('completionDesc') }
+        { step: '01', title: t('consultation'), desc: t('consultationDesc1') },
+        { step: '02', title: t('preparation'), desc: t('preparationDesc1') },
+        { step: '03', title: t('construction'), desc: t('constructionDesc1') },
+        { step: '04', title: t('completion'), desc: t('completionDesc1') }
     ];
 
     return (
@@ -105,7 +105,7 @@ export const Destination = () => {
                             <h3 className="text-xl font-bold text-gray-800 mb-2">
                                 {feature.title}
                             </h3>
-                            <p className="text-gray-600 text-sm">
+                            <p className="text-gray-600 text-md">
                                 {feature.description}
                             </p>
                         </motion.div>
@@ -195,7 +195,7 @@ export const Destination = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                                className="text-center"
+                                className="text-center whitespace-pre-line"
                             >
                                 <div className="w-16 h-16 bg-[#cbb9a4] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                                     {item.step}
@@ -203,7 +203,7 @@ export const Destination = () => {
                                 <h3 className="text-xl font-bold text-gray-800 mb-2">
                                     {item.title}
                                 </h3>
-                                <p className="text-gray-600 text-sm">
+                                <p className="text-gray-600 text-md">
                                     {item.desc}
                                 </p>
                             </motion.div>
@@ -231,7 +231,7 @@ export const Destination = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: 0.1 }}
-                            className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group"
+                            className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group whitespace-pre-line"
                         >
                             <div className="flex flex-col items-center text-center">
                                 <div className="w-20 h-20 bg-gradient-to-br from-[#cbb9a4] to-[#b8a490] rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -240,7 +240,7 @@ export const Destination = () => {
                                 <h3 className="text-xl font-bold text-gray-800 mb-3">
                                     {t('spaciousSpace')}
                                 </h3>
-                                <p className="text-gray-600 leading-relaxed">
+                                <p className="text-gray-600 leading-relaxed text-md">
                                     {t('spaciousSpaceDesc')}
                                 </p>
                             </div>
@@ -277,7 +277,7 @@ export const Destination = () => {
                                 <div className="w-20 h-20 bg-gradient-to-br from-[#cbb9a4] to-[#b8a490] rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                                     <CircleCheckBig className="w-10 h-10 text-white" />
                                 </div>
-                                <h3 className="text-xl font-bold text-gray-800 mb-3">
+                                <h3 className="text-xl font-bold text-gray-800 mb-3 whitespace-pre-line">
                                     {t('romanticSpace')}
                                 </h3>
                                 <p className="text-gray-600 leading-relaxed">

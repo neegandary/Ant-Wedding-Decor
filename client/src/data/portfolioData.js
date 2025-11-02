@@ -149,7 +149,7 @@ export const PORTFOLIO_ITEMS_RAW = [
   {
     id: 29,
     date: { day: '10', month: 'TH11', year: '2022' },
-    categoryKey: 'weddingDecor',
+    categoryKey: 'restaurantDecorCategory',
     title: 'DUY & MY ',
     author: 'Ant Wedding',
     descriptionKey: 'duyMy2Desc',

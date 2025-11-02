@@ -11,22 +11,22 @@ const Experience = () => {
 
     // Hàng 1: 6 hình với thông tin
     const row1Images = [
-        { img: `${IMAGES.nathanxtracy}`, title: 'FOUND BY FATE', tags: [ 'TRANG TRÍ TIỆC CƯỚI NGOÀI TRỜI'], endpoint: 'nathanxtracy' },
-        { img: `${IMAGES.tienxwilliam}`, title: 'QUIET COASTAL LOVE ', tags: [ 'TRANG TRÍ TIỆC CƯỚI NGOÀI TRỜI'], endpoint: 'tienxwilliam' },
-        { img: `${IMAGES.vanxtuc}`, title: 'VAN & TUC', tags: [ 'TRANG TRÍ SẢNH CƯỚI'], endpoint: 'vanxtuc' },
-        { img: `${IMAGES.tranxtai}`, title: 'TRAN & TAI', tags: [ 'TRANG TRÍ TIỆC CƯỚI NGOÀI TRỜI'], endpoint: 'tranxtai' },
-        { img: `${IMAGES.mayxmat}`, title: 'EAT.PRAY.LOVE', tags: [ 'TRANG TRÍ TIỆC CƯỚI NGOÀI TRỜI'], endpoint: 'mayxmat' },
-        { img: `${IMAGES.duyenxsteven}`, title: 'DUYEN & STEVEN', tags: [ 'TRANG TRÍ SẢNH CƯỚI'], endpoint: 'duyenxsteven' },
+        { img: `${IMAGES.nathanxtracy}`, title: 'FOUND BY FATE', tags: ['weddingDecor'], endpoint: 'nathanxtracy' },
+        { img: `${IMAGES.tienxwilliam}`, title: 'QUIET COASTAL LOVE ', tags: ['weddingDecor'], endpoint: 'tienxwilliam' },
+        { img: `${IMAGES.vanxtuc}`, title: 'VAN & TUC', tags: ['restaurantDecorCategory'], endpoint: 'vanxtuc' },
+        { img: `${IMAGES.tranxtai}`, title: 'TRAN & TAI', tags: ['weddingDecor'], endpoint: 'tranxtai' },
+        { img: `${IMAGES.mayxmat}`, title: 'EAT.PRAY.LOVE', tags: ['weddingDecor'], endpoint: 'mayxmat' },
+        { img: `${IMAGES.duyenxsteven}`, title: 'DUYEN & STEVEN', tags: ['restaurantDecorCategory'], endpoint: 'duyenxsteven' },
     ];
 
     // Hàng 2: 6 hình với thông tin
     const row2Images = [
-        { img: `${IMAGES.service}`, title: 'THE JOURNEY WITHIN', tags: [ 'TRANG TRÍ TIỆC CƯỚI NGOÀI TRỜI'], endpoint: 'hanxtuan' },
-        { img: `${IMAGES.phuongxhien}`, title: 'PHUONG & HIEN', tags: [ 'LỄ GIA TIÊN'], endpoint: 'phuongxhien' },
-        { img: `${IMAGES.duyxmy}`, title: 'SWEETEST DAY', tags: [ 'LỄ GIA TIÊN'], endpoint: 'duyxmy' },
-        { img: `${IMAGES.phuongxhien2_3}`, title: 'PHUONG & HIEN', tags: [ 'TRANG TRÍ SẢNH CƯỚI'], endpoint: 'phuongxhien2' },
-        { img: `${IMAGES.elopement}`, title: 'ELOPE WEDDING', tags: [ 'TRANG TRÍ TIỆC CƯỚI NGOÀI TRỜI'], endpoint: 'elopement' },
-        { img: `${IMAGES.hieuxbrian}`, title: 'WELCOME HOME', tags: [ 'TRANG TRÍ TIỆC CƯỚI NGOÀI TRỜI'], endpoint: 'hieuxbrian' },
+        { img: `${IMAGES.service}`, title: 'THE JOURNEY WITHIN', tags: ['weddingDecor'], endpoint: 'hanxtuan' },
+        { img: `${IMAGES.phuongxhien}`, title: 'PHUONG & HIEN', tags: ['ancestorDecorCategory'], endpoint: 'phuongxhien' },
+        { img: `${IMAGES.duyxmy}`, title: 'SWEETEST DAY', tags: ['ancestorDecorCategory'], endpoint: 'duyxmy' },
+        { img: `${IMAGES.phuongxhien2_3}`, title: 'PHUONG & HIEN', tags: ['restaurantDecorCategory'], endpoint: 'phuongxhien2' },
+        { img: `${IMAGES.elopement}`, title: 'ELOPE WEDDING', tags: ['weddingDecor'], endpoint: 'elopement' },
+        { img: `${IMAGES.hieuxbrian}`, title: 'WELCOME HOME', tags: ['weddingDecor'], endpoint: 'hieuxbrian' },
     ];
 
     const handleImageClick = (endpoint) => {
@@ -68,7 +68,7 @@ const Experience = () => {
                     <h2 className="text-4xl font-bold text-gray-800 mb-2">
                         ANT<span className="font-normal">WORK</span>
                     </h2>
-                    <p className="text-sm text-orange-400">{t("workSubTitle")}</p>
+                    <p className="text-lg text-orange-400">{t("workSubTitle")}</p>
                 </div>
 
                 {/* First Row Slider - 6 images, show 4 */}
@@ -94,10 +94,10 @@ const Experience = () => {
                                         <div className="flex flex-col gap-2 mb-4">
                                             {item.tags.map((tag, i) => (
                                                 <div key={i} className="flex items-center gap-2 text-sm">
-                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                                     </svg>
-                                                    <span>{tag}</span>
+                                                    <span className="whitespace-nowrap">{t(tag)}</span>
                                                 </div>
                                             ))}
                                         </div>
@@ -133,10 +133,10 @@ const Experience = () => {
                                         <div className="flex flex-col gap-2 mb-4">
                                             {item.tags.map((tag, i) => (
                                                 <div key={i} className="flex items-center gap-2 text-sm">
-                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                                     </svg>
-                                                    <span>{tag}</span>
+                                                    <span className="whitespace-nowrap">{t(tag)}</span>
                                                 </div>
                                             ))}
                                         </div>
