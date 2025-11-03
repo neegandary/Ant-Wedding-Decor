@@ -42,18 +42,18 @@ html, body {
 
 /* Increase base font size for the entire project */
 html {
-  font-size: 18px; /* Default is 16px, increased to 18px */
+  font-size: 16px; /* Default is 16px, increased to 18px */
 }
 
 /* For larger screens, increase even more */
 @media (min-width: 1024px) {
   html {
-    font-size: 19px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 1280px) {
   html {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
