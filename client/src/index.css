@@ -39,3 +39,21 @@
 html, body {
   overflow-x: hidden;
 }
+
+/* Increase base font size for the entire project */
+html {
+  font-size: 18px; /* Default is 16px, increased to 18px */
+}
+
+/* For larger screens, increase even more */
+@media (min-width: 1024px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 20px;
+  }
+}
