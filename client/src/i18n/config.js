@@ -192,12 +192,12 @@ const resources = {
       outdoorBenefitsRes: "Tại Sao Nên Tổ Chức Tiệc Cưới Trong Sảnh",
       spaciousSpaceRes: "Không lo về thời tiết — luôn hoàn hảo dù mưa hay nắng",
       spaciousSpaceResDesc: "Tiệc cưới trong sảnh mang lại sự an tâm tuyệt đối, giúp bạn không phải lo lắng về gió, mưa hay nắng. Mọi cảm xúc, âm thanh và ánh sáng đều được kiểm soát tốt nhất để buổi tiệc diễn ra trọn vẹn.",
-      naturalLightRes:"Không gian tiện nghi – sang trọng và dễ tùy biến",
+      naturalLightRes: "Không gian tiện nghi – sang trọng và dễ tùy biến",
       naturalLightResDesc: "Các sảnh tiệc hiện nay được thiết kế với hệ thống ánh sáng, âm thanh, máy lạnh và dịch vụ chuyên nghiệp. Ant có thể biến đổi không gian ấy theo phong cách riêng của từng cặp đôi — từ tinh tế, nhẹ nhàng đến ấn tượng và cá tính.",
-      romanticSpaceRes:"Dễ dàng kết nối – thuận tiện cho khách mời",
-      romanticSpaceResDesc:"Với vị trí trung tâm và dịch vụ đồng bộ, sảnh tiệc là lựa chọn lý tưởng để người thân, bạn bè dễ dàng di chuyển và tận hưởng trọn vẹn ngày vui. Không cần lo khâu sắp xếp, mọi thứ đều được chuẩn bị chu đáo từ đầu đến cuối.",
+      romanticSpaceRes: "Dễ dàng kết nối – thuận tiện cho khách mời",
+      romanticSpaceResDesc: "Với vị trí trung tâm và dịch vụ đồng bộ, sảnh tiệc là lựa chọn lý tưởng để người thân, bạn bè dễ dàng di chuyển và tận hưởng trọn vẹn ngày vui. Không cần lo khâu sắp xếp, mọi thứ đều được chuẩn bị chu đáo từ đầu đến cuối.",
       readyForPerfectWeddingRes: "Sẵn Sàng Tạo Nên Tiệc Cưới Hoàn Hảo?",
-      contactForFreeConsultationRes:"Liên hệ với chúng tôi ngay hôm nay để được tư vấn miễn phí",
+      contactForFreeConsultationRes: "Liên hệ với chúng tôi ngay hôm nay để được tư vấn miễn phí",
 
       // Ancestor Service
       ancestorServiceTitle: "Về Dịch Vụ Trang Trí Lễ Gia Tiên",
@@ -618,12 +618,12 @@ const resources = {
       outdoorBenefitsRes: "The Beauty Of An Indoor Wedding",
       spaciousSpaceRes: "Worry-free, come rain or shine",
       spaciousSpaceResDesc: "An indoor wedding gives you absolute peace of mind — no need to worry about the weather. Every sound, every light, and every moment is perfectly managed to ensure your celebration unfolds flawlessly.",
-      naturalLightRes:"Elegant space – comfortable and easily personalized",
+      naturalLightRes: "Elegant space – comfortable and easily personalized",
       naturalLightResDesc: "Modern ballrooms offer a full range of amenities: professional lighting, sound, air-conditioning, and service. Ant Wedding transforms these spaces to reflect each couple’s unique story — whether minimalist, romantic, or bold and dramatic.",
-      romanticSpaceRes:"Convenient and connected for all guests",
-      romanticSpaceResDesc:"Located in central areas with full facilities, indoor venues make it easier for guests to gather, celebrate, and share the joy of your day. Every detail is taken care of, so all you need to do is enjoy the moment.",
-      readyForPerfectWeddingRes:"Let's Draw Your Wedding Dream",
-      contactForFreeConsultationRes:"Connect today for a complimentary consultation.",
+      romanticSpaceRes: "Convenient and connected for all guests",
+      romanticSpaceResDesc: "Located in central areas with full facilities, indoor venues make it easier for guests to gather, celebrate, and share the joy of your day. Every detail is taken care of, so all you need to do is enjoy the moment.",
+      readyForPerfectWeddingRes: "Let's Draw Your Wedding Dream",
+      contactForFreeConsultationRes: "Connect today for a complimentary consultation.",
 
 
       // Outdoor/Destination Service

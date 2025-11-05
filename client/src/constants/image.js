@@ -558,6 +558,7 @@ export const IMAGES = {
     duyxmy2_7: `${IMAGE_BASE_URL}/image/duyxmy2_7.webp?t=${Date.now()}`,
     duyxmy2_8: `${IMAGE_BASE_URL}/image/duyxmy2_8.webp?t=${Date.now()}`,
     duyxmy2_9: `${IMAGE_BASE_URL}/image/duyxmy2_9.webp?t=${Date.now()}`,
+    duyxmy2_10: `${IMAGE_BASE_URL}/image/duyxmy2_10.webp?t=${Date.now()}`,
 
     // Be Nang gallery
     benang1: `${IMAGE_BASE_URL}/image/benang1.webp?t=${Date.now()}`,
@@ -569,6 +570,7 @@ export const IMAGES = {
     benang7: `${IMAGE_BASE_URL}/image/benang7.webp?t=${Date.now()}`,
     benang8: `${IMAGE_BASE_URL}/image/benang8.webp?t=${Date.now()}`,
     benang9: `${IMAGE_BASE_URL}/image/benang9.webp?t=${Date.now()}`,
+    benang10: `${IMAGE_BASE_URL}/image/benang10.webp?t=${Date.now()}`,
 
     // Trang x Vini gallery
     trangxvini1: `${IMAGE_BASE_URL}/image/trangxvini1.webp?t=${Date.now()}`,

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { IMAGES } from '../constants/image';
 
 const Service = () => {
@@ -11,24 +12,28 @@ const Service = () => {
       title: t('ancestorDecor'),
       description: t('ancestorDesc'),
       image: IMAGES.phuongxhien,
+      link: '/services/ancestor',
     },
     {
       id: 2,
       title: t('outdoorDecor'),
       description: t('outdoorDesc'),
       image: IMAGES.tienxwilliam,
+      link: '/services/destination',
     },
     {
       id: 3,
       title: t('restaurantDecor'),
       description: t('restaurantDesc'),
-      image: IMAGES.nathanxtracy,
+      image: IMAGES.duyxmy2_10,
+      link: '/services/restaurant-wedding',
     },
     {
       id: 4,
       title: t('eventDecorTitle'),
       description: t('eventDecorDesc'),
-      image: IMAGES.hieuxbrian,
+      image: IMAGES.benang10,
+      link: '/services/event',
     }
   ];
 
@@ -103,12 +108,15 @@ const Service = () => {
                 <p className="text-gray-600 leading-relaxed mb-4">
                   {service.description}
                 </p>
-                <button className="text-[#806a56] hover:text-[#cbb9a4] font-semibold transition-colors flex items-center gap-2">
+                <Link
+                  to={service.link}
+                  className="text-[#806a56] hover:text-[#cbb9a4] font-semibold transition-colors flex items-center gap-2"
+                >
                   {t('viewDetails')}
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </button>
+                </Link>
               </div>
             </motion.div>
           ))}
